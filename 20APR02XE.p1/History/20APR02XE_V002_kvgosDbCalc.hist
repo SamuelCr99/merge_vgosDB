@@ -1,0 +1,23 @@
+
+TIMETAG 2020/04/21 21:51:04 UTC
+MK3DB_VERSION 2
+CALC11.02 Ver. 2016.12.29  Tue Apr 21 17:51:04 2020   caprica
+Calc 11 at NASA GSFC  -SB-
+
+TIMETAG 2020/04/21 21:51:14 UTC
+. vgosDbCalc: Library ID: SgLib-0.7.0 (Oakdale) released on 04 Mar, 2020
+. vgosDbCalc: Driver  ID: vgosDbCalc-0.4.0 (Audubon) released on 03 Mar, 2020
+. vgosDbCalc: Host    ID: caprica (Hw: x86_64; Sw: 4.4.0-170-generic version of Linux)
+. vgosDbCalc: User    ID: Sergei Bolotin <sergei.bolotin@nasa.gov>, NVI, Inc. / NASA Goddard Space Flight Center
+. vgosDbCalc: User command: "/home/slb/SgLib/src/vgosDbCalc/.libs/lt-vgosDbCalc 20APR02XE"
+. vgosDbCalc: Input data  : /home/slb/500/vgosDb/2020/20APR02XE/20APR02XE_V001_iWACO_kall.wrp
+. vgosDbCalc: External a priori setup: 
+. vgosDbCalc: SITES    : /home/slb/500/oper/solve_apriori_files/blokq.c11.dat
+. vgosDbCalc: Sources  : /home/slb/500/oper/solve_apriori_files/blokq.c11.dat
+. vgosDbCalc: Ocean    : /home/slb/500/oper/solve_apriori_files/blokq.c11.dat
+. vgosDbCalc: EOPs     : /home/slb/500/oper/solve_apriori_files/usno_finals.erp
+. vgosDbCalc: Tilts    : /home/slb/500/oper/solve_apriori_files/tilt.dat
+. vgosDbCalc: OPTL     : /home/slb/500/oper/solve_apriori_files/blokq.c11.dat
+. vgosDbCalc: running observations through CALC has been complete
+. putDataIntoVgosDb: no clock break information were added to the vgosDb data tree
+. createWrapperFileName: the organization name has been adjusted: WACO => GSFC

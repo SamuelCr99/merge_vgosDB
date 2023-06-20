@@ -1,0 +1,23 @@
+
+TIMETAG 2020/05/14 12:45:58 UTC
+MK3DB_VERSION 2
+CALC11.02 Ver. 2016.12.29  Thu May 14 08:45:57 2020gs690-gs61
+Calc 11 at NASA/GSFC  -DG-
+
+TIMETAG 2020/05/14 12:46:10 UTC
+. vgosDbCalc: Library ID: SgLib-0.7.1 (Linganore Creek) released on 13 May, 2020
+. vgosDbCalc: Driver  ID: vgosDbCalc-0.4.1 (Lake Marian) released on 13 May, 2020
+. vgosDbCalc: Host    ID: gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov (Hw: x86_64; Sw: 3.10.0-1062.9.1.el7.x86_64 version of Linux)
+. vgosDbCalc: User    ID: David Gordon <david.gordon-1@nasa.gov>, Goddard Space Flight Center
+. vgosDbCalc: User command: "/space/nusolve/bin/vgosDbCalc 20APR07XA_V001_iSHA_kall.wrp"
+. vgosDbCalc: Input data  : ./20APR07XA_V001_iSHA_kall.wrp
+. vgosDbCalc: External a priori setup: 
+. vgosDbCalc: SITES    : /500/oper/solve_apriori_files/blokq.c11.dat
+. vgosDbCalc: Sources  : /500/oper/solve_apriori_files/blokq.c11.dat
+. vgosDbCalc: Ocean    : /500/oper/solve_apriori_files/blokq.c11.dat
+. vgosDbCalc: EOPs     : /500/oper/solve_apriori_files/usno_finals.erp
+. vgosDbCalc: Tilts    : /500/oper/solve_apriori_files/tilt.dat
+. vgosDbCalc: OPTL     : /500/oper/solve_apriori_files/blokq.c11.dat
+. vgosDbCalc: running observations through CALC has been complete
+. putDataIntoVgosDb: no clock break information were added to the vgosDb data tree
+. createWrapperFileName: the organization name has been adjusted: SHA => GSFC

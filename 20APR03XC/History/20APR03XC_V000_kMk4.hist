@@ -1,0 +1,68 @@
+
+TIMETAG 2020/05/11 21:43:41 UTC
+MK3DB_VERSION 1
+
+UG003W/20APR03XC
+VLBA USNO X/S reference frame session.
+Correlated at the VLBA. Fourfit fringed at GSFC.
+
+New S-band sequence. S4 moved from 2348 to 2380 MHz to avoid RFI.
+S-band manual Pcals at BR and PT.
+
+Correlator comments:
+SC missing from first 7 hours. Software problems.
+MK low Mark6 playback correlator weights for the last 3 hours. Caused 
+ by missing data frames during recording.
+***************************************************************************
+
+
+VERY LONG BASELINE ARRAY OBSERVING LOG
+--------------------------------------
+Project:        UG003W
+Observer:       Gordon, D.
+Project type:   GEO
+Obs filename:   ug003w.vex
+Date/Day:       2020APR03/094
+Ants Scheduled: SC HN NL FD LA PT KP OV BR MK
+
+=UT-Time===Comment============================================MF#==%AD==AMD=
+           Operator is Betty Ragan.                                      
+     0924  Begin.                                                        
+0924-1609 *SC observation not running. File loads then        SW    100  405
+           immediately stops. Appears to be an executor                  
+           problem. (VLBASYS-777)                                        
+     0924 %HN raining.                                                   
+     1350  New operator: Jessica King                                    
+     1350 %NL precipitation.                                             
+     2035 %BR high winds.                                                
+     2158  New operator is Carolyn Morris                                
+     0000  Date is 2020APR04/095.                                        
+     0000 %HN raining.                                                   
+     0014 %NL raining.                                                   
+     0555  New operator is Betty Ragan.                                  
+     0918  End.                                                          
+
+
+Downtime Summary:
+	Total downtime : 405 min
+	Percentage downtime of observing: 2.8%
+	Average downtime per hour : 1.7 min
+
+    Total scheduled observing time (# Antennas): 14340 min (10)
+
+Notes:
+    * = Entries where data was affected.
+    % = Entries where data may have been affected.
+    & = Entries where the site tech was called out.
+  WEA = Weather entries.
+  MF# = Maintenance form or major downtime category associated with a problem.
+  %AD = The percentage of an antenna affected by a problem.
+  AMD = Total antenna-minutes downtime for a problem.
+ Tsys = System Temperature (TP/SP x Tcal/2)
+  ACU = Antenna Control Unit
+  FRM = Focus/Rotation Mount
+  RFI = Radio Frequency Interference
+  VME = Site control computer
+   CB = Circuit Breaker
+ vclock = Program that compares site clock time to a standard.
+

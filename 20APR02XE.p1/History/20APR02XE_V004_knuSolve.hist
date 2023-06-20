@@ -1,0 +1,46 @@
+
+TIMETAG 2020/04/21 21:52:04 UTC
+MK3DB_VERSION 4
+nuSolve: Library ID: SgLib-0.7.0 (Oakdale) released on 04 Mar, 2020
+nuSolve: Driver  ID: nuSolve-0.7.0 (Linganore) released on 03 Mar, 2020
+nuSolve: Host    ID: caprica (Hw: x86_64; Sw: 4.4.0-170-generic version of Linux)
+nuSolve: User    ID: Sergei Bolotin <sergei.bolotin@nasa.gov>, NVI, Inc. / NASA Goddard Space Flight Center
+nuSolve: Input data  : /home/slb/500/vgosDb/2020/20APR02XE/20APR02XE_V003_iGSFC_kall.wrp
+
+TIMETAG 2020/04/21 23:02:07 UTC
+Analyzed by Sergei Bolotin (hereafter SB) at NVI, Inc. / NASA Goddard Space Flight Center. Contact info: <sergei.bolotin@nasa.gov>
+IVS-R4940: NASA GSFC analysis (SB)
+G-Gxs solution,   60/  60 clocks/atms,    2/  40 constraints, 23.95-hr gradients.
+Solve fit is 30.68 psec.
+
+TIMETAG 2020/04/21 23:02:09 UTC
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: glo.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+BA-FO BA-HA BA-IS BA-KO BA-NY BA-SV BA-WE BA-WE BA-YE BA-ZE 
+FO-HA FO-IS FO-KO FO-NY FO-SV FO-WE FO-WE FO-YE FO-ZE HA-IS 
+HA-NY HA-SV HA-WE HA-WE HA-YE HA-ZE IS-KO IS-NY IS-SV IS-WE 
+IS-WE IS-YE IS-ZE KO-NY KO-SV KO-WE KO-WE KO-YE KO-ZE NY-SV 
+NY-WE NY-WE NY-YE NY-ZE SV-WE SV-WE SV-YE SV-ZE WE-WE WE-YE 
+WE-ZE WE-YE WE-ZE YE-ZE 
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.

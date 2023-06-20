@@ -1,0 +1,49 @@
+
+TIMETAG 2020/06/17 17:17:34 UTC
+MK3DB_VERSION 4
+nuSolve: Library ID: SgLib-0.7.1 (Linganore Creek) released on 10 Jun, 2020
+nuSolve: Driver  ID: nuSolve-0.7.1 (Lake Linganore) released on 10 Jun, 2020
+nuSolve: Host    ID: gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov (Hw: x86_64; Sw: 3.10.0-1062.9.1.el7.x86_64 version of Linux)
+nuSolve: User    ID: David Gordon <David.Gordon-1@nasa.gov>, NASA Goddard Space Flight Center
+nuSolve: Input data  : /home/dgordon1/vgosDB_ug003/2020/20APR03XC/20APR03XC_V003_iGSFC_kall.wrp
+
+TIMETAG 2020/06/17 20:12:46 UTC
+Analyzed by David Gordon (hereafter DG) at NASA Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> UG003W/VLBA Astrometry: GSFC Analysis  -DG-
+DG> OV cable cal not applied; has breaks and is bimodal.
+DG> NL cable cal has a break at ~14:27; clock break applied.
+DG> NuSolve fit of 30.3 psec with numerous sources adjusted.
+noname: GSFC analysis (DG)
+G-Gxs solution,   30/  30 clocks/atms,    2/40.001 constraints, 23.8667-hr gradients.
+Solve fit is 30.84 psec.
+Detected 1 clock break
+A clock break marker has been set for NL-VLBA  at 03 Apr, 2020; 14:27:00.0000
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: glo.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+BR-FD BR-HN BR-KP BR-LA BR-MK BR-NL BR-OV BR-PI BR-SC FD-HN 
+FD-KP FD-LA FD-MK FD-NL FD-OV FD-PI FD-SC HN-KP HN-LA HN-MK 
+HN-NL HN-OV HN-PI HN-SC KP-LA KP-MK KP-NL KP-OV KP-PI KP-SC 
+LA-MK LA-NL LA-OV LA-PI LA-SC MK-NL MK-OV MK-PI MK-SC NL-OV 
+NL-PI NL-SC OV-PI OV-SC PI-SC 
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.

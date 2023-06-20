@@ -1,0 +1,15 @@
+
+TIMETAG 2020/04/06 00:37:31 UTC
+MK3DB_VERSION 1
+. vgosDbMake: Library ID: SgLib-0.6.3 (Rebma) released on 26 Sep, 2018
+. vgosDbMake: Driver  ID: vgosDbMake-0.4.3 (Thelbane) released on 26 Sep, 2018
+. vgosDbMake: User    ID: vlbi user <vlbi@spacegeodesy.go.jp>, Geospatial Information Authority of Japan
+. vgosDbMake: User command: "/usr/local/bin/vgosDbMake /tmp/mkDB_q20096/komb -t /nfs_tsubame/rapid/cor_report/q20096/q20096.corr"
+. vgosDbMake: Input data  : "/tmp/mkDB_q20096/komb"
+. selfCheck: the X-band is set as the primary one
+. selfCheck: skipping the eccentricities set up: incomplete data set 
+. selfCheck: the calcInfo's list of stations is empty; set it up: 2 stations in the list
+. checkChannelSetup: the session is ok
+. selfCheck: the session selfcheck has been completed
+. getDataFromKombFiles: session selfcheck complete
+. vgosDbMake: the session Q20096 (20APR05XK) has been imported from fringes files

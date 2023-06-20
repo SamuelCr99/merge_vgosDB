@@ -1,0 +1,548 @@
+
+TIMETAG 2020/04/21 21:51:40 UTC
+MK3DB_VERSION 3
+. vgosDbProcLogs: Library ID: SgLib-0.7.0 (Oakdale) released on 04 Mar, 2020
+. vgosDbProcLogs: Driver  ID: vgosDbProcLogs-0.5.0 (Balmoral) released on 03 Mar, 2020
+. vgosDbProcLogs: Host    ID: caprica (Hw: x86_64; Sw: 4.4.0-170-generic version of Linux)
+. vgosDbProcLogs: User    ID: Sergei Bolotin <sergei.bolotin@nasa.gov>, NVI, Inc. / NASA Goddard Space Flight Center
+. vgosDbProcLogs: User command: "/home/slb/SgLib/src/vgosDbProcLogs/.libs/lt-vgosDbProcLogs 20APR02XE"
+. vgosDbProcLogs: Input data  : /home/slb/500/vgosDb/2020/20APR02XE/20APR02XE_V002_iGSFC_kall.wrp
+. vgosDbProcLogs: the session R4940 (20APR02XE) has been imported from vgosDb data set
+w readFile: got a duplicate record " Ca CAMBRIDG --------- ---- Cambridge, UK (VLBA)" for the station name "CAMBRIDG" in the ns-codes file [/home/slb/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Cb CAMBRIDG --------- ---- Cambridge, UK (Ryle)" for the station name "CAMBRIDG" in the ns-codes file [/home/slb/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Ef EFLSBERG 14209S001 7203 Effelsberg, Germany (originally Mk4, now common EVN usage)" for the station name "EFLSBERG" in the ns-codes file [/home/slb/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Jv JODRELL2 --------- ---- VLBA, Jodrell Bank, UK" for the station name "JODRELL2" in the ns-codes file [/home/slb/500/oper/master/ns-codes.txt]
+. importDataFromLogFiles: checking [/home/slb/500.common/sessions/2020/r4940/] directory for station log files
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940bd.log, a log file for BADARY station
+. readLogFile: station BADARY: 29875 strings of the log file (2M) were read
+. verifyReadings: station BADARY: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station BADARY: cannot find any usable cable calibrations
+w propagateData: station BADARY: cannot find the scan "094-0332d" in the log file
+. propagateData: station BADARY: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940ft.log, a log file for FORTLEZA station
+. readLogFile: station FORTLEZA: collected operator's comments: 
+. readLogFile: station FORTLEZA: 2020/04/02 18:04:24: receiver is warm
+. readLogFile: station FORTLEZA: 2020/04/02 18:04:47: maser to GPS offset is: 0.700us
+. readLogFile: station FORTLEZA: 2020/04/02 18:05:09: formatter to GPS offset is: 0.530us
+. readLogFile: station FORTLEZA: 2020/04/02 18:05:44: delay line is inserted
+. readLogFile: station FORTLEZA: 2020/04/02 18:06:29: delay line is removed
+. readLogFile: station FORTLEZA: 2020/04/02 18:14:34: weather: sky is clear
+. readLogFile: station FORTLEZA: 2020/04/03 18:24:41: receiver is warm
+. readLogFile: station FORTLEZA: 2020/04/03 18:25:01: weather: sky is partially cloudy
+. readLogFile: station FORTLEZA: 2020/04/03 18:26:49: delay line is inserted
+. readLogFile: station FORTLEZA: 21730 strings of the log file (1M) were read (245 strings were skipped)
+. checkRinexFile: extracted 329 meteo records from 1455 strings of /home/slb/500.common/sessions/2020/r4940/ceeu0931.20m RINEX file
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 107%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 106%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.9%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 105%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104.3%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104.2%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 104%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 103%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.6%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 102.4%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.7%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 101.1%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.8%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.5%; adjusted it to 100%
+w checkRinexFile: the extracted relative humidity looks suspicious: 100.1%; adjusted it to 100%
+. checkRinexFile: extracted 1108 meteo records from 1455 strings of /home/slb/500.common/sessions/2020/r4940/ceeu0941.20m RINEX file
+. checkRinexFile: collected 1437 meteo records
+. propagateData: station FORTLEZA: 125 exact matches of cable calibrations were found
+. propagateData: station FORTLEZA: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940ht.log, a log file for HART15M station
+w readLogFile: station HART15M: cannot determine proper cable sign from cable_diff_is pattern, the string is: "2020.093.18:18:39.85;"Cable difference is: na"
+. readLogFile: station HART15M: collected operator's comments: 
+. readLogFile: station HART15M: 2020/04/02 18:18:40: Session r4940 ready message for Hart15M.
+. readLogFile: station HART15M: 2020/04/02 18:18:40: ;"----------------------------------------
+. readLogFile: station HART15M: 2020/04/02 18:18:40: Comments:
+. readLogFile: station HART15M: 2020/04/02 18:18:40: Hart15M is ready to start R4940.
+. readLogFile: station HART15M: 2020/04/02 18:18:40: All systems nominal.
+. readLogFile: station HART15M: 2020/04/02 18:18:40: Session is being run remotely.
+. readLogFile: station HART15M: 2020/04/02 18:18:40: First source: 1144+402 at 18:30:00  UT
+. readLogFile: station HART15M: 2020/04/02 18:18:40: FMOUT-GPS: 2.0615 microseconds
+. readLogFile: station HART15M: 2020/04/02 18:18:40: Wx:  Temperature (C): 13.5  Pressure (mBar): 869.2  Humidity (%): 87.3
+. readLogFile: station HART15M: 2020/04/02 18:18:40: Sky Conditions: Overcast with intermittent rain
+. readLogFile: station HART15M: 2020/04/02 18:18:40: Cable difference is: na
+. readLogFile: station HART15M: 2020/04/02 18:18:40: Pointing values: na
+. readLogFile: station HART15M: 2020/04/02 18:18:40: Tsys (x1/s/x2): 42.5/50.3/48.4
+. readLogFile: station HART15M: 2020/04/02 18:30:03: Session r4940 auto-start message for Hart15M.
+. readLogFile: station HART15M: 2020/04/02 18:30:03: ;"---------------------------------------------
+. readLogFile: station HART15M: 2020/04/02 18:30:03: Started recording with source: 1144+402 at 093.18:30:00 UT
+. readLogFile: station HART15M: 2020/04/02 18:32:24: Weather conditions: overcast with intermittent rain
+. readLogFile: station HART15M: 2020/04/03 05:18:32: Weather conditions: overcast
+. readLogFile: station HART15M: 2020/04/03 14:57:44: Weather conditions: overcast with intermittent rain
+. readLogFile: station HART15M: 2020/04/03 18:40:40: Session r4940 stop message for Hart15M.
+. readLogFile: station HART15M: 2020/04/03 18:40:40: ;"---------------------------------------
+. readLogFile: station HART15M: 2020/04/03 18:40:40: Comments:
+. readLogFile: station HART15M: 2020/04/03 18:40:40: Hart15M has completed R4940.
+. readLogFile: station HART15M: 2020/04/03 18:40:40: No problems to report.
+. readLogFile: station HART15M: 2020/04/03 18:40:40: Weather conditions were overvast throughout with intermittent rain at times.
+. readLogFile: station HART15M: 2020/04/03 18:40:40: Data will be e-shipped to Washington
+. readLogFile: station HART15M: 2020/04/03 18:40:40: Disk Inventory: A 0, B 2, C 0, D 1, E 1, F 0, G 1, H 0, (other larger) 7
+. readLogFile: station HART15M: 2020/04/03 18:40:40: Observation finished at: 18:28:05 UT
+. readLogFile: station HART15M: 22377 strings of the log file (1M) were read
+. verifyReadings: station HART15M: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station HART15M: cannot find any usable cable calibrations
+. propagateData: station HART15M: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940is.log, a log file for ISHIOKA station
+. readLogFile: station ISHIOKA: collected operator's comments: 
+. readLogFile: station ISHIOKA: 2020/04/02 05:28:48: Weather is fie
+. readLogFile: station ISHIOKA: 2020/04/02 23:40:20: Weather is fine
+. readLogFile: station ISHIOKA: 2020/04/03 04:11:49: Weather is fine
+. readLogFile: station ISHIOKA: 2020/04/03 09:15:21: Weather is fine
+. readLogFile: station ISHIOKA: 8774 strings of the log file (466K) were read (326 strings were skipped)
+. verifyReadings: station ISHIOKA: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station ISHIOKA: cannot find any usable cable calibrations
+. propagateData: station ISHIOKA: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940kk.log, a log file for KOKEE station
+. readLogFile: station KOKEE: collected operator's comments: 
+. readLogFile: station KOKEE: 2020/04/02 19:31:57: kokee park geophysical observatory, r4940 April 2020, operator-imai.
+. readLogFile: station KOKEE: 2020/04/02 19:32:19: cable cal and pointging checks done prior to experiment i20093.
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: Session r4940 ready message for Kokee Park.
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: ;"-------------------------------------------
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: Comments:
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: cable cal and pointing checks done prior to experiment i20093.
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: First source: 0025+197 at 093/1936:29  UT
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: FMOUT-GPS: +11.04 microseconds
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: Wx:  Temperature (C): 14.3  Pressure (mBar): 885.4  Humidity (%): 91.4
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: Sky Conditions: clear sky
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: Cable difference is: longer cable makes the reading smaller by
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: 52.3 microseconds and is nominal
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: Pointing values:
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: SEFD  X/S       Source          Az/El      Offset1  Offset2
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: 1837/750     cygnusa          5/71      -0.000   -0.025
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: 2133/664     casa            31/39      0.009    -0.025
+. readLogFile: station KOKEE: 2020/04/02 19:35:13: Tsys (x1/s/x2): 88/45/55
+. readLogFile: station KOKEE: 2020/04/02 19:36:33: Session r4940 auto-start message for Kokee Park.
+. readLogFile: station KOKEE: 2020/04/02 19:36:33: ;"------------------------------------------------
+. readLogFile: station KOKEE: 2020/04/02 19:36:33: Started recording with source: 0025+197 at 093.19:36:29 UT
+. readLogFile: station KOKEE: 2020/04/02 20:00:45: weather-clear sky
+. readLogFile: station KOKEE: 2020/04/02 20:16:53: RFI on IFB
+. readLogFile: station KOKEE: 2020/04/02 20:33:52: RFI on IFB
+. readLogFile: station KOKEE: 2020/04/02 20:54:28: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/02 21:58:43: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/02 22:58:03: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/02 23:56:22: weather-overcast
+. readLogFile: station KOKEE: 2020/04/03 00:57:33: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/03 01:58:15: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/03 02:58:18: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/03 03:58:21: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/03 04:07:02: RFI on IFB
+. readLogFile: station KOKEE: 2020/04/03 04:58:24: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/03 05:59:01: weather-no stars visible
+. readLogFile: station KOKEE: 2020/04/03 06:59:38: weather-no stars visible
+. readLogFile: station KOKEE: 2020/04/03 07:58:08: weather-no stars visible
+. readLogFile: station KOKEE: 2020/04/03 08:59:29: weather-no stars visible, light sprinkle
+. readLogFile: station KOKEE: 2020/04/03 09:59:39: weather-some stars visible
+. readLogFile: station KOKEE: 2020/04/03 10:59:33: weather-many stars visible
+. readLogFile: station KOKEE: 2020/04/03 11:59:30: weather-some stars visible
+. readLogFile: station KOKEE: 2020/04/03 12:58:38: weather-no stars visible, light sprinkle
+. readLogFile: station KOKEE: 2020/04/03 13:58:42: weather-some stars visible
+. readLogFile: station KOKEE: 2020/04/03 14:13:20: RFI on IFB
+. readLogFile: station KOKEE: 2020/04/03 14:58:52: weather-some stars visible
+. readLogFile: station KOKEE: 2020/04/03 15:59:26: weather-partly cloudy
+. readLogFile: station KOKEE: 2020/04/03 16:59:12: weather-overcast
+. readLogFile: station KOKEE: 2020/04/03 17:54:01: RFI on IFB
+. readLogFile: station KOKEE: 2020/04/03 17:54:08: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/03 18:26:31: formatter minus GPS was +11.03 usec at the end
+. readLogFile: station KOKEE: 2020/04/03 18:26:47: cable cal follows starting with the normal operational cable length
+. readLogFile: station KOKEE: 2020/04/03 18:26:60: now cable cal with an added cable length of 52 usec
+. readLogFile: station KOKEE: 2020/04/03 18:27:42: cable measurement just taken was -52.9 usec
+. readLogFile: station KOKEE: 2020/04/03 18:27:54: no post poiting check due to short turn-around.
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: Session r4940 stop message for Kokee Park.
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: ;"------------------------------------------
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: Comments:
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: Diskpack BKG-0041 will be sent out via fedex AWB# 7701 2422	9158
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: Problem scans:
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: Source   Scan start   Explanation of problem
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: 0454-234 094/0406:50  RFI on IFB
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: 1145-071 094/1412:52  RFI on IFB
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: Disk Inventory: A 0, B 0, C 0, D 5, E 1, F 0, G 0, H 4, (other larger) 9
+. readLogFile: station KOKEE: 2020/04/03 18:29:26: Observation finished at: 094/1825:58 UT
+. readLogFile: station KOKEE: 33395 strings of the log file (1M) were read (310 strings were skipped)
+. propagateData: station KOKEE: 201 exact matches of cable calibrations were found
+. propagateData: station KOKEE: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940ny.log, a log file for NYALES20 station
+. readLogFile: station NYALES20: collected operator's comments: 
+. readLogFile: station NYALES20: 2020/04/02 17:49:45: Ny-Alesund 20m antenna
+. readLogFile: station NYALES20: 2020/04/02 17:49:55: Zenith tsys follows:
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: Session r4940 ready message for Ny-Alesund.
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: ;"-------------------------------------------
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: First source: 1144+402 at 18:30  UT
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: GPS-FMOUT: 161.32 microseconds
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: Wx:  Temperature (C): -19.8  Pressure (mBar): 987.4  Humidity (%): 62.59
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: Sky Conditions: partly cloudy
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: Cable difference is: longer cable makes the reading larger by
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: 682.6 microseconds and is nominal
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: Pointing values:
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: SEFD  X/S       Source          Az/El      Offset1  Offset2
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: 800/1311    CygnusA        347/30      0.0043   -0.0028
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: 859/1289    CasA           310/53      -0.0020  -0.0059
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: 859/1417    TaurusA        208/32      0.0120   0.0162
+. readLogFile: station NYALES20: 2020/04/02 17:51:52: Tsys (x1/s/x2): 44/117/48
+. readLogFile: station NYALES20: 2020/04/02 19:08:55: Session r4940 start message for Ny-Alesund.
+. readLogFile: station NYALES20: 2020/04/02 19:08:55: ;"-------------------------------------------
+. readLogFile: station NYALES20: 2020/04/02 19:08:55: Started recording with source: 1144+402 at: 18:30 UT
+. readLogFile: station NYALES20: 61429 strings of the log file (4M) were read (25277 strings were skipped)
+. propagateData: station NYALES20: 211 exact matches of cable calibrations were found
+. propagateData: station NYALES20: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940sv.log, a log file for SVETLOE station
+. readLogFile: station SVETLOE: collected operator's comments: 
+. readLogFile: station SVETLOE: 2020/04/02 19:28:37: operator Isaenko O
+. readLogFile: station SVETLOE: 2020/04/02 19:28:39: cloudy
+. readLogFile: station SVETLOE: 2020/04/03 00:36:35: rainy
+. readLogFile: station SVETLOE: 2020/04/03 01:36:58: sleet
+. readLogFile: station SVETLOE: 2020/04/03 02:06:15: rainy
+. readLogFile: station SVETLOE: 2020/04/03 02:40:40: cloudy
+. readLogFile: station SVETLOE: 2020/04/03 04:46:08: operator Shumilova
+. readLogFile: station SVETLOE: 2020/04/03 04:46:09: cloudy
+. readLogFile: station SVETLOE: 2020/04/03 08:52:32: snow
+. readLogFile: station SVETLOE: 2020/04/03 09:13:18: cloudy
+. readLogFile: station SVETLOE: 2020/04/03 09:35:16: snow
+. readLogFile: station SVETLOE: 2020/04/03 11:00:23: cloudy
+. readLogFile: station SVETLOE: 2020/04/03 12:09:45: snow
+. readLogFile: station SVETLOE: 2020/04/03 14:56:15: cloudy
+. readLogFile: station SVETLOE: 2020/04/03 17:19:26: cloudy
+. readLogFile: station SVETLOE: 30456 strings of the log file (2M) were read
+. verifyReadings: station SVETLOE: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station SVETLOE: cannot find any usable cable calibrations
+. propagateData: station SVETLOE: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940wn.log, a log file for WETTZ13N station
+. readLogFile: station WETTZ13N: collected operator's comments: 
+. readLogFile: station WETTZ13N: 2020/04/02 17:43:51: Observation:       R 4 9 4 0 W n ; 02.04.2020
+. readLogFile: station WETTZ13N: 2020/04/02 17:44:15: Everything seems to be o.k.;
+. readLogFile: station WETTZ13N: 2020/04/02 17:45:29: We need still to run with a warm dewar, since we get no spare parts now.
+. readLogFile: station WETTZ13N: 2020/04/02 17:45:44: Weather: sunny, dry;
+. readLogFile: station WETTZ13N: 64864 strings of the log file (4M) were read (29384 strings were skipped)
+. verifyReadings: station WETTZ13N: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station WETTZ13N: cannot find any usable cable calibrations
+. propagateData: station WETTZ13N: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940wz.log, a log file for WETTZELL station
+. readLogFile: station WETTZELL: collected operator's comments: 
+. readLogFile: station WETTZELL: 2020/04/03 06:23:02: lost scans between 094.00:04UT and 094.06:18 due to an ACU failure.
+. readLogFile: station WETTZELL: 62050 strings of the log file (4M) were read (28052 strings were skipped)
+. verifyReadings: station WETTZELL: cannot find any usable cablelong measurements
+w verifyReadings: station WETTZELL: cannot determine the cable calibration sign
+. verifyReadings: station WETTZELL: the cable sign was set to "+" according to the list of default cable signs
+. propagateData: station WETTZELL: 196 exact matches of cable calibrations were found
+. propagateData: station WETTZELL: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940ys.log, a log file for YEBES40M station
+. readLogFile: station YEBES40M: collected operator's comments: 
+. readLogFile: station YEBES40M: 2020/04/02 18:28:30: Backend IP: 193.146.252.29
+. readLogFile: station YEBES40M: 2020/04/02 18:28:30: Recorder IP: 193.146.252.24
+. readLogFile: station YEBES40M: 2020/04/02 18:30:25: Cloudy sky
+. readLogFile: station YEBES40M: 2020/04/02 19:58:05: Cloudy sky
+. readLogFile: station YEBES40M: 2020/04/03 08:36:01: Clear sky
+. readLogFile: station YEBES40M: 2020/04/03 11:26:27: Clear sky
+. readLogFile: station YEBES40M: 2020/04/03 12:34:18: Clear sky
+. readLogFile: station YEBES40M: 2020/04/03 15:07:42: Clear sky
+. readLogFile: station YEBES40M: 2020/04/03 17:32:52: Clear sky
+. readLogFile: station YEBES40M: 2020/04/03 18:28:59: Clear sky
+. readLogFile: station YEBES40M: 70447 strings of the log file (5M) were read (52026 strings were skipped)
+. verifyReadings: station YEBES40M: cannot find any usable cablelong measurements
+w verifyReadings: station YEBES40M: cannot determine the cable calibration sign
+. propagateData: station YEBES40M: 146 exact matches of cable calibrations were found
+. propagateData: station YEBES40M: meteo parameters were found
+. importDataFromLogFiles: processing /home/slb/500.common/sessions/2020/r4940/r4940zc.log, a log file for ZELENCHK station
+w readLogFile: station ZELENCHK: the scan name "094-0610" will be replaced with "094-0624", looks like discontinuity in the log file
+w readLogFile: station ZELENCHK: the source name "2113+293" will be replaced with "0151+474", looks like discontinuity in the log file
+. readLogFile: station ZELENCHK: collected operator's comments: 
+. readLogFile: station ZELENCHK: 2020/04/03 02:36:48: sky condition: fog
+. readLogFile: station ZELENCHK: 2020/04/03 03:20:51: sky condition: clear
+. readLogFile: station ZELENCHK: 30984 strings of the log file (2M) were read
+. verifyReadings: station ZELENCHK: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station ZELENCHK: cannot find any usable cable calibrations
+. propagateData: station ZELENCHK: meteo parameters were found
+. vgosDbProcLogs: import of data from station log files has been complete

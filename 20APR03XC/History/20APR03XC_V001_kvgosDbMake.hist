@@ -1,0 +1,772 @@
+
+TIMETAG 2020/06/17 00:10:22 UTC
+MK3DB_VERSION 1
+. vgosDbMake: Library ID: SgLib-0.7.1 (Linganore Creek) released on 10 Jun, 2020
+. vgosDbMake: Driver  ID: vgosDbMake-0.5.1 (Long Branch) released on 13 May, 2020
+. vgosDbMake: Host    ID: gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov (Hw: x86_64; Sw: 3.10.0-1062.9.1.el7.x86_64 version of Linux)
+. vgosDbMake: User    ID: David Gordon <david.gordon-1@nasa.gov>, Goddard Space Flight Center
+. vgosDbMake: User command: "/space/nusolve/bin/vgosDbMake -e* -m mapFile -d 20APR03XC -o /home/dgordon1/vgosDB_ug003 -t /500/sessions/2020/ug003w/ug003w.history /500/mk4_files/VLBA/ug003w/1234"
+. vgosDbMake: Input data  : "/500/mk4_files/VLBA/ug003w/1234"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0400/1150+334.14UA6N
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0401/1150+365.14UA6O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0402/1204+399.14UA6O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0403/NGC4151.14UA6O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0404/1144+402.14UA6P
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0405/1124+455.14UA6P
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0406/1135+480.14UA6Q
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0407/1136+408.14UA6Q
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0408/1142+422.14UA6Q
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0409/1334-127.14UA6Q
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0410/1313-072.14UA6R
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0411/1316-12A.14UA6R
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0412/1316-120.14UA6S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0413/NGC5077.14UA6S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0414/1908+484.14UA6S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0415/1801+459.14UA6S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0416/1811+430.14UA6T
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0417/3C380.14UA6T
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0418/1837+479.14UA6U
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0419/1418+546.14UA6U
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0420/1447+536.14UA6U
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0421/1454+510.14UA6U
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0422/1506+591.14UA6V
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0423/1519+567.14UA6V
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0424/1448+762.14UA6V
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0425/1436+763.14UA6V
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0426/1520+725.14UA6W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0427/1522+791.14UA6X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0428/1525+737.14UA6X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0429/M84.14UA6X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0430/1257+123.14UA6X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0431/1258+145.14UA6Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0432/1312+126.14UA6Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0433/1313+200.14UA6Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0434/1712-059.14UA6Z
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0435/1737-081.14UA6Z
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0436/1713-048.14UA6Z
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0437/1718-084.14UA70
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0438/1719-050.14UA70
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0439/1657-261.14UA70
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0440/1647-296.14UA71
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0441/1657-298.14UA73
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0442/1715-287.14UA74
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0443/1749-299.14UA74
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0444/1725+044.14UA75
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0445/1745+085.14UA75
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0446/1749+062.14UA76
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0447/1751+050.14UA76
+. processFringeFile: skipping the observation ho.S.39.14UA76: the fringe error code is "G"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0448/1753+049.14UA77
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0449/1753+204.14UA77
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0450/1829+219.14UA77
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0451/1830+285.14UA79
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0452/1832+208.14UA7A
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0453/1833+250.14UA7C
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0454/1443-162.14UA7D
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0455/1438-151.14UA7D
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0456/1442-155.14UA7E
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0457/1445-161.14UA7F
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0458/1446-111.14UA7F
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0459/1657-261.14UA7F
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0460/1729-373.14UA7F
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0461/1733-339.14UA7G
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0462/1738-336.14UA7H
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0463/1740-309.14UA7I
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0464/1556-245.14UA7J
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0465/1612-243.14UA7J
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0466/1614-255.14UA7J
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0467/1614-195.14UA7K
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0468/1616-181.14UA7K
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0469/1908-201.14UA7K
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0470/1804-251.14UA7K
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0471/1816-206.14UA7L
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0472/1817-254.14UA7M
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0473/1820-274.14UA7M
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0474/1556-245.14UA7M
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0475/1612-243.14UA7M
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0476/1614-255.14UA7N
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0477/1614-195.14UA7O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0478/1616-181.14UA7O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0479/1657-261.14UA7O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0480/1647-296.14UA7O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0481/1657-298.14UA7P
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0482/1715-287.14UA7Q
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0483/1749-299.14UA7Q
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0484/1510-089.14UA7R
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0485/1517-116.14UA7R
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0486/1529-131.14UA7R
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0487/1534-128.14UA7S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0488/1539-111.14UA7S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0489/1951+355.14UA7S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0490/1955+343.14UA7S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0491/1957+386.14UA7T
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0492/1959+332.14UA7T
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0493/2001+304.14UA7U
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0494/1908-201.14UA7U
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0495/1804-251.14UA7U
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0496/1816-206.14UA7V
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0497/1817-254.14UA7V
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0498/1820-274.14UA7W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0499/1725+044.14UA7W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0500/1745+085.14UA7W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0501/1749+062.14UA7X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0502/1751+050.14UA7X
+. processFringeFile: skipping the observation bn.X.12.14UA7X: the fringe error code is "G"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0503/1753+049.14UA7X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0504/1657-261.14UA7Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0505/1729-373.14UA7Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0506/1733-339.14UA7Z
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0507/1738-336.14UA7Z
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0508/1740-309.14UA80
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0509/1921-293.14UA81
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0510/1946-200.14UA82
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0511/1948-186.14UA82
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0512/1948-241.14UA82
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0513/1950-207.14UA83
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0514/1823+689.14UA83
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0515/1755+626.14UA83
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0516/1822+682.14UA84
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0517/1826+670.14UA85
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0518/1827+645.14UA85
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0519/1746+470.14UA85
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0520/1801+459.14UA86
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0521/1811+430.14UA86
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0522/3C380.14UA86
+w getDataFromFringeFiles: cannot find any usable fringe file in the directory /500/mk4_files/VLBA/ug003w/1234/No0523, skipped
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0524/1508+572.14UA86
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0525/1447+536.14UA86
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0526/1454+510.14UA87
+w getDataFromFringeFiles: cannot find any usable fringe file in the directory /500/mk4_files/VLBA/ug003w/1234/No0527, skipped
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0528/1519+567.14UA87
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0529/1908-201.14UA87
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0530/1804-251.14UA87
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0531/1816-206.14UA88
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0532/1817-254.14UA89
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0533/1820-274.14UA89
+w getDataFromFringeFiles: cannot find any usable fringe file in the directory /500/mk4_files/VLBA/ug003w/1234/No0534, skipped
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0535/1712-059.14UA89
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0536/1713-048.14UA8A
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0537/1718-084.14UA8A
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0538/1719-050.14UA8A
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0539/1753+204.14UA8B
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0540/1829+219.14UA8B
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0541/1830+285.14UA8B
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0542/1832+208.14UA8C
+. processFringeFile: skipping the observation kp.X.52.14UA8C: the fringe error code is "G"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0543/1833+250.14UA8D
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0544/1921-293.14UA8E
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0545/1946-200.14UA8E
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0546/1948-186.14UA8E
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0547/1948-241.14UA8F
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0548/1950-207.14UA8F
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0549/2142+110.14UA8G
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0550/2154+100.14UA8G
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0551/2201+098.14UA8G
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0552/2206+178.14UA8G
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0553/2209+184.14UA8H
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0554/2353+816.14UA8H
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0555/2316+862.14UA8H
+. processFringeFile: skipping the observation fl.S.21.14UA8H: the fringe error code is "G"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0556/2325+799.14UA8I
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0557/2342+821.14UA8I
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0558/2344+798.14UA8K
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0559/2143-156.14UA8K
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0560/2130-184.14UA8K
+. processFringeFile: skipping the observation fn.S.25.14UA8K: the fringe error code is "H"
+. processFringeFile: skipping the observation hn.S.37.14UA8K: the fringe error code is "H"
+. processFringeFile: skipping the observation kn.S.47.14UA8K: the fringe error code is "H"
+. processFringeFile: skipping the observation ln.S.55.14UA8K: the fringe error code is "H"
+. processFringeFile: skipping the observation mn.S.61.14UA8K: the fringe error code is "H"
+. processFringeFile: skipping the observation no.S.67.14UA8K: the fringe error code is "H"
+. processFringeFile: skipping the observation np.S.69.14UA8K: the fringe error code is "H"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0561/2133-109.14UA8L
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0562/2135-147.14UA8L
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0563/2135-184.14UA8M
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0564/1725+044.14UA8M
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0565/1745+085.14UA8M
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0566/1749+062.14UA8N
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0567/1751+050.14UA8N
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0568/1753+049.14UA8N
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0569/1936-155.14UA8O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0570/1946-200.14UA8O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0571/1948-186.14UA8R
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0572/1948-241.14UA8S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0573/1950-207.14UA8S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0574/1448+762.14UA8T
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0575/1436+763.14UA8T
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0576/1520+725.14UA8U
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0577/1522+791.14UA8W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0578/1525+737.14UA8W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0579/1951+355.14UA8X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0580/1955+343.14UA8X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0581/1957+386.14UA8X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0582/1959+332.14UA8X
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0583/2001+304.14UA8Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0584/2335-027.14UA8Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0585/2306-052.14UA8Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0586/2307-097.14UA8Z
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0587/2309-014.14UA8Z
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0588/2310-071.14UA90
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0589/1753+204.14UA90
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0590/1829+219.14UA90
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0591/1830+285.14UA93
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0592/1832+208.14UA93
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0593/1833+250.14UA94
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0594/2318+049.14UA94
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0595/2329+068.14UA94
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0596/2330+083.14UA95
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0597/2335+031.14UA95
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0598/2344+068.14UA96
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0599/1908+484.14UA96
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0600/1801+459.14UA96
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0601/1811+430.14UA97
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0602/3C380.14UA97
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0603/1837+479.14UA99
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0604/2143-156.14UA99
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0605/2130-184.14UA99
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0606/2133-109.14UA9A
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0607/2135-147.14UA9A
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0608/2135-184.14UA9B
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0609/2142+110.14UA9B
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0610/2154+100.14UA9B
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0611/2201+098.14UA9B
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0612/2206+178.14UA9C
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0613/2209+184.14UA9C
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0614/1823+689.14UA9D
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0615/1755+626.14UA9D
+. processFringeFile: skipping the observation fk.S.21.14UA9D: the fringe error code is "G"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0616/1822+682.14UA9E
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0617/1826+670.14UA9F
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0618/1827+645.14UA9F
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0619/0047+023.14UA9F
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0620/0055+032.14UA9G
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0621/0055+060.14UA9G
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0622/0057+028.14UA9H
+. processFringeFile: skipping the observation lp.S.67.14UA9H: the fringe error code is "G"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0623/0058+058.14UA9H
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0624/2220-351.14UA9I
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0625/2143-156.14UA9I
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0626/2130-184.14UA9I
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0627/2133-109.14UA9J
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0628/2135-147.14UA9K
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0629/2135-184.14UA9N
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0630/0048-097.14UA9N
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0631/0055-016.14UA9N
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0632/0103-021.14UA9N
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0633/0104-035.14UA9O
+. processFringeFile: skipping the observation fo.S.29.14UA9O: the fringe error code is "H"
+. processFringeFile: skipping the observation ho.S.43.14UA9O: the fringe error code is "H"
+. processFringeFile: skipping the observation ko.S.55.14UA9O: the fringe error code is "H"
+. processFringeFile: skipping the observation lo.S.65.14UA9O: the fringe error code is "H"
+. processFringeFile: skipping the observation mo.S.73.14UA9O: the fringe error code is "H"
+. processFringeFile: skipping the observation no.S.79.14UA9O: the fringe error code is "H"
+. processFringeFile: skipping the observation op.S.85.14UA9O: the fringe error code is "H"
+. processFringeFile: skipping the observation os.S.87.14UA9O: the fringe error code is "H"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0634/0105-008.14UA9O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0635/1951+355.14UA9O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0636/1955+343.14UA9O
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0637/1957+386.14UA9P
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0638/1959+332.14UA9Q
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0639/2001+304.14UA9Q
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0640/2244-372.14UA9R
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0641/2335-027.14UA9R
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0642/2306-052.14UA9S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0643/2307-097.14UA9S
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0644/2309-014.14UA9T
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0645/2310-071.14UA9T
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0646/2318+049.14UA9U
+. processFringeFile: skipping the observation bf.S.1.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fh.S.19.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fk.S.21.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fl.S.23.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fm.S.25.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fn.S.27.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fo.S.29.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fp.S.31.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fs.S.33.14UA9U: the fringe error code is "H"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0647/2329+068.14UA9U
+. processFringeFile: skipping the observation bf.S.1.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fh.S.19.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fk.S.21.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fl.S.23.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fm.S.25.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fn.S.27.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fo.S.29.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fp.S.31.14UA9U: the fringe error code is "H"
+. processFringeFile: skipping the observation fs.S.33.14UA9U: the fringe error code is "H"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0648/2330+083.14UA9V
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0649/2335+031.14UA9V
+. processFringeFile: skipping the observation bf.S.1.14UA9V: the fringe error code is "H"
+. processFringeFile: skipping the observation fh.S.19.14UA9V: the fringe error code is "H"
+. processFringeFile: skipping the observation fk.S.21.14UA9V: the fringe error code is "H"
+. processFringeFile: skipping the observation fl.S.23.14UA9V: the fringe error code is "H"
+. processFringeFile: skipping the observation fm.S.25.14UA9V: the fringe error code is "H"
+. processFringeFile: skipping the observation fn.S.27.14UA9V: the fringe error code is "H"
+. processFringeFile: skipping the observation fo.S.29.14UA9V: the fringe error code is "G"
+. processFringeFile: skipping the observation fp.S.31.14UA9V: the fringe error code is "H"
+. processFringeFile: skipping the observation fs.S.33.14UA9V: the fringe error code is "H"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0650/2344+068.14UA9V
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0651/0235+164.14UA9W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0652/0223+113.14UA9W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0653/0223+093.14UA9W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0654/0224+176.14UA9W
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0655/0231+183.14UA9Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0656/0227-369.14UA9Y
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0657/0202-172.14UA9Z
+. processFringeFile: skipping the observation fm.S.25.14UA9Z: the fringe error code is "H"
+. processFringeFile: skipping the observation hm.S.39.14UA9Z: the fringe error code is "H"
+. processFringeFile: skipping the observation km.S.51.14UA9Z: the fringe error code is "H"
+. processFringeFile: skipping the observation lm.S.61.14UA9Z: the fringe error code is "H"
+. processFringeFile: skipping the observation mn.S.71.14UA9Z: the fringe error code is "H"
+. processFringeFile: skipping the observation mo.S.73.14UA9Z: the fringe error code is "H"
+. processFringeFile: skipping the observation mp.S.75.14UA9Z: the fringe error code is "H"
+. processFringeFile: skipping the observation ms.S.77.14UA9Z: the fringe error code is "H"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0658/0156-144.14UA9Z
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0659/0158-159.14UA9Z
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0660/0158-141.14UAA0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0661/0159-117.14UAA0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0662/2142+110.14UAA0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0663/2154+100.14UAA1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0664/2201+098.14UAA1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0665/2206+178.14UAA1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0666/2209+184.14UAA2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0667/2353+816.14UAA2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0668/2316+862.14UAA2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0669/2325+799.14UAA3
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0670/2342+821.14UAA3
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0671/2344+798.14UAA5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0672/0300+470.14UAA5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0673/0343+485.14UAA5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0674/0418+437.14UAA6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0675/0421+464.14UAA6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0676/0345+416.14UAA6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0677/0047+023.14UAA7
+. processFringeFile: skipping the observation bf.S.1.14UAA7: the fringe error code is "H"
+. processFringeFile: skipping the observation fh.S.19.14UAA7: the fringe error code is "H"
+. processFringeFile: skipping the observation fk.S.21.14UAA7: the fringe error code is "H"
+. processFringeFile: skipping the observation fl.S.23.14UAA7: the fringe error code is "H"
+. processFringeFile: skipping the observation fm.S.25.14UAA7: the fringe error code is "H"
+. processFringeFile: skipping the observation fn.S.27.14UAA7: the fringe error code is "H"
+. processFringeFile: skipping the observation fo.S.29.14UAA7: the fringe error code is "H"
+. processFringeFile: skipping the observation fp.S.31.14UAA7: the fringe error code is "H"
+. processFringeFile: skipping the observation fs.S.33.14UAA7: the fringe error code is "H"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0678/0055+032.14UAA7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0679/0055+060.14UAA8
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0680/0057+028.14UAA8
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0681/0058+058.14UAA9
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0682/0415+398.14UAAB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0683/0337+337.14UAAB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0684/0338+388.14UAAB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0685/0351+390.14UAAC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0686/0356+322.14UAAC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0687/2335-027.14UAAC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0688/2306-052.14UAAC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0689/2307-097.14UAAD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0690/2309-014.14UAAE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0691/2310-071.14UAAE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0692/0227-369.14UAAG
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0693/0205-391.14UAAG
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0694/0214-330.14UAAH
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0695/0225-306.14UAAH
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0696/0226-375.14UAAH
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0697/0322+222.14UAAI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0698/0356+157.14UAAI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0699/0402+160.14UAAJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0700/0403+208.14UAAJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0701/0404+169.14UAAK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0702/0346-279.14UAAK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0703/0322-294.14UAAL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0704/0329-255.14UAAO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0705/0334-207.14UAAO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0706/0341-256.14UAAP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0707/2330+083.14UAAP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0708/2318+049.14UAAP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0709/2329+068.14UAAQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0710/2335+031.14UAAQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0711/2344+068.14UAAQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0712/0420+022.14UAAR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0713/0408+085.14UAAR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0714/0409+000.14UAAR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0715/0409+045.14UAAT
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0716/0411+054.14UAAU
+. processFringeFile: skipping the observation hl.S.37.14UAAU: the fringe error code is "G"
+. processFringeFile: skipping the observation lp.X.68.14UAAU: the fringe error code is "G"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0717/0235+164.14UAAV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0718/0223+113.14UAAV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0719/0223+093.14UAAV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0720/0224+176.14UAAV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0721/0231+183.14UAAW
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0722/0515+208.14UAAX
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0723/0506+198.14UAAX
+. processFringeFile: skipping the observation fl.S.23.14UAAX: the fringe error code is "G"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0724/0506+274.14UAAX
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0725/0507+209.14UAAY
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0726/0508+264.14UAAZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0727/0613+570.14UAB0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0728/0535+677.14UAB0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0729/0548+689.14UAB0
+. processFringeFile: skipping the observation bn.S.11.14UAB0: the fringe error code is "H"
+. processFringeFile: skipping the observation fn.S.27.14UAB0: the fringe error code is "H"
+. processFringeFile: skipping the observation hn.S.41.14UAB0: the fringe error code is "H"
+. processFringeFile: skipping the observation kn.S.53.14UAB0: the fringe error code is "H"
+. processFringeFile: skipping the observation ln.S.63.14UAB0: the fringe error code is "H"
+. processFringeFile: skipping the observation mn.S.71.14UAB0: the fringe error code is "H"
+. processFringeFile: skipping the observation no.S.79.14UAB0: the fringe error code is "H"
+. processFringeFile: skipping the observation np.S.81.14UAB0: the fringe error code is "H"
+. processFringeFile: skipping the observation ns.S.83.14UAB0: the fringe error code is "H"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0730/0607+624.14UAB1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0731/0646+600.14UAB1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0732/0227-369.14UAB2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0733/0205-391.14UAB2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0734/0214-330.14UAB2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0735/0225-306.14UAB3
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0736/0226-375.14UAB3
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0737/0048-097.14UAB4
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0738/0055-016.14UAB4
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0739/0103-021.14UAB4
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0740/0104-035.14UAB5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0741/0105-008.14UAB6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0742/0047+023.14UAB6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0743/0055+032.14UAB6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0744/0055+060.14UAB7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0745/0057+028.14UAB7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0746/0058+058.14UAB9
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0747/0202-172.14UABA
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0748/0156-144.14UABA
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0749/0158-159.14UABB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0750/0158-141.14UABB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0751/0159-117.14UABC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0752/0346-279.14UABC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0753/0322-294.14UABC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0754/0329-255.14UABD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0755/0334-207.14UABD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0756/0341-256.14UABE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0757/0332-403.14UABE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0758/0322+222.14UABF
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0759/0356+157.14UABF
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0760/0402+160.14UABF
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0761/0403+208.14UABG
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0762/0404+169.14UABH
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0763/0307+380.14UABI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0764/0337+337.14UABI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0765/0338+388.14UABI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0766/0351+390.14UABI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0767/0356+322.14UABJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0768/0657+172.14UABJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0769/0634+233.14UABJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0770/0635+250.14UABJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0771/0638+182.14UABK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0772/3C166.14UABK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0773/0300+470.14UABL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0774/0343+485.14UABL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0775/0421+464.14UABL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0776/0418+437.14UABL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0777/0345+416.14UABN
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0778/0749+540.14UABN
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0779/0658+548.14UABO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0780/0709+509.14UABO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0781/0724+571.14UABP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0782/0729+562.14UABP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0783/0235+164.14UABQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0784/0223+113.14UABQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0785/0223+093.14UABQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0786/0224+176.14UABQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0787/0231+183.14UABR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0788/0515+208.14UABR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0789/0506+198.14UABS
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0790/0506+274.14UABU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0791/0507+209.14UABU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0792/0508+264.14UABV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0793/0834+250.14UABV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0794/0814+201.14UABV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0795/0814+240.14UABW
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0796/0814+227.14UABW
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0797/0820+225.14UABX
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0798/0804-267.14UABY
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0799/0801-079.14UABY
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0800/0743-006.14UABY
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0801/0741-063.14UABY
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0802/0748-069.14UABZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0803/0748-006.14UABZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0804/0613+570.14UAC0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0805/0535+677.14UAC0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0806/0548+689.14UAC1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0807/0607+624.14UAC1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0808/0646+600.14UAC3
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0809/0420+022.14UAC4
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0810/0408+085.14UAC4
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0811/0409+000.14UAC5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0812/0409+045.14UAC5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0813/0411+054.14UAC6
+. processFringeFile: skipping the observation fk.X.22.14UAC6: the fringe error code is "G"
+. processFringeFile: skipping the observation ln.S.63.14UAC6: the fringe error code is "G"
+. processFringeFile: skipping the observation lp.X.68.14UAC6: the fringe error code is "G"
+. processFringeFile: skipping the observation op.X.86.14UAC6: the fringe error code is "G"
+w getDataFromFringeFiles: cannot find any usable fringe file in the directory /500/mk4_files/VLBA/ug003w/1234/No0814, skipped
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0815/0826-373.14UAC6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0816/0818-128.14UAC7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0817/0804-153.14UAC7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0818/0805-119.14UAC7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0819/0806-153.14UAC8
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0820/0808-132.14UAC8
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0821/0834+250.14UACB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0822/0849+287.14UACB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0823/0850+284.14UACB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0824/0901+237.14UACB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0825/0907+230.14UACC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0826/0322+222.14UACC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0827/0356+157.14UACD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0828/0402+160.14UACD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0829/0403+208.14UACE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0830/0404+169.14UACE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0831/0415+398.14UACF
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0832/0337+337.14UACF
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0833/0338+388.14UACG
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0834/0351+390.14UACH
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0835/0356+322.14UACH
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0836/0657+172.14UACI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0837/0634+233.14UACI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0838/0635+250.14UACI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0839/0638+182.14UACI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0840/3C166.14UACJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0841/0300+470.14UACJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0842/0343+485.14UACJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0843/0345+416.14UACJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0844/0418+437.14UACK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0845/0421+464.14UACK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0846/0826-373.14UACL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0847/0943+105.14UACL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0848/0938+119.14UACL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0849/0939+144.14UACL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0850/0940+172.14UACM
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0851/0945+163.14UACN
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0852/0613+570.14UACO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0853/0658+548.14UACO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0854/0709+509.14UACP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0855/0724+571.14UACP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0856/0729+562.14UACQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0857/0515+208.14UACR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0858/0506+198.14UACR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0859/0506+274.14UACR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0860/0507+209.14UACS
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0861/0508+264.14UACT
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0862/0834+250.14UACU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0863/0814+201.14UACU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0864/0814+240.14UACV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0865/0814+227.14UACV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0866/0820+225.14UACY
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0867/1016-311.14UACZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0868/0918-363.14UACZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0869/0923-355.14UACZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0870/0926-306.14UAD0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0871/0927-378.14UAD1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0872/1004-217.14UAD1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0873/0922-202.14UAD1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0874/0929-289.14UAD2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0875/0930-200.14UAD2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0876/0932-281.14UAD3
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0877/1144+402.14UAD5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0878/1124+455.14UAD5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0879/1135+480.14UAD6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0880/1136+408.14UAD6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0881/1142+422.14UAD6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0882/1042+071.14UAD6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0883/1056+026.14UAD7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0884/1057+050.14UAD7
+. processFringeFile: skipping the observation fm.S.25.14UAD7: the fringe error code is "H"
+. processFringeFile: skipping the observation km.S.51.14UAD7: the fringe error code is "H"
+. processFringeFile: skipping the observation lm.S.61.14UAD7: the fringe error code is "H"
+. processFringeFile: skipping the observation mn.S.71.14UAD7: the fringe error code is "H"
+. processFringeFile: skipping the observation mo.S.73.14UAD7: the fringe error code is "H"
+. processFringeFile: skipping the observation mp.S.75.14UAD7: the fringe error code is "H"
+. processFringeFile: skipping the observation ms.S.77.14UAD7: the fringe error code is "H"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0885/1057+100.14UAD8
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0886/1059+025.14UAD9
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0887/1144+402.14UADA
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0888/1150+334.14UADA
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0889/1150+365.14UADB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0890/1204+399.14UADB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0891/NGC4151.14UADB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0892/1448+762.14UADC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0893/1436+763.14UADC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0894/1520+725.14UADD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0895/1522+791.14UADD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0896/1525+737.14UADD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0897/0834+250.14UADE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0898/0849+287.14UADE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0899/0850+284.14UADE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0900/0901+237.14UADE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0901/0907+230.14UADF
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0902/0657+172.14UADI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0903/0634+233.14UADI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0904/0635+250.14UADI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0905/0638+182.14UADJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0906/3C166.14UADJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0907/0826-373.14UADJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0908/0818-128.14UADJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0909/0804-153.14UADJ
+. processFringeFile: skipping the observation mp.X.76.14UADJ: the fringe error code is "G"
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0910/0805-119.14UADK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0911/0806-153.14UADK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0912/0808-132.14UADL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0913/0743-006.14UADM
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0914/0741-063.14UADM
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0915/0748-069.14UADM
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0916/0748-006.14UADN
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0917/0801-079.14UADN
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0918/0943+105.14UADO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0919/0938+119.14UADO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0920/0939+144.14UADO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0921/0940+172.14UADP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0922/0945+163.14UADP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0923/1004-217.14UADR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0924/0922-202.14UADR
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0925/0929-289.14UADT
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0926/0930-200.14UADT
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0927/0932-281.14UADT
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0928/0826-373.14UADU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0929/1016-311.14UADU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0930/0918-363.14UADU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0931/0923-355.14UADV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0932/0926-306.14UADW
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0933/0927-378.14UADW
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0934/1219+044.14UADX
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0935/1212+078.14UADX
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0936/1213+097.14UADY
+w getDataFromFringeFiles: cannot find any usable fringe file in the directory /500/mk4_files/VLBA/ug003w/1234/No0937, skipped
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0938/1221+071.14UADY
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0939/0615+820.14UADZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0940/0535+677.14UADZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0941/0548+689.14UADZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0942/0607+624.14UAE0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0943/0646+600.14UAE0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0944/M84.14UAE0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0945/1257+123.14UAE1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0946/1258+145.14UAE1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0947/1312+126.14UAE1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0948/1313+200.14UAE2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0949/0749+540.14UAE2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0950/0658+548.14UAE2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0951/0709+509.14UAE3
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0952/0724+571.14UAE3
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0953/0729+562.14UAE4
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0954/1219+044.14UAE5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0955/1157+014.14UAE5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0956/1158+043.14UAE6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0957/1158+007.14UAE7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0958/1200+028.14UAE7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0959/0834+250.14UAE8
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0960/0814+201.14UAE8
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0961/0814+240.14UAE9
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0962/0814+227.14UAE9
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0963/0820+225.14UAEB
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0964/1042+071.14UAEC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0965/1056+026.14UAEC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0966/1057+050.14UAEC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0967/1057+100.14UAED
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0968/1059+025.14UAEE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0969/1418+546.14UAEE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0970/1447+536.14UAEE
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0971/1454+510.14UAEF
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0972/1506+591.14UAEF
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0973/1519+567.14UAEF
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0974/1334-127.14UAEH
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0975/1313-072.14UAEH
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0976/1316-12A.14UAEI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0977/1316-120.14UAEI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0978/NGC5077.14UAEI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0979/0834+250.14UAEJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0980/0849+287.14UAEJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0981/0850+284.14UAEJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0982/0901+237.14UAEL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0983/0907+230.14UAEL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0984/0938+119.14UAEN
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0985/0943+105.14UAEN
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0986/0939+144.14UAEN
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0987/0940+172.14UAEO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0988/0945+163.14UAEO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0989/1144+402.14UAEP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0990/1124+455.14UAEP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0991/1135+480.14UAEP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0992/1136+408.14UAEQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0993/1142+422.14UAEQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0994/2353+816.14UAEQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0995/2316+862.14UAEQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0996/2325+799.14UAEQ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0997/2342+821.14UAER
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0998/2344+798.14UAER
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No0999/1219+044.14UAES
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1000/1157+014.14UAES
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1001/1158+043.14UAET
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1002/1158+007.14UAEU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1003/1200+028.14UAEU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1004/1144+402.14UAEU
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1005/1150+334.14UAEV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1006/1150+365.14UAEV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1007/1204+399.14UAEV
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1008/NGC4151.14UAEW
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1009/1443-162.14UAEW
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1010/1438-151.14UAEX
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1011/1442-155.14UAEX
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1012/1445-161.14UAEZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1013/1446-111.14UAEZ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1014/M84.14UAF0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1015/1257+123.14UAF0
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1016/1258+145.14UAF1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1017/1312+126.14UAF1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1018/1313+200.14UAF1
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1019/1042+071.14UAF2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1020/1056+026.14UAF2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1021/1057+050.14UAF2
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1022/1057+100.14UAF3
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1023/1059+025.14UAF4
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1024/1334-127.14UAF5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1025/1313-072.14UAF5
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1026/1316-12A.14UAF6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1027/1316-120.14UAF6
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1028/NGC5077.14UAF7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1029/1823+689.14UAF7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1030/1755+626.14UAF7
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1031/1822+682.14UAF8
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1032/1826+670.14UAF9
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1033/1827+645.14UAF9
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1034/1510-089.14UAFA
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1035/1517-116.14UAFA
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1036/1529-131.14UAFC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1037/1534-128.14UAFC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1038/1539-111.14UAFC
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1039/1219+044.14UAFD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1040/1157+014.14UAFD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1041/1158+043.14UAFD
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1042/1158+007.14UAFG
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1043/1200+028.14UAFH
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1044/1443-162.14UAFI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1045/1438-151.14UAFI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1046/1442-155.14UAFI
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1047/1445-161.14UAFJ
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1048/1446-111.14UAFK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1049/1451-400.14UAFK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1050/1556-245.14UAFK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1051/1612-243.14UAFK
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1052/1614-255.14UAFL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1053/1614-195.14UAFL
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1054/1616-181.14UAFM
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1055/1219+044.14UAFO
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1056/1212+078.14UAFP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1057/1213+097.14UAFP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1058/NGC4261.14UAFP
+w parseVexFile: PI Name was not found; the file is /500/mk4_files/VLBA/ug003w/1234/No1059/1221+071.14UAFQ
+w getDataFromFringeFiles: more than one experiment serial number found:
+w getDataFromFringeFiles: 0 -> 89 times
+w getDataFromFringeFiles: 16383 -> 54269 times
+. getDataFromFringeFiles: the database name was explicitly set to 20APR03XC
+. getDataFromFringeFiles: 7 second-band-only observations were removed
+. selfCheck: the X-band is set as the primary one
+. selfCheck: the record mode has been set to "NChan:16 Rbw:1024.0 Bps:2"
+w selfCheck: cannot find a masterfile record for the session [20APR03XC] 
+. selfCheck: skipping the eccentricities set up: incomplete data set 
+. guessNetworkId: unable to guess the network ID, nothing to match
+. checkChannelSetup: the session is ok
+. selfCheck: the session selfcheck has been completed
+E getDataFromFringeFiles: cannot get the experiment serial number
+. vgosDbMake: the session UG003W (20APR03XC) has been imported from fringes files

@@ -1,0 +1,32 @@
+
+TIMETAG 2020/06/04 20:34:31 UTC
+MK3DB_VERSION 4
+The cable cal were reset for selected station(s) WETTZ13S, KOKEE12M
+. vgosDbProcLogs: Library ID: SgLib-0.7.0 (Oakdale) released on 03 Mar, 2020
+. vgosDbProcLogs: Driver  ID: vgosDbProcLogs-0.5.0 (Balmoral) released on 03 Mar, 2020
+. vgosDbProcLogs: Host    ID: demi (Hw: x86_64; Sw: 3.10.0-693.21.1.el7.x86_64 version of Linux)
+. vgosDbProcLogs: User    ID: John Barrett <barrettj@mit.edu>, MIT Haystack Observatory
+. vgosDbProcLogs: User command: "vgosDbProcLogs -zc -s WETTZ13S -s KOKEE12M -k pcmt /data/20APR07VI/20APR07VI_V003_iMIT_kall.wrp"
+. vgosDbProcLogs: Input data  : /data/20APR07VI/20APR07VI_V003_iMIT_kall.wrp
+. vgosDbProcLogs: the session V20098 (20APR07VI) has been imported from vgosDb data set
+. vgosDbProcLogs: the cable cal were reset for selected station(s) WETTZ13S, KOKEE12M of the session V20098 (20APR07VI)
+w readFile: got a duplicate record " Ca CAMBRIDG --------- ---- Cambridge, UK (VLBA)" for the station name "CAMBRIDG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Cb CAMBRIDG --------- ---- Cambridge, UK (Ryle)" for the station name "CAMBRIDG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Ef EFLSBERG 14209S001 7203 Effelsberg, Germany (originally Mk4, now common EVN usage)" for the station name "EFLSBERG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Jv JODRELL2 --------- ---- VLBA, Jodrell Bank, UK" for the station name "JODRELL2" in the ns-codes file [/500/oper/master/ns-codes.txt]
+. importDataFromLogFiles: checking [/500/sessions/2020/v20098/] directory for station log files
+. importDataFromLogFiles: processing /500/sessions/2020/v20098/v20098k2.pcmt.BCD.XY.dat, a PCMT file for KOKEE12M station
+. readLogFile: station KOKEE12M: 38 strings of the log file (2K) were read
+. verifyReadings: station KOKEE12M: insufficient number (0) of meteo parameters; skipped
+. verifyReadings: station KOKEE12M: cannot find any usable cablelong measurements
+w verifyReadings: station KOKEE12M: cannot determine the cable calibration sign
+w verifyReadings: no default cable cal list were provided
+. propagateData: station KOKEE12M: 36 exact matches of cable calibrations were found
+. importDataFromLogFiles: processing /500/sessions/2020/v20098/v20098ws.pcmt.BCD.XY.dat, a PCMT file for WETTZ13S station
+. readLogFile: station WETTZ13S: 38 strings of the log file (2K) were read
+. verifyReadings: station WETTZ13S: insufficient number (0) of meteo parameters; skipped
+. verifyReadings: station WETTZ13S: cannot find any usable cablelong measurements
+w verifyReadings: station WETTZ13S: cannot determine the cable calibration sign
+w verifyReadings: no default cable cal list were provided
+. propagateData: station WETTZ13S: 36 exact matches of cable calibrations were found
+. vgosDbProcLogs: import of data from station log files has been complete

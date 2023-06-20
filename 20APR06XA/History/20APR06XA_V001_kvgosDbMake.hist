@@ -1,0 +1,17 @@
+
+TIMETAG 2020/04/17 16:35:33 UTC
+MK3DB_VERSION 1
+. vgosDbMake: Library ID: SgLib-0.7.0 (Oakdale) released on 04 Mar, 2020
+. vgosDbMake: Driver  ID: vgosDbMake-0.5.0 (Aylor) released on 03 Mar, 2020
+. vgosDbMake: Host    ID: frontend (Hw: x86_64; Sw: 3.10.0-957.10.1.el7.x86_64 version of Linux)
+. vgosDbMake: User    ID: oper <oper@frontend>, MPIFR correlator
+. vgosDbMake: User command: "/cluster/geosoft/nusolve/bin/vgosDbMake /Exps/r1941/v1/4910/ -t /Exps/r1941/v1/4910/r1941.corr -o /Exps/r1941/EXPORT/"
+. vgosDbMake: Input data  : "/Exps/r1941/v1/4910"
+w getDataFromFringeFiles: the observations do not have correct experiment serial number (==16383)
+. selfCheck: the X-band is set as the primary one
+. selfCheck: the record mode has been set to "NChan:14 Rbw:224.0 Bps:1"
+. selfCheck: skipping the eccentricities set up: incomplete data set 
+. checkChannelSetup: the session is ok
+. selfCheck: the session selfcheck has been completed
+E getDataFromFringeFiles: cannot get the experiment serial number
+. vgosDbMake: the session R1941 (20APR06XA) has been imported from fringes files

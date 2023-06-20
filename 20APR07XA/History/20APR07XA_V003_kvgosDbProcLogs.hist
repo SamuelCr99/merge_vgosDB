@@ -1,0 +1,332 @@
+
+TIMETAG 2020/05/14 12:46:41 UTC
+MK3DB_VERSION 3
+. vgosDbProcLogs: Library ID: SgLib-0.7.1 (Linganore Creek) released on 13 May, 2020
+. vgosDbProcLogs: Driver  ID: vgosDbProcLogs-0.5.1 (Lake Merle) released on 13 May, 2020
+. vgosDbProcLogs: Host    ID: gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov (Hw: x86_64; Sw: 3.10.0-1062.9.1.el7.x86_64 version of Linux)
+. vgosDbProcLogs: User    ID: David Gordon <david.gordon-1@nasa.gov>, Goddard Space Flight Center
+. vgosDbProcLogs: User command: "/space/nusolve/bin/vgosDbProcLogs 20APR07XA_V002_iGSFC_kall.wrp"
+. vgosDbProcLogs: Input data  : ./20APR07XA_V002_iGSFC_kall.wrp
+. vgosDbProcLogs: the session APSG46 (20APR07XA) has been imported from vgosDb data set
+w readFile: got a duplicate record " Ca CAMBRIDG --------- ---- Cambridge, UK (VLBA)" for the station name "CAMBRIDG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Cb CAMBRIDG --------- ---- Cambridge, UK (Ryle)" for the station name "CAMBRIDG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Ef EFLSBERG 14209S001 7203 Effelsberg, Germany (originally Mk4, now common EVN usage)" for the station name "EFLSBERG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Jv JODRELL2 --------- ---- VLBA, Jodrell Bank, UK" for the station name "JODRELL2" in the ns-codes file [/500/oper/master/ns-codes.txt]
+. importDataFromLogFiles: checking [/500/sessions/2020/apsg46/] directory for station log files
+. importDataFromLogFiles: processing /500/sessions/2020/apsg46/apsg46ho.log, a log file for HOBART26 station
+w readLogFile: station HOBART26: the scan name "098-1753" will be replaced with "098-2255", looks like discontinuity in the log file
+w readLogFile: station HOBART26: the source name "1520+319" will be replaced with "2215+150", looks like discontinuity in the log file
+w readLogFile: station HOBART26: the scan name "098-2305" will be replaced with "099-0148", looks like discontinuity in the log file
+w readLogFile: station HOBART26: the source name "2113+293" will be replaced with "1936-155", looks like discontinuity in the log file
+. readLogFile: station HOBART26: collected operator's comments: 
+. readLogFile: station HOBART26: 2020/04/07 03:26:37: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station HOBART26: 2020/04/07 03:26:38: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station HOBART26: 2020/04/07 03:26:38: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station HOBART26: 2020/04/07 13:14:51: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station HOBART26: 2020/04/07 13:14:51: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station HOBART26: 2020/04/07 13:14:51: Remote access: user with alias 'oper(1)' logged out
+. readLogFile: station HOBART26: 2020/04/07 13:14:51: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station HOBART26: 2020/04/07 17:50:36: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station HOBART26: 2020/04/07 17:50:36: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station HOBART26: 2020/04/07 17:50:36: Remote access: user with alias 'oper' logged out
+. readLogFile: station HOBART26: 2020/04/07 17:50:36: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station HOBART26: 2020/04/08 01:44:29: schedule resumed after a few hour break to service receiver focus platform
+. readLogFile: station HOBART26: 2020/04/08 07:03:30: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station HOBART26: 2020/04/08 07:03:30: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station HOBART26: 2020/04/08 07:03:30: Remote access: user with alias 'oper(1)' logged out
+. readLogFile: station HOBART26: 2020/04/08 07:03:30: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station HOBART26: 2020/04/08 09:15:39: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station HOBART26: 2020/04/08 09:15:39: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Checklist "During observation"
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Sent by Patrick (user alias: oper)
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Hobart 26m Checklist OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Antenna : on source and tracking OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Data: Autocorrelations OK OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Time: delays OK, stable and within 1us (clkoff, maserdelay) OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Time: Field System time (econtrol StatusMonitor) agrees with station time OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Time: Maser status OK OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Mark5: mk5=mode? correct OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Mark5: mk5=dot? response nominal OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Mark5: disk_pos OK? Log (actual - expected) in GB (value=-1060) OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Meteorology: Weather (wth) being logged OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Meteorology: Sky conditions logged (percentage cloud cover, rain etc) (value=clear, no rain) OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Tsys: S-band Tsys 50 to 70K OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Tsys: X-band Tsys 50 to 70K OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Check the receiver position with rxp OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Cryogenics: Vacuum pressure less than 3.5 OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Cryogenics: 70K stage temperature below 65K OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Cryogenics: He supply pressure above 275 psi OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Log Monitor audio check button sounds audible beep OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Make sure Skype is running for chat with sites and on-call person OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: System: Check and update Handover and Current Issues wiki pages OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: System: Any problems or concerns logged OK
+. readLogFile: station HOBART26: 2020/04/08 09:55:39: Additional notes:
+. readLogFile: station HOBART26: 2020/04/08 12:04:17: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station HOBART26: 2020/04/08 12:04:17: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Checklist "During observation"
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Sent by Patrick (user alias: oper(1))
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Hobart 26m Checklist OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Antenna : on source and tracking OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Data: Autocorrelations OK OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Time: delays OK, stable and within 1us (clkoff, maserdelay) OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Time: Field System time (econtrol StatusMonitor) agrees with station time OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Time: Maser status OK OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Mark5: mk5=mode? correct OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Mark5: mk5=dot? response nominal OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Mark5: disk_pos OK? Log (actual - expected) in GB (value=-1061.26) OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Meteorology: Weather (wth) being logged OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Meteorology: Sky conditions logged (percentage cloud cover, rain etc) (value=clear, no rain) OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Tsys: S-band Tsys 50 to 70K OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Tsys: X-band Tsys 50 to 70K OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Check the receiver position with rxp OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Cryogenics: Vacuum pressure less than 3.5 OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Cryogenics: 70K stage temperature below 65K OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Cryogenics: He supply pressure above 275 psi OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Log Monitor audio check button sounds audible beep OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Make sure Skype is running for chat with sites and on-call person OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: System: Check and update Handover and Current Issues wiki pages OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: System: Any problems or concerns logged OK
+. readLogFile: station HOBART26: 2020/04/08 12:06:18: Additional notes:
+. readLogFile: station HOBART26: 2020/04/08 13:08:23: Remote access: user with alias 'oper' logged out
+. readLogFile: station HOBART26: 2020/04/08 13:08:23: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station HOBART26: 2020/04/08 13:08:23: Remote access: user with alias 'oper' logged out
+. readLogFile: station HOBART26: 2020/04/08 13:08:23: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Checklist "During observation"
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Sent by mas (user alias: oper)
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Hobart 26m Checklist OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Antenna : on source and tracking OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Data: Autocorrelations OK OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Time: delays OK, stable and within 1us (clkoff, maserdelay) OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Time: Field System time (econtrol StatusMonitor) agrees with station time OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Time: Maser status OK OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Mark5: mk5=mode? correct OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Mark5: mk5=dot? response nominal OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Mark5: disk_pos OK? Log (actual - expected) in GB (value= -1062.65 GB ) OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Meteorology: Weather (wth) being logged OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Meteorology: Sky conditions logged (percentage cloud cover, rain etc) (value=clear skies) OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Tsys: S-band Tsys 50 to 70K OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Tsys: X-band Tsys 50 to 70K OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Check the receiver position with rxp OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Cryogenics: Vacuum pressure less than 3.5 OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Cryogenics: 70K stage temperature below 65K OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Cryogenics: He supply pressure above 275 psi OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Log Monitor audio check button sounds audible beep OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Make sure Skype is running for chat with sites and on-call person OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: System: Check and update Handover and Current Issues wiki pages OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: System: Any problems or concerns logged OK
+. readLogFile: station HOBART26: 2020/04/08 13:53:51: Additional notes:
+. readLogFile: station HOBART26: 24721 strings of the log file (1M) were read
+. verifyReadings: station HOBART26: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station HOBART26: cannot find any usable cable calibrations
+w propagateData: station HOBART26: cannot find the scan "099-1511" in the log file
+w propagateData: station HOBART26: cannot find the scan "099-1514" in the log file
+w propagateData: station HOBART26: cannot find the scan "099-1517" in the log file
+w propagateData: station HOBART26: cannot find the scan "099-1519" in the log file
+w propagateData: station HOBART26: cannot find the scan "099-1527" in the log file
+w propagateData: station HOBART26: cannot find the scan "099-1529" in the log file
+w propagateData: station HOBART26: cannot find the scan "099-1537" in the log file
+w propagateData: station HOBART26: cannot find the scan "099-1547" in the log file
+. propagateData: station HOBART26: meteo parameters were found
+. importDataFromLogFiles: processing /500/sessions/2020/apsg46/apsg46is.log, a log file for ISHIOKA station
+. readLogFile: station ISHIOKA: collected operator's comments: 
+. readLogFile: station ISHIOKA: 2020/04/07 23:47:14: Weather is fine
+. readLogFile: station ISHIOKA: 11661 strings of the log file (621K) were read (439 strings were skipped)
+. verifyReadings: station ISHIOKA: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station ISHIOKA: cannot find any usable cable calibrations
+. propagateData: station ISHIOKA: meteo parameters were found
+. importDataFromLogFiles: processing /500/sessions/2020/apsg46/apsg46kg.log, a log file for KOGANEI station
+. readLogFile: station KOGANEI: 25538 strings of the log file (1M) were read (1966 strings were skipped)
+. verifyReadings: station KOGANEI: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station KOGANEI: cannot find any usable cable calibrations
+. propagateData: station KOGANEI: meteo parameters were found
+. importDataFromLogFiles: processing /500/sessions/2020/apsg46/apsg46kk.log, a log file for KOKEE station
+. readLogFile: station KOKEE: collected operator's comments: 
+. readLogFile: station KOKEE: 2020/04/07 16:26:34: kokee park geophysical observatory, apsg46, apr 2020, operator-chang
+. readLogFile: station KOKEE: 2020/04/07 16:26:49: cable cal follows starting with an added cable length of 52 usec
+. readLogFile: station KOKEE: 2020/04/07 16:27:50: cable measurement just taken was -54.9 usec
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: Session apsg46 ready message for Kokee Park.
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: ;"--------------------------------------------
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: First source: 1639-062 at 098/1730:00  UT
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: FMOUT-GPS: +10.9 microseconds
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: Wx:  Temperature (C): 12.6  Pressure (mBar): 885.2  Humidity (%): 100
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: Sky Conditions: overcast
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: Cable difference is: longer cable makes the reading smaller by
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: 54.9 microseconds and is nominal
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: Pointing values:
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: SEFD  X/S       Source          Az/El      Offset1  Offset2
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: 2038/812     cygnusa         36/64      -0.007   0.002
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: 2395/691     casa            33/29      0.001    -0.001
+. readLogFile: station KOKEE: 2020/04/07 16:31:36: Tsys (x1/s/x2): 85/39/0
+. readLogFile: station KOKEE: 2020/04/07 17:30:04: Session apsg46 auto-start message for Kokee Park.
+. readLogFile: station KOKEE: 2020/04/07 17:30:04: ;"-------------------------------------------------
+. readLogFile: station KOKEE: 2020/04/07 17:30:04: Started recording with source: 1639-062 at 098.17:30:00 UT
+. readLogFile: station KOKEE: 2020/04/07 17:47:08: RFI on IFB
+. readLogFile: station KOKEE: 2020/04/07 17:58:57: weather-overcast
+. readLogFile: station KOKEE: 2020/04/07 18:15:25: breaking off support to observe intensive i20098.
+. readLogFile: station KOKEE: 2020/04/07 19:37:22: resuming schedule after observing intensive i20098.
+. readLogFile: station KOKEE: 2020/04/07 19:59:01: weather-overcast
+. readLogFile: station KOKEE: 2020/04/07 20:58:40: weather-moslty cloudy
+. readLogFile: station KOKEE: 2020/04/07 21:55:56: weather-overcast
+. readLogFile: station KOKEE: 2020/04/07 22:58:58: weather-overcast
+. readLogFile: station KOKEE: 2020/04/07 23:58:21: weather-moslty cloudy
+. readLogFile: station KOKEE: 2020/04/08 00:56:09: weather-moslty cloudy
+. readLogFile: station KOKEE: 2020/04/08 01:58:40: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/08 02:56:57: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/08 03:58:09: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/08 04:58:13: weather-mostly cloudy
+. readLogFile: station KOKEE: 2020/04/08 05:58:38: weather-no stars visible
+. readLogFile: station KOKEE: 2020/04/08 06:58:10: weather-no stars visible
+. readLogFile: station KOKEE: 2020/04/08 07:58:43: weather-few stars visible
+. readLogFile: station KOKEE: 2020/04/08 08:58:22: weather-moon visible through high clouds
+. readLogFile: station KOKEE: 2020/04/08 09:59:06: weather-moon and some stars visible
+. readLogFile: station KOKEE: 2020/04/08 10:58:58: weather-moon visible through high clouds
+. readLogFile: station KOKEE: 2020/04/08 11:58:48: weather-moon and some stars visible
+. readLogFile: station KOKEE: 2020/04/08 12:59:08: weather-moon and many stars visible
+. readLogFile: station KOKEE: 2020/04/08 14:58:11: weather-moon and many stars visible
+. readLogFile: station KOKEE: 2020/04/08 15:59:30: weather-partly cloudy, light fog
+. readLogFile: station KOKEE: 2020/04/08 17:31:16: formatter minus GPS was +10.87 usec at the end
+. readLogFile: station KOKEE: 2020/04/08 17:31:39: cable cal follows starting with the normal operational cable length
+. readLogFile: station KOKEE: 2020/04/08 17:31:50: now cable cal with an added cable length of 52 usec
+. readLogFile: station KOKEE: 2020/04/08 17:41:50: Session apsg46 stop message for Kokee Park.
+. readLogFile: station KOKEE: 2020/04/08 17:41:50: ;"-------------------------------------------
+. readLogFile: station KOKEE: 2020/04/08 17:41:50: Comments:
+. readLogFile: station KOKEE: 2020/04/08 17:41:50: Diskpack HAY-0057 will be sent out via fedex AWB 7701 7206 8221 to Haystack.  Data
+. readLogFile: station KOKEE: 2020/04/08 17:41:50: will we e-transfered from HAY to SHAO correlator.
+. readLogFile: station KOKEE: 2020/04/08 17:41:50: Disk Inventory: A 0, B 0, C 0, D 5, E 1, F 0, G 0, H 2, (other larger) 9
+. readLogFile: station KOKEE: 2020/04/08 17:41:50: Observation finished at: 099/1729:17 UT
+. readLogFile: station KOKEE: 36029 strings of the log file (2M) were read (327 strings were skipped)
+. propagateData: station KOKEE: 313 exact matches of cable calibrations were found
+. propagateData: station KOKEE: meteo parameters were found
+. importDataFromLogFiles: processing /500/sessions/2020/apsg46/apsg46km.log, a log file for KUNMING station
+. readLogFile: station KUNMING: collected operator's comments: 
+. readLogFile: station KUNMING: 2020/04/07 18:41:42: Warning! Cause the telescope control problem the data valid time is from UT 18:40
+. readLogFile: station KUNMING: 2020/04/07 18:41:58: Warning! Cause the telescope control problem the data valid time is from UT 18:40:00
+. readLogFile: station KUNMING: 19066 strings of the log file (1M) were read
+. verifyReadings: station KUNMING: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station KUNMING: cannot find any usable cable calibrations
+. propagateData: station KUNMING: meteo parameters were found
+. importDataFromLogFiles: processing /500/sessions/2020/apsg46/apsg46ur.log, a log file for URUMQI station
+. readLogFile: station URUMQI: 29064 strings of the log file (1M) were read
+. verifyReadings: station URUMQI: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station URUMQI: cannot find any usable cable calibrations
+. propagateData: station URUMQI: meteo parameters were found
+. importDataFromLogFiles: processing /500/sessions/2020/apsg46/apsg46yg.log, a log file for YARRA12M station
+. readLogFile: station YARRA12M: collected operator's comments: 
+. readLogFile: station YARRA12M: 2020/04/07 17:13:38: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/07 17:13:38: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 17:13:39: Remote access: user with alias 'oper(1)' logged out
+. readLogFile: station YARRA12M: 2020/04/07 17:13:40: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 18:48:52: Remote access: user with alias 'oper(1)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/07 18:49:15: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/07 18:49:15: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 18:49:15: Remote access: user 'oper' (alias 'oper(2)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 18:49:15: Remote access: user 'oper' (alias 'oper(3)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 18:49:15: Remote access: user 'oper' (alias 'oper(4)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 18:49:15: Remote access: user 'oper' (alias 'oper(5)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 18:49:15: Remote access: user 'oper' (alias 'oper(6)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 18:49:15: Remote access: user 'oper' (alias 'oper(7)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 18:50:16: Remote access: user with alias 'oper' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/07 18:50:16: Remote access: user with alias 'oper(4)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/07 18:50:16: Remote access: user with alias 'oper(3)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/07 18:50:16: Remote access: user with alias 'oper(2)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/07 18:50:16: Remote access: user with alias 'oper(5)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/07 18:50:16: Remote access: user with alias 'oper(1)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/07 22:35:36: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/07 22:35:36: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/07 22:35:39: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/07 22:35:39: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 06:50:51: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/08 06:50:51: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 09:15:07: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/08 09:15:07: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Checklist "During observation"
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Sent by Patrick (user alias: oper)
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Yarragadee Checklist OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Antenna: drives OK OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Antenna: Time OK (i.e. SNTP server OK) OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Antenna : on source and tracking OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Data: LO Locked OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Data: Autocorrelations OK OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Time: delays OK, stable and within 1us (clkoff, maserdelay) OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Time: Maser status OK OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Time: Field System time (econtrol StatusMonitor) agrees with station time OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Mark5: mk5=mode? correct OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Mark5: mk5=dot? response nominal OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Mark5: disk_pos OK? Log (actual - expected) in GB (value=-116.26) OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Meteorology: Weather (wth) being logged OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Meteorology: Sky conditions logged (percentage cloud cover, rain etc) (value=clear, no rain) OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Tsys: S-band Tsys OK (~85-100) OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Tsys: X-band Tsys OK (~80-95) OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Log Monitor audio check button sounds audible beep OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Make sure Skype is running for chat with sites and on-call person OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: System: Check and update Handover and Current Issues wiki pages OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: System: Any problems or concerns logged OK
+. readLogFile: station YARRA12M: 2020/04/08 09:55:34: Additional notes:
+. readLogFile: station YARRA12M: 2020/04/08 11:41:57: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/08 11:41:57: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Checklist "During observation"
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Sent by Patrick (user alias: oper)
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Yarragadee Checklist OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Antenna: drives OK OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Antenna: Time OK (i.e. SNTP server OK) OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Antenna : on source and tracking OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Data: LO Locked OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Data: Autocorrelations OK OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Time: delays OK, stable and within 1us (clkoff, maserdelay) OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Time: Maser status OK OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Time: Field System time (econtrol StatusMonitor) agrees with station time OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Mark5: mk5=mode? correct OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Mark5: mk5=dot? response nominal OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Mark5: disk_pos OK? Log (actual - expected) in GB (value=-120.42) OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Meteorology: Weather (wth) being logged OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Meteorology: Sky conditions logged (percentage cloud cover, rain etc) OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Tsys: S-band Tsys OK (~85-100) OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Tsys: X-band Tsys OK (~80-95) OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Log Monitor audio check button sounds audible beep OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Make sure Skype is running for chat with sites and on-call person OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: System: Check and update Handover and Current Issues wiki pages OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: System: Any problems or concerns logged OK
+. readLogFile: station YARRA12M: 2020/04/08 12:03:47: Additional notes:
+. readLogFile: station YARRA12M: 2020/04/08 13:50:20: Remote access: user with alias 'oper' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/08 13:50:43: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/08 13:50:43: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 13:50:43: Remote access: user 'oper' (alias 'oper(2)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 13:50:43: Remote access: user 'oper' (alias 'oper(3)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 13:50:43: Remote access: user 'oper' (alias 'oper(4)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 13:50:43: Remote access: user 'oper' (alias 'oper(5)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 13:50:43: Remote access: user 'oper' (alias 'oper(6)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 13:50:43: Remote access: user 'oper' (alias 'oper(7)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 13:51:43: Remote access: user with alias 'oper' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/08 13:51:43: Remote access: user with alias 'oper(3)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/08 13:51:43: Remote access: user with alias 'oper(4)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/08 13:51:43: Remote access: user with alias 'oper(2)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/08 13:51:43: Remote access: user with alias 'oper(5)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/08 13:51:43: Remote access: user with alias 'oper(1)' logged out bye system
+. readLogFile: station YARRA12M: 2020/04/08 15:06:43: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/08 15:06:43: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 15:06:44: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 15:06:44: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 15:06:44: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 15:06:44: Remote access: user with alias 'oper(1)' logged out
+. readLogFile: station YARRA12M: 2020/04/08 15:06:44: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 15:06:44: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 15:06:44: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 15:06:45: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 15:06:46: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 15:06:47: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 17:33:34: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/08 17:33:34: Remote access: user 'oper' (alias 'oper(1)') logged in
+. readLogFile: station YARRA12M: 2020/04/08 17:33:34: Remote access: user with alias 'oper' logged out
+. readLogFile: station YARRA12M: 2020/04/08 17:33:34: Remote access: user 'oper' (alias 'oper') logged in
+. readLogFile: station YARRA12M: 2020/04/08 17:33:35: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 17:33:35: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 17:33:35: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 17:33:35: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 17:33:37: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 2020/04/08 17:33:37: Remote access: user 'NOAUTH' (alias '') tried to log in, but failed
+. readLogFile: station YARRA12M: 35058 strings of the log file (2M) were read (2393 strings were skipped)
+. verifyReadings: station YARRA12M: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station YARRA12M: cannot find any usable cable calibrations
+w propagateData: station YARRA12M: cannot find the scan "098-1810" in the log file
+. propagateData: station YARRA12M: meteo parameters were found
+. vgosDbProcLogs: import of data from station log files has been complete

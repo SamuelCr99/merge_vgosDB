@@ -1,0 +1,27 @@
+
+TIMETAG 2020/04/06 00:37:32 UTC
+MK3DB_VERSION 3
+. vgosDbProcLogs: Library ID: SgLib-0.6.3 (Rebma) released on 26 Sep, 2018
+. vgosDbProcLogs: Driver  ID: vgosDbProcLogs-0.4.3 (Deiga) released on 26 Sep, 2018
+. vgosDbProcLogs: User    ID: vlbi user <vlbi@spacegeodesy.go.jp>, Geospatial Information Authority of Japan
+. vgosDbProcLogs: User command: "/usr/local/bin/vgosDbProcLogs 20APR05XK"
+. vgosDbProcLogs: Input data  : /opt/solve/vgosDB/2020/20APR05XK/20APR05XK_V002_iGSI_kall.wrp
+. vgosDbProcLogs: the session Q20096 (20APR05XK) has been imported from vgosDb data set
+w readFile: got a duplicate record " Ca CAMBRIDG --------- ---- Cambridge, UK (VLBA)" for the station name "CAMBRIDG" in the ns-codes file [/opt/solve/master/ns-codes.txt]
+w readFile: got a duplicate record " Cb CAMBRIDG --------- ---- Cambridge, UK (Ryle)" for the station name "CAMBRIDG" in the ns-codes file [/opt/solve/master/ns-codes.txt]
+w readFile: got a duplicate record " Ef EFLSBERG 14209S001 7203 Effelsberg, Germany (originally Mk4, now common EVN usage)" for the station name "EFLSBERG" in the ns-codes file [/opt/solve/master/ns-codes.txt]
+w readFile: got a duplicate record " Jv JODRELL2 --------- ---- VLBA, Jodrell Bank, UK" for the station name "JODRELL2" in the ns-codes file [/opt/solve/master/ns-codes.txt]
+. importDataFromLogFiles: checking [/opt/solve/sessions/2020/q20096/] directory for station log files
+. importDataFromLogFiles: processing /opt/solve/sessions/2020/q20096/q20096is.log, a log file for ISHIOKA station
+. readLogFile: station ISHIOKA: 1321 strings of the log file (69K) were read (43 strings were skipped)
+. verifyReadings: station ISHIOKA: insufficient number (0) of cable calibrations; skipped
+w verifyReadings: station ISHIOKA: cannot find any usable cable calibrations
+. propagateData: station ISHIOKA: meteo parameters were found
+. importDataFromLogFiles: processing /opt/solve/sessions/2020/q20096/q20096wz.log, a log file for WETTZELL station
+. readLogFile: station WETTZELL: 6232 strings of the log file (417K) were read
+. verifyReadings: station WETTZELL: cannot find any usable cablelong measurements
+w verifyReadings: station WETTZELL: cannot determine the cable calibration sign
+. verifyReadings: station WETTZELL: the cable sign was set to "+" according to the list of default cable signs
+. propagateData: station WETTZELL: 39 exact matches of cable calibrations were found
+. propagateData: station WETTZELL: meteo parameters were found
+. vgosDbProcLogs: import of data from station log files has been complete

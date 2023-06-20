@@ -1,0 +1,59 @@
+
+TIMETAG 2020/04/04 01:00:23 UTC
+MK3DB_VERSION 3
+. vgosDbProcLogs: Library ID: SgLib-0.7.0 (Oakdale) released on 04 Mar, 2020
+. vgosDbProcLogs: Driver  ID: vgosDbProcLogs-0.5.0 (Balmoral) released on 03 Mar, 2020
+. vgosDbProcLogs: Host    ID: gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov (Hw: x86_64; Sw: 3.10.0-1062.9.1.el7.x86_64 version of Linux)
+. vgosDbProcLogs: User    ID: Oper <mario.berube@nasa.gov>, NVI, Inc./Goddard Space Flight Center NASA
+. vgosDbProcLogs: User command: "/space/nusolve/bin/vgosDbProcLogs -klog /500/vgosDB/2020/20APR03XU/20APR03XU_V002_iGSFC_kall.wrp"
+. vgosDbProcLogs: Input data  : /500/vgosDB/2020/20APR03XU/20APR03XU_V002_iGSFC_kall.wrp
+. vgosDbProcLogs: the session I20094 (20APR03XU) has been imported from vgosDb data set
+w readFile: got a duplicate record " Ca CAMBRIDG --------- ---- Cambridge, UK (VLBA)" for the station name "CAMBRIDG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Cb CAMBRIDG --------- ---- Cambridge, UK (Ryle)" for the station name "CAMBRIDG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Ef EFLSBERG 14209S001 7203 Effelsberg, Germany (originally Mk4, now common EVN usage)" for the station name "EFLSBERG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Jv JODRELL2 --------- ---- VLBA, Jodrell Bank, UK" for the station name "JODRELL2" in the ns-codes file [/500/oper/master/ns-codes.txt]
+. importDataFromLogFiles: checking [/500/sessions/2020/i20094/] directory for station log files
+. importDataFromLogFiles: processing /500/sessions/2020/i20094/i20094kk.log, a log file for KOKEE station
+. readLogFile: station KOKEE: collected operator's comments: 
+. readLogFile: station KOKEE: 2020/04/03 18:30:20: kokee park geopysical observatory, i20094, April 2020, operator-imai.
+. readLogFile: station KOKEE: 2020/04/03 18:31:45: no pointing check due to short turn-around
+. readLogFile: station KOKEE: 2020/04/03 18:32:18: cable cal follows starting with an added cable length of 52 usec
+. readLogFile: station KOKEE: 2020/04/03 18:32:32: now cable cal with the normal operational cable length
+. readLogFile: station KOKEE: 2020/04/03 18:33:14: cable measurement just taken was -52.6 usec
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: Session i20094 ready message for Kokee Park.
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: ;"--------------------------------------------
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: Comments:
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: No pointing checks due to short turn-around.
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: First source: 0133+476 at 094/1845:00  UT
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: FMOUT-GPS: +11.03 microseconds
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: Wx:  Temperature (C): 14.5  Pressure (mBar): 886.2  Humidity (%): 100.0
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: Sky Conditions: mostly cloudy
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: Cable difference is: longer cable makes the reading larger by
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: 52.6 microseconds and is nominal
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: Pointing values: NA
+. readLogFile: station KOKEE: 2020/04/03 18:34:58: Tsys (x1/s/x2): 91/40/54
+. readLogFile: station KOKEE: 2020/04/03 18:45:05: Session i20094 auto-start message for Kokee Park.
+. readLogFile: station KOKEE: 2020/04/03 18:45:05: ;"-------------------------------------------------
+. readLogFile: station KOKEE: 2020/04/03 18:45:05: Started recording with source: 0133+476 at 094.18:45:00 UT
+. readLogFile: station KOKEE: 2020/04/03 19:47:10: formatter minus GPS was +11.03 usec at the end
+. readLogFile: station KOKEE: 2020/04/03 19:47:31: cable cal follows starting with the normal operational cable length of 52 usec
+. readLogFile: station KOKEE: 2020/04/03 19:47:53: ;"***normal operaitonal cable length
+. readLogFile: station KOKEE: 2020/04/03 19:48:04: now cable cal with an added cable length of 52 usec
+. readLogFile: station KOKEE: 2020/04/03 19:48:46: cable measurement just taken was -53.5 usec
+. readLogFile: station KOKEE: 2020/04/03 19:54:48: Session i20094 stop message for Kokee Park.
+. readLogFile: station KOKEE: 2020/04/03 19:54:48: ;"-------------------------------------------
+. readLogFile: station KOKEE: 2020/04/03 19:54:48: Comments:
+. readLogFile: station KOKEE: 2020/04/03 19:54:48: Looking into problem with BBC #13. Data will be sent out via e-trasnfer.
+. readLogFile: station KOKEE: 2020/04/03 19:54:48: Observation finished at: 094/1945:07 UT
+. readLogFile: station KOKEE: 2915 strings of the log file (171K) were read (20 strings were skipped)
+w cleanCableCalibrations: station KOKEE: 1 outlier has been removed
+. propagateData: station KOKEE: 19 exact matches of cable calibrations were found
+. propagateData: station KOKEE: meteo parameters were found
+. importDataFromLogFiles: processing /500/sessions/2020/i20094/i20094wz.log, a log file for WETTZELL station
+. readLogFile: station WETTZELL: 4485 strings of the log file (310K) were read (2180 strings were skipped)
+. verifyReadings: station WETTZELL: cannot find any usable cablelong measurements
+w verifyReadings: station WETTZELL: cannot determine the cable calibration sign
+. verifyReadings: station WETTZELL: the cable sign was set to "+" according to the list of default cable signs
+. propagateData: station WETTZELL: 19 exact matches of cable calibrations were found
+. propagateData: station WETTZELL: meteo parameters were found
+. vgosDbProcLogs: import of data from station log files has been complete

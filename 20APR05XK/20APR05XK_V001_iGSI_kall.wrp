@@ -1,0 +1,131 @@
+VERSION 1.002   2017Oct02
+!
+!
+!
+!
+Begin History
+!
+Begin Process Correlator
+Version 1
+CreatedBy correlator operator
+Default_dir History
+RunTimeTag 2020/04/06 00:11:50 UTC
+History 20APR05XK_V000_kKomb.hist
+End Process Correlator
+!
+Begin Process SgLib/vgosDbMake
+Version 0.6.3/0.4.3
+CreatedBy vlbi user, Geospatial Information Authority of Japan
+Default_dir History
+RunTimeTag 2020/04/06 00:37:31 UTC
+History 20APR05XK_V001_kvgosDbMake.hist
+End Process SgLib/vgosDbMake
+!
+End History
+!
+!
+Begin Session
+Session Q20096
+AltSessionId 20APR05XK
+!
+Head.nc
+!
+Default_Dir CrossReference
+StationCrossRef.nc
+SourceCrossRef.nc
+!
+End Session
+!
+Begin Station ISHIOKA
+!
+Default_Dir ISHIOKA
+TimeUTC.nc
+RefClockOffset.nc
+End Station ISHIOKA
+!
+Begin Station WETTZELL
+!
+Default_Dir WETTZELL
+TimeUTC.nc
+RefClockOffset.nc
+End Station WETTZELL
+!
+!
+Begin Scan
+!
+Default_Dir Scan
+TimeUTC.nc
+ScanName.nc
+!
+End Scan
+!
+!
+Begin Observation
+!
+!
+Default_Dir Observables
+TimeUTC.nc
+Baseline.nc
+Source.nc
+ChannelInfo_bS.nc
+PhaseCalInfo_bS.nc
+CorrInfo-GSI_bS.nc
+RefFreq_bS.nc
+AmbigSize_bS.nc
+QualityCode_bS.nc
+SBDelay_bS.nc
+GroupDelay_bS.nc
+GroupRate_bS.nc
+Phase_bS.nc
+DataFlag_bS.nc
+SNR_bS.nc
+Correlation_bS.nc
+!
+!
+ChannelInfo_bX.nc
+PhaseCalInfo_bX.nc
+CorrInfo-GSI_bX.nc
+RefFreq_bX.nc
+AmbigSize_bX.nc
+QualityCode_bX.nc
+SBDelay_bX.nc
+GroupDelay_bX.nc
+GroupRate_bX.nc
+Phase_bX.nc
+DataFlag_bX.nc
+SNR_bX.nc
+Correlation_bX.nc
+!
+!
+!
+!
+!
+Default_Dir CrossReference
+ObsCrossRef.nc
+!
+!
+!
+!
+Default_Dir ObsCalTheo
+Cal-Unphase_bS.nc
+Cal-Unphase_bX.nc
+!
+!
+End Observation
+!
+!
+Begin Program Solve
+Default_dir Solve
+!
+Begin Session
+End Session
+!
+Begin Scan
+ScanTimeMJD.nc
+End Scan
+!
+Begin Observation
+End Observation
+!
+End Program Solve
+!

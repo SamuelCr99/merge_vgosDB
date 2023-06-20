@@ -1,0 +1,34 @@
+
+TIMETAG 2020/06/11 20:49:24 UTC
+MK3DB_VERSION 6
+nuSolve: Library ID: SgLib-0.7.0 (Oakdale) released on 04 Mar, 2020
+nuSolve: Driver  ID: nuSolve-0.7.0 (Linganore) released on 03 Mar, 2020
+nuSolve: Host    ID: caprica (Hw: x86_64; Sw: 4.4.0-170-generic version of Linux)
+nuSolve: User    ID: Sergei Bolotin <sergei.bolotin@nasa.gov>, NVI, Inc. / NASA Goddard Space Flight Center
+nuSolve: Input data  : /home/slb/500/vgosDb/2020/20APR07VI/20APR07VI_V005_iGSFC_kall.wrp
+
+TIMETAG 2020/06/11 21:00:54 UTC
+Analyzed by Sergei Bolotin (hereafter SB) at NVI, Inc. / NASA Goddard Space Flight Center. Contact info: <sergei.bolotin@nasa.gov>
+VGOS-20098: NASA GSFC analysis (SB)
+G-Gxs solution.
+Solve fit is 25.85 psec.
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: glo.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+KO-WE 
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Eccentricity data store in data base header.

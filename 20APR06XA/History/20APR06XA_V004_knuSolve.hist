@@ -1,0 +1,47 @@
+
+TIMETAG 2020/04/17 23:40:54 UTC
+MK3DB_VERSION 4
+nuSolve: Library ID: SgLib-0.7.0 (Oakdale) released on 04 Mar, 2020
+nuSolve: Driver  ID: nuSolve-0.7.0 (Linganore) released on 03 Mar, 2020
+nuSolve: Host    ID: gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov (Hw: x86_64; Sw: 3.10.0-1062.9.1.el7.x86_64 version of Linux)
+nuSolve: User    ID: David Gordon <David.Gordon-1@nasa.gov>, NASA Goddard Space Flight Center
+nuSolve: Input data  : /500/vgosDB/2020/20APR06XA/20APR06XA_V003_iGSFC_kall.wrp
+
+TIMETAG 2020/04/18 01:05:31 UTC
+Analyzed by David Gordon (hereafter DG) at NASA Goddard Space Flight Center. Contact info: <David.Gordon-1@nasa.gov>
+DG> R1941: GSFC Analysis  -DG-
+DG> Two clock breaks at YARRA12M. NuSolve fit of 27.4 psec.
+IVS-R1941: GSFC analysis (DG)
+G-Gxs solution,   60/  30 clocks/atms,    2/40.001 constraints,   24-hr gradients.
+Solve fit is 27.65 psec.
+Detected 2 clock breaks
+A clock break marker has been set for YARRA12M at 07 Apr, 2020; 01:04:00.0000
+A clock break marker has been set for YARRA12M at 07 Apr, 2020; 12:20:00.0000
+The following flyby options were used in the solution:
+Station positions flyby file: glo.sit
+Station velocities flyby file: glo.vel
+Source flyby file: glo.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+BA-FO BA-HA BA-IS BA-MA BA-NY BA-WE BA-YA BA-ZE FO-HA FO-IS 
+FO-MA FO-NY FO-WE FO-YA FO-ZE HA-IS HA-MA HA-NY HA-WE HA-YA 
+HA-ZE IS-MA IS-NY IS-WE IS-YA IS-ZE MA-NY MA-WE MA-YA MA-ZE 
+NY-WE NY-YA NY-ZE WE-YA WE-ZE YA-ZE 
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.

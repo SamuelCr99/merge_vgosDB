@@ -1,0 +1,88 @@
+
+TIMETAG 2020/06/17 02:31:57 UTC
+MK3DB_VERSION 3
+. vgosDbProcLogs: Library ID: SgLib-0.7.1 (Linganore Creek) released on 10 Jun, 2020
+. vgosDbProcLogs: Driver  ID: vgosDbProcLogs-0.5.1 (Lake Merle) released on 13 May, 2020
+. vgosDbProcLogs: Host    ID: gs690-gs61a-gsvgsfc-ivscc-server1.gsfc.nasa.gov (Hw: x86_64; Sw: 3.10.0-1062.9.1.el7.x86_64 version of Linux)
+. vgosDbProcLogs: User    ID: David Gordon <david.gordon-1@nasa.gov>, Goddard Space Flight Center
+. vgosDbProcLogs: User command: "/space/nusolve/bin/vgosDbProcLogs 20APR03XC_V002_iGSFC_kall.wrp"
+. vgosDbProcLogs: Input data  : ./20APR03XC_V002_iGSFC_kall.wrp
+. vgosDbProcLogs: the session UG003W (20APR03XC) has been imported from vgosDb data set
+w readFile: got a duplicate record " Ca CAMBRIDG --------- ---- Cambridge, UK (VLBA)" for the station name "CAMBRIDG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Cb CAMBRIDG --------- ---- Cambridge, UK (Ryle)" for the station name "CAMBRIDG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Ef EFLSBERG 14209S001 7203 Effelsberg, Germany (originally Mk4, now common EVN usage)" for the station name "EFLSBERG" in the ns-codes file [/500/oper/master/ns-codes.txt]
+w readFile: got a duplicate record " Jv JODRELL2 --------- ---- VLBA, Jodrell Bank, UK" for the station name "JODRELL2" in the ns-codes file [/500/oper/master/ns-codes.txt]
+. importDataFromLogFiles: checking [/500/sessions/2020/ug003w/] directory for station log files
+w lookupScanName: station BR-VLBA: no scan name was assigned to the on_data record: [2020/04/03 13:55:34 -- 2020/04/03 13:56:54] @ 1837+479
+w lookupScanName: station BR-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:02:06 -- 2020/04/03 14:03:25] @ 1506+591
+w lookupScanName: station BR-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:19:36 -- 2020/04/03 14:20:00] @ 1737-081
+w lookupScanName: station BR-VLBA: no scan name was assigned to the on_data record: [2020/04/04 00:19:38 -- 2020/04/04 00:20:14] @ 0646-306
+w lookupScanName: station BR-VLBA: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+. verifyReadings: station BR-VLBA: cannot find any usable cablelong measurements
+. propagateData: station BR-VLBA: no cable cal record found for the scan "no0758" in the log file
+. propagateData: station BR-VLBA: 637 exact (505 are multiple) and 1 closest matches of cable calibrations were found
+. propagateData: station BR-VLBA: meteo parameters were found
+w lookupScanName: station FD-VLBA: no scan name was assigned to the on_data record: [2020/04/03 13:55:34 -- 2020/04/03 13:56:54] @ 1837+479
+w lookupScanName: station FD-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:02:06 -- 2020/04/03 14:03:25] @ 1506+591
+w lookupScanName: station FD-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:19:36 -- 2020/04/03 14:20:00] @ 1737-081
+w lookupScanName: station FD-VLBA: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+. verifyReadings: station FD-VLBA: cannot find any usable cablelong measurements
+. propagateData: station FD-VLBA: 654 exact (512 are multiple) matches of cable calibrations were found
+. propagateData: station FD-VLBA: meteo parameters were found
+w lookupScanName: station HN-VLBA: no scan name was assigned to the on_data record: [2020/04/03 13:55:34 -- 2020/04/03 13:56:54] @ 1837+479
+w lookupScanName: station HN-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:02:06 -- 2020/04/03 14:03:25] @ 1506+591
+w lookupScanName: station HN-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:19:36 -- 2020/04/03 14:20:00] @ 1737-081
+w lookupScanName: station HN-VLBA: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+. verifyReadings: station HN-VLBA: cannot find any usable cablelong measurements
+. propagateData: station HN-VLBA: 628 exact (497 are multiple) matches of cable calibrations were found
+. propagateData: station HN-VLBA: meteo parameters were found
+w lookupScanName: station KP-VLBA: no scan name was assigned to the on_data record: [2020/04/03 13:55:34 -- 2020/04/03 13:56:54] @ 1837+479
+w lookupScanName: station KP-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:02:06 -- 2020/04/03 14:03:25] @ 1506+591
+w lookupScanName: station KP-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:19:36 -- 2020/04/03 14:20:00] @ 1737-081
+w lookupScanName: station KP-VLBA: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+. verifyReadings: station KP-VLBA: cannot find any usable cablelong measurements
+. propagateData: station KP-VLBA: 651 exact (511 are multiple) matches of cable calibrations were found
+. propagateData: station KP-VLBA: meteo parameters were found
+w lookupScanName: station LA-VLBA: no scan name was assigned to the on_data record: [2020/04/03 13:55:34 -- 2020/04/03 13:56:54] @ 1837+479
+w lookupScanName: station LA-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:02:06 -- 2020/04/03 14:03:25] @ 1506+591
+w lookupScanName: station LA-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:19:36 -- 2020/04/03 14:20:00] @ 1737-081
+w lookupScanName: station LA-VLBA: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+. verifyReadings: station LA-VLBA: cannot find any usable cablelong measurements
+. propagateData: station LA-VLBA: 654 exact (512 are multiple) matches of cable calibrations were found
+. propagateData: station LA-VLBA: meteo parameters were found
+w lookupScanName: station MK-VLBA: no scan name was assigned to the on_data record: [2020/04/03 13:55:34 -- 2020/04/03 13:56:54] @ 1837+479
+w lookupScanName: station MK-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:02:06 -- 2020/04/03 14:03:25] @ 1506+591
+w lookupScanName: station MK-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:19:36 -- 2020/04/03 14:20:00] @ 1737-081
+w lookupScanName: station MK-VLBA: no scan name was assigned to the on_data record: [2020/04/04 00:19:38 -- 2020/04/04 00:20:14] @ 0646-306
+w lookupScanName: station MK-VLBA: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+w lookupScanName: station MK-VLBA: no scan name was assigned to the on_data record: [2020/04/04 08:38:40 -- 2020/04/04 08:39:03] @ 1219+044
+. verifyReadings: station MK-VLBA: cannot find any usable cablelong measurements
+. propagateData: station MK-VLBA: 640 exact (509 are multiple) matches of cable calibrations were found
+. propagateData: station MK-VLBA: meteo parameters were found
+w lookupScanName: station NL-VLBA: no scan name was assigned to the on_data record: [2020/04/03 13:55:34 -- 2020/04/03 13:56:54] @ 1837+479
+w lookupScanName: station NL-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:02:06 -- 2020/04/03 14:03:25] @ 1506+591
+w lookupScanName: station NL-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:19:36 -- 2020/04/03 14:20:00] @ 1737-081
+w lookupScanName: station NL-VLBA: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+. verifyReadings: station NL-VLBA: cannot find any usable cablelong measurements
+. propagateData: station NL-VLBA: 654 exact (512 are multiple) matches of cable calibrations were found
+. propagateData: station NL-VLBA: meteo parameters were found
+w lookupScanName: station OV-VLBA: no scan name was assigned to the on_data record: [2020/04/03 13:55:34 -- 2020/04/03 13:56:54] @ 1837+479
+w lookupScanName: station OV-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:02:06 -- 2020/04/03 14:03:25] @ 1506+591
+w lookupScanName: station OV-VLBA: no scan name was assigned to the on_data record: [2020/04/03 14:19:36 -- 2020/04/03 14:20:00] @ 1737-081
+w lookupScanName: station OV-VLBA: no scan name was assigned to the on_data record: [2020/04/04 00:19:38 -- 2020/04/04 00:20:14] @ 0646-306
+w lookupScanName: station OV-VLBA: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+. verifyReadings: station OV-VLBA: cannot find any usable cablelong measurements
+. propagateData: station OV-VLBA: 651 exact (510 are multiple) matches of cable calibrations were found
+. propagateData: station OV-VLBA: meteo parameters were found
+w lookupScanName: station PIETOWN: no scan name was assigned to the on_data record: [2020/04/03 13:55:34 -- 2020/04/03 13:56:54] @ 1837+479
+w lookupScanName: station PIETOWN: no scan name was assigned to the on_data record: [2020/04/03 14:02:06 -- 2020/04/03 14:03:25] @ 1506+591
+w lookupScanName: station PIETOWN: no scan name was assigned to the on_data record: [2020/04/03 14:19:36 -- 2020/04/03 14:20:00] @ 1737-081
+w lookupScanName: station PIETOWN: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+. verifyReadings: station PIETOWN: cannot find any usable cablelong measurements
+. propagateData: station PIETOWN: 654 exact (512 are multiple) matches of cable calibrations were found
+. propagateData: station PIETOWN: meteo parameters were found
+w lookupScanName: station SC-VLBA: no scan name was assigned to the on_data record: [2020/04/04 04:53:20 -- 2020/04/04 04:55:20] @ NGC4261
+. verifyReadings: station SC-VLBA: cannot find any usable cablelong measurements
+. propagateData: station SC-VLBA: 465 exact (364 are multiple) matches of cable calibrations were found
+. propagateData: station SC-VLBA: meteo parameters were found
+. vgosDbProcLogs: import of data from station log files has been complete
