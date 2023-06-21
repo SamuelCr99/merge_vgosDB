@@ -1,6 +1,6 @@
 import netCDF4 as nc
 
-ds = nc.Dataset('data/20APR01XA/Apriori/Antenna.nc')
+ds = nc.Dataset('NVI_data/20APR01XA/Apriori/Antenna.nc')
 
 # print(ds['AntennaStationList'][:])
 
