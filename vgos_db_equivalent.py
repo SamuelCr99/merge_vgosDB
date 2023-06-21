@@ -1,6 +1,8 @@
 import netCDF4 as nc
+import sys
 
-META_VARS = ["Stub","CreateTime","CreatedBy","Program","Subroutine","vgosDB_Version","DataOrigin","Session"]
+# Is "Stub" necessarily meta?
+META_VARS = ["Stub", "CreateTime","CreatedBy","Program","DataOrigin","TimeTag","TimeTagFile","Session","Band","Station","Subroutine","History","vgosDB_Version"]
 
 def is_equivalent(file1,file2):
 
@@ -19,4 +21,10 @@ def is_equivalent(file1,file2):
     return True
 
 if __name__ == '__main__':
-    print(is_equivalent('data/20APR01XA/Apriori/Antenna.nc','data/20APR01XA/Apriori/Antenna.nc'))
+    if len(sys.argv) < 3:
+        s1 = "NVI_data/20APR01XA/Apriori/Antenna.nc"
+        s2 = "NVI_data/20APR01XA/Apriori2/Antenna.nc"
+        print(is_equivalent(s1, s2))
+
+    else:
+        print(is_equivalent(sys.argv[1], sys.argv[2]))
