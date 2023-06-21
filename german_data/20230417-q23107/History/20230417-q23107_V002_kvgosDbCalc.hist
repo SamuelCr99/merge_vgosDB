@@ -1,0 +1,23 @@
+
+TIMETAG 2023/04/17 13:13:22 UTC
+MK3DB_VERSION 2
+CALC11.02 Ver. 2016.12.29  Mon Apr 17 15:13:22 2023lsv645.bkg
+Calc 11 at BKG  -vlbi-
+
+TIMETAG 2023/04/17 13:13:23 UTC
+. vgosDbCalc: Library ID: SgLib-0.8.1 (Skyland) released on 05 Jan, 2023
+. vgosDbCalc: Driver  ID: vgosDbCalc-0.5.0 (Knob Mountain) released on 03 Jan, 2023
+. vgosDbCalc: Host    ID: lsv645.bkg (Hw: x86_64; Sw: 4.18.0-425.19.2.el8_7.x86_64 version of Linux)
+. vgosDbCalc: User    ID: BKG Analysis Center <vlbi@lsv645.bkg>, Federal Agency for Cartography and Geodesy (BKG)
+. vgosDbCalc: User command: "vgosDbCalc -a vlbi /data/vgosdb/2023/20230417-q23107/20230417-q23107_V001_iMPI_kall.wrp"
+. vgosDbCalc: Input data  : /data/vgosdb/2023/20230417-q23107/20230417-q23107_V001_iMPI_kall.wrp
+. vgosDbCalc: External a priori setup: 
+. vgosDbCalc: SITES    : /data/calctree/apriori_files/blokq.c11.dat
+. vgosDbCalc: Sources  : /data/calctree/apriori_files/blokq.c11.dat
+. vgosDbCalc: Ocean    : /data/calctree/apriori_files/blokq.c11.dat
+. vgosDbCalc: EOPs     : /data/calctree/apriori_files/usno_finals.erp
+. vgosDbCalc: Tilts    : /data/calctree/apriori_files/tilt.dat
+. vgosDbCalc: OPTL     : /data/calctree/apriori_files/blokq.c11.dat
+. vgosDbCalc: running observations through CALC has been complete
+. putDataIntoVgosDb: no clock break information were added to the vgosDb data tree
+. createWrapperFileName: the organization name has been adjusted: MPI => BKG

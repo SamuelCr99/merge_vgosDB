@@ -1,0 +1,38 @@
+
+TIMETAG 2023/06/20 13:09:03 UTC
+MK3DB_VERSION 4
+nuSolve: Library ID: SgLib-0.8.1 (Skyland) released on 05 Jan, 2023
+nuSolve: Driver  ID: nuSolve-0.8.1 (Hawksbill Gap) released on 05 Jan, 2023
+nuSolve: Host    ID: lsv645.bkg (Hw: x86_64; Sw: 4.18.0-425.19.2.el8_7.x86_64 version of Linux)
+nuSolve: User    ID: Gerald Engelhardt <gerald.engelhardt@bkg.bund.de>, Bundesamt fuer Kartographie und Geodaesie
+nuSolve: Input data  : /home/engelhardt/vgosdb/20230616-i23167/20230616-i23167_V003_iBKG_kall.wrp
+
+TIMETAG 2023/06/20 13:16:51 UTC
+Analyzed by Gerald Engelhardt (hereafter GE) at Bundesamt fuer Kartographie und Geodaesie. Contact info: <gerald.engelhardt@bkg.bund.de>
+/BKG nuSolve update. -GE-
+Delays only, 6 parameters, 45.243 psec fit,
+31 obs, 7.60 microsec UT1 formal error.
+The following flyby options were used in the solution:
+Station positions flyby file: itrf2020_sitmod_bkg
+Station velocities flyby file: itrf2020_velmod_bkg
+Source flyby file: glo_bkg_icrf3sx.ori
+Station axis offset flyby file: gsfc_itrf2020.axo.txt
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved (well, at least, tried to resolve)
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+KO-WE 
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
+Eccentricity data store in data base header.
