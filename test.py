@@ -7,6 +7,7 @@ from wrapper_equivalent import is_equivalent_wrapper
 
 path = "test_data/netCDF_files/"
 A_path = "test_data/netCDF_files/Antenna.nc"
+G_path = "test_data/DB_orig/wrap.wrp"
 
 same_files = ["Antenna"]
 not_same_files = ["Antenna_V001","Antenna_V002","Antenna_V003","Antenna_V004","Eccentricity"]
@@ -19,6 +20,12 @@ not_equivalent_files = ["Antenna_V004","Eccentricity"]
 
 plug_compatible_files = ["Antenna","Antenna_V001","Antenna_V002","Antenna_V003","Antenna_V004"]
 not_plug_compatible_files = ["Eccentricity"]
+
+same_wrappers = ["DB_orig/wrap.wrp"]
+not_same_wrappers = ["DB_equiv_1/wrap.wrp","DB_equiv_2/wrap.wrp","DB_non_comp/wrap.wrp"]
+
+equivalent_wrappers = ["DB_orig/wrap.wrp","DB_equiv_1/wrap.wrp","DB_equiv_2/wrap.wrp"]
+not_equivalent_wrappers = ["DB_non_comp/wrap.wrp"]
 
 # Same file checks
 for file in same_files:
@@ -61,3 +68,21 @@ for file in not_plug_compatible_files:
         print(f"Not plug compatible file fail: {file}")
 if len(found_plug_compatible_files) != len(plug_compatible_files):
     print("Plug compatible file error: Different length of lists")
+
+# Same wrappers check
+for wrapper in same_wrappers:
+    if not is_same_wrapper(G_path, f"test_data/{wrapper}"):
+        print(f"Same wrapper fail: {wrapper}")
+for wrapper in not_same_wrappers:
+    if is_same_wrapper(G_path, f"test_data/{wrapper}"):
+        print(f"Not same wrapper fail: {wrapper}")
+
+# Equivalent wrapper check
+for wrapper in equivalent_wrappers:
+    if not is_equivalent_wrapper(G_path, f"test_data/{wrapper}"):
+        print(f"Equivalent wrapper fail: {wrapper}")
+for wrapper in not_equivalent_wrappers:
+    if is_equivalent_wrapper(G_path, f"test_data/{wrapper}"):
+        print(f"Not equivalent wrapper fail: {wrapper}")
+
+print("If you didn't see any error messages, you're good!")
