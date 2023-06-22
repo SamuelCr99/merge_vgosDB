@@ -8,13 +8,12 @@ def is_equivalent(file1,file2):
 
     ds1 = nc.Dataset(file1)
     ds2 = nc.Dataset(file2)
-
-    if str(ds1.variables) != str(ds2.variables):
-        return False
     
     for var in ds1.variables:
         if var in META_VARS:
             continue
+        if var not in ds2.variables:
+            return False
         if (ds1[var][:] != ds2[var][:]).any():
             return False
 
