@@ -14,20 +14,21 @@ def extract_paths(lines):
     Returns a list of file paths to all files referenced in wrapper file
     """
     paths = []
-    prefix = ""
-    program_prefix = ""
+    default_dir = []
     for line in lines: 
-        if "Begin Program" in line:
-            program_prefix = line.strip("Begin Program ").strip('\n')
-            program_prefix += '/'
-        elif line[0] == "!" and len(line) == 2:
-            prefix = ""
-        elif 'Default_Dir' in line:
-            prefix = line.strip('Default_Dir ').strip('\n')
-            prefix += '/'
+        if line[0] == "!" or line[0] == "#" or line[0] == "/":
+            continue
+        elif line[0:5].lower() == "begin":
+            default_dir.append("")
+        elif line[0:3].lower() == "end":
+            default_dir.remove(default_dir[-1])
+        elif line[0:11].lower() == 'default_dir':
+            default_dir_tmp = line[12:-1]
+            default_dir_tmp += '/'
+            default_dir[-1] = default_dir_tmp
         elif '.nc' in line and " " not in line:
             line = line.strip("\n")
-            paths.append(program_prefix+prefix + line)
+            paths.append("/".join(filter(lambda x: x, default_dir)) + line)
     return paths
 
 def is_same_wrapper(primary_file, secondary_file):
@@ -59,8 +60,8 @@ def is_same_wrapper(primary_file, secondary_file):
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        s1 = "NVI_data/20APR01XA/20APR01XA_V005_iGSFC_kall.wrp"
-        s2 = "NVI_data/20APR01XAV2/20APR01XA_V005_iGSFC_kall.wrp"
+        s1 = "NVI_data/20APR01XA/20APR01XA_V002_iGSFC_kall.wrp"
+        s2 = "NVI_data/20APR01XAV2/20APR01XA_V002_iGSFC_kall.wrp"
         print(is_same_wrapper(s1, s2))
 
     else:
