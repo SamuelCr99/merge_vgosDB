@@ -5,24 +5,8 @@ from vgos_db_same import is_same
 import os
 
 
-def write_to_wrapper(line):
-    pass
-
-def write_history_file_to_wrapper(line):
-    pass
-
-def check_directory(line):
-    # Does the directory exist in merged vgosDB?
-    pass
-
-def check_for_history_file(line):
-    # Does the merged vgosDB contain a history file of the same name? 
-    
-    pass
-
-
-def is_wrapper_info(line):
-    return False
+# def is_wrapper_info(line):
+#     return False
 
 def is_directory(line):
     if "default_dir" in line.lower():
@@ -40,39 +24,47 @@ def is_data_file(line):
     return False
 
 def handle_wrapper_info(line):
-    write_to_wrapper(line)
+    return line
 
-def handle_directory(line):
-    if not check_directory(line):
-        # Create directory in merged vgosDB and write this to the history file
-        pass
-    write_to_wrapper(line)
+def handle_directory(line, merge_directory):
+    directory_name = line.split(' ')[-1]
+    history_lines = ''
 
-def handle_history_file(line):
-    if not check_for_history_file(line):
+    if directory_name not in os.listdir(merge_directory):
+        # Create a new directory
+        history_lines = f"Directory: {directory_name} did not exist, now created"
+    return line, history_lines
+
+def handle_history_file(line, merge_directory, secondary_directory):
+    history_file_name = line.split(' ')[-1]
+
+    if history_file_name not in os.listdir(merge_directory+'/History'):
         # Copy the secondary history file to the merged vgosDB area under new name
         # Indiciate operation in history file
         pass
-    write_history_file_to_wrapper(line)
+    # write_history_file_to_wrapper(line)
+    return "History " + line
 
+def handle_data_file(line, merge_directory, secondary_directory):
+    compatible_station = find_compatible(secondary_directory+line, merge_directory)[0]
+    compatible_station_folder = compatible_station.strip(merge_directory).strip(line)
+    folder_name = ''
 
-def handle_data_file(line):
-    if find_compatible(line):
-        # Copy vgosDB datafile to merged vgosDB
+    if not compatible_station: 
+        # Copy file to merged vgosDB  
         pass
-    elif is_same(line):
+
+    if is_same(line,compatible_station):
         # Return to top 
         pass
-    elif is_identical(line):
-        # Use name of vgosDB identical
+    elif is_identical(line, compatible_station):
         # Update history to indicate change of name
-        pass
-    elif is_equivalent(line):
-        # Use name of vgosDB-equivalent
-        # Update history file to indicate change of name
-        pass
+        return line
+    elif is_equivalent(line, compatible_station):
+        # Update history to indicate change of name
+        return line
     else:
-        if check_directory(line): # This might be wrong
+        if line in os.listdir(merge_directory+folder_name): 
             # Copy the secondary vgosDB datafile to the merged vgosDB with a unique name
             pass
         else: 
@@ -91,35 +83,40 @@ def find_wrapper_files(directory):
 
 
 
-def main(wrapper_file, merge_directory):
+def main(wrapper_file, merge_directory, secondary_directory):
     with open(wrapper_file) as file:
         lines = file.readlines()
 
+    # if wrapper_file.split('/')[-1] in os.listdir(merge_directory):
+    #     print('Same wrapper file found')
+
+    lines_to_write_wrapper = []
+    lines_to_write_history = []
 
     for line in lines: 
-        if is_wrapper_info(line):
-            print("It is a wrapper file!")
-            # handle_wrapper_info(line)
+        line = line.strip('\n')
 
-        elif is_directory(line):
-            line = line.strip('\n')
-            print(f"Directory found: {line}")
-            handle_directory(line)
+        if is_directory(line):
+            return_values = handle_directory(line, merge_directory)
+            lines_to_write_wrapper.append(return_values[0])
+            if return_values[1]:
+                lines_to_write_history.append(return_values[1])
 
         elif is_history_file(line):
-            line = line.strip('\n')
-            print(f"History found: {line}")
-            handle_history_file(line)
+            lines_to_write_wrapper.append(handle_history_file(line, merge_directory, secondary_directory))
 
-        elif is_data_file(line):
-            line = line.strip('\n')
-            print(f"Datafile found: {line}")
-            handle_history_file(line)
+        # elif is_data_file(line):
+        #     # Line here will not work, we will need the whole path! 
+        #     handle_data_file(line, merge_directory, secondary_directory)
+        # else:
+        #     lines_to_write_wrapper.append(handle_wrapper_info(line))
+    for l in lines_to_write_history:
+        print(l)
 
 if __name__ == '__main__':
-    file_location = 'NVI_data/20APR01XA/'
-    wrapper_files = find_wrapper_files(file_location)
+    secondary_directory = 'NVI_data/20APR01XA/'
+    wrapper_files = find_wrapper_files(secondary_directory)
     wrapper_files.sort(reverse=True)
     for wrapper_file in wrapper_files: 
-        main(wrapper_file, '')
+        main(wrapper_file, 'NVI_data/20APR01XA', secondary_directory)
         quit()
