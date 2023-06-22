@@ -2,6 +2,7 @@ from vgos_db_equivalent import is_equivalent
 from vgos_db_plug_compatible import find_compatible
 from vgos_db_identical import is_identical
 from vgos_db_same import is_same
+import os
 
 
 def write_to_wrapper(line):
@@ -78,8 +79,23 @@ def handle_data_file(line):
             # Copy the secondary vgosDB datafile 
             pass
 
+def find_wrapper_files(directory):
+    # if directory[-1] != '/': directory += '/'
+    wrapper_files = []
+    files = os.listdir(directory)
+    for file in files:
+        if file[-4:] == '.wrp':
+            wrapper_files.append(directory + file)
+    return wrapper_files
 
-def main(lines):
+
+
+
+def main(wrapper_file, merge_directory):
+    with open(wrapper_file) as file:
+        lines = file.readlines()
+
+
     for line in lines: 
         if is_wrapper_info(line):
             print("It is a wrapper file!")
@@ -101,6 +117,9 @@ def main(lines):
             handle_history_file(line)
 
 if __name__ == '__main__':
-    with open('NVI_data/20APR01XA/20APR01XA_V005_iGSFC_kall.wrp') as file:
-        wrapper_lines = file.readlines()
-    main(wrapper_lines)
+    file_location = 'NVI_data/20APR01XA/'
+    wrapper_files = find_wrapper_files(file_location)
+    wrapper_files.sort(reverse=True)
+    for wrapper_file in wrapper_files: 
+        main(wrapper_file, '')
+        quit()
