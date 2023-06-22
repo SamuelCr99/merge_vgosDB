@@ -1,0 +1,25 @@
+
+TIMETAG 2021/01/11 21:09:22 UTC
+MK3DB_VERSION 5
+CALC11.02 Ver. 2016.12.29  Mon Jan 11 16:09:21 2021gs61av-vlb
+Calc 11 at NASA GSFC  -OP-
+
+TIMETAG 2021/01/11 21:09:24 UTC
+Detected 2 clock breaks
+A clock break marker has been set for KATH12M  at 01 Apr, 2020; 23:52:00.0000
+A clock break marker has been set for YARRA12M at 02 Apr, 2020; 11:34:00.0000
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): Library ID: SgLib-0.7.3 (New Market (pre)) released on 23 Dec, 2020
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): Driver  ID: vgosDbCalc-0.4.3 (Clarksburg (pre)) released on 23 Dec, 2020
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): Host    ID: gs61av-vlbiprod01 (Hw: x86_64; Sw: 4.18.0-193.14.2.el8_2.x86_64 version of Linux)
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): User    ID: Oper <oper@localhost>, NVI, Inc. / NASA Goddard Space Flight Center
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): User command: "vgosDbCalc 20APR01XA"
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): Input data  : /sgpvlbi/level2/vgosDB/2020/20APR01XA/20APR01XA_V004_iGSFC_kall.wrp
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): External a priori setup: 
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): SITES    : /sgpvlbi/apriori/calc/blokq.c11.dat
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): Sources  : /sgpvlbi/apriori/calc/blokq.c11.dat
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): Ocean    : /sgpvlbi/apriori/calc/blokq.c11.dat
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): EOPs     : /sgpvlbi/apriori/calc/usno_finals.erp
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): Tilts    : /sgpvlbi/apriori/calc/tilt.dat
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): OPTL     : /sgpvlbi/apriori/calc/blokq.c11.dat
+  vgosDbCalc-0.4.3 (Clarksburg (pre)): running observations through CALC has been complete
+. putDataIntoVgosDb: the session has clock breaks, the stored data were not modified

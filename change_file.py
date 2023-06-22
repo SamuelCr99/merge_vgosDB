@@ -1,9 +1,12 @@
 import netCDF4 as nc
 
-ds = nc.Dataset('NVI_data/20APR01XA/Apriori/Antenna_V001.nc', 'a')
-ds2 = nc.Dataset('NVI_data/20APR01XAV2/Apriori/Antenna_V001.nc')
+ds = nc.Dataset('test_data/netCDF_files/Antenna_V004.nc', 'a')
 
-ds['Stub'][:] = ['A', 'n', 't', 'e','n','n','a']
-# ds['Stub'][:] = ['A', 'a', 't', 'e','n','n','a']
-ds["AntennaAxisTilt"][:] = [0, 0]
-print(ds["AntennaAxisTilt"][:] == ds2["AntennaAxisTilt"][:])
+# ds['CreateTime'][:] = ['2','0','2','3','/','0','6','/','2','2',' ','0','9',':','2','0',':','1','8',' ','U','T','C']
+
+# ds['AntennaAxisType'].CreateTime = "2023/06/22 09:20:18 UTC"
+
+# ds['AntennaAxisType'][:] = ['\\','x','9','9','\\','x','0','0','\\','x','0','3','\\','x','0','0','\\','x','0','4','\\','x','0','0','\\','x','0','3','\\','x','0','0','\\','x','0','3','\\','x','0','0']
+# ds['AntennaStationList'][:] = [['H','E','J','H','E','J','H','E'],['H','E','J','H','E','J','H','E'],['H','E','J','H','E','J','H','E'],['H','E','J','H','E','J','H','E'],['H','E','J','H','E','J','H','E']]
+
+ds['Stub'][:] = ['A','n','t','e','n','n','a']

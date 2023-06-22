@@ -1,0 +1,225 @@
+
+TIMETAG 2020/10/29 08:11:04 UTC
+MK3DB_VERSION 0
++HEADER
+CORREL   VIEN
+DATABASE 20APR01XA
+SESSNAME AUA063
+OBSTIME  2020/04/01 2020/04/02
+UTSTART  18:00
+DURATION 24
+DOY      092-093
+CORRTIME 2020/10/27
+CORRPASS 1
+EXPORT   DONE
+
++SUMMARY
+ Qcode      % of Total   % of Correlated
+                scans          scans
+
+  5-9            36%             -
+   0             15%             -
+ 4-1,A-H,N       49%             -
+ Removed           -              -
+
++CORRELATOR_NOTES
+
+mixed mode
+VGOS: Hb,Ke
+S/X: Ho,Ht,Yg
+
+zoom bands and datastream option applied in v2d file
+
+otherwise, same processing stragety than for aua060
+
++STATION_NOTES
+
+  HOBART12 (Hb/h): VGOS, phase cal tones detected (very strong > 200 for S-band)
+application of multitone pcal mode in fourfit degrades station quality
+therefore manual pcal mode used
+
+  HOBART26 (Ho/H): S/X, Lot of non-detections
+
+  HART15M (Ht/q): S/X, ok
+
+  KATH12M (Ke/a): VGOS, no pcal detection
+
+  WARK12M (Ww/u): did not observe
+
+  YARRA12M (Yg/i): S/X, one third of data missing
+
++DROP_CHANNELS
+  Hb 
+  Ho 
+  Ht 
+  Ke 
+  Ww 
+  Yg 
+
++MANUAL PCAL  Hb Ho Ke
+
++CHANNELS
+ Channels: XR1U = band|polarization|channel#|sideband
+
+XR1U/L  BBC01 8212.99 
+XR2U    BBC02 8252.99 
+XR3U    BBC03 8352.99 
+XR4U    BBC04 8512.99 
+XR5U    BBC05 8732.99 
+XR6U    BBC06 8852.99 
+XR7U    BBC07 8892.99 
+XR8U/L  BBC08 8932.99 
+SR1U    BBC09 2200.99 
+SR2U    BBC10 2216.99 
+SR3U    BBC11 2232.99 
+SR4U    BBC12 2248.99 
+SR5U    BBC13 2264.99 
+SR6U    BBC14 2280.99 
+
++CLOCKS
+
+Clocks: VIEN
+
+ Station  fmout-gps	 Used	  rate	    Comments
+            [usec]	[usec]	 [sec/sec]
+    Hb      11.361      13.2287  1.735e-13
+    Ho      11.737      13.5146  3.835e-13
+    Ht       5.008       5.0638 -1.115e-13
+    Ke       7.877       7.8483  4.982e-13
+    Yg      18.593      18.593   1.308e-12
+
+ Date: 2020/04/01 18:00:00
+
++QCODES
+
+Qcodes    0 1 2 3 4  5  6   7   8    9  A B C D E F   G H    N -  Tot
+---------------------------------------------------------------------
+qh:X     17 0 0 0 0  1  1   3  27  236  0 0 0 0 0 0   0 0   12 0  297
+qh:S     12 0 0 0 0  0  0   0   3  270  0 0 0 0 0 0   0 0   12 0  297
+qH:X    223 0 0 0 0  1  0   1   2   39  0 0 0 0 0 0   0 0   14 0  280
+qH:S    224 0 0 0 0  1  0   1   4   35  0 0 0 0 0 0   0 1   14 0  280
+qa:X     25 0 0 0 0  0  1   5  16  157  0 0 0 0 0 0  11 0  180 0  395
+qa:S     12 0 0 0 0  0  0   0   2  201  0 0 0 0 0 0   0 0  180 0  395
+qi:X      0 0 0 0 0  1  0   0   5  180  0 0 0 0 0 0   0 0  230 0  416
+qi:S      0 0 0 0 0  0  0   0   4  181  0 0 0 0 0 0   1 0  230 0  416
+hH:X     11 0 0 0 1  4  0 127  42  231  0 0 0 0 0 0  46 0   24 0  486
+hH:S      0 0 0 1 4 68 17   8  10    2  0 0 0 0 0 0 352 0   24 0  486
+ha:X      0 0 0 0 0  0  1  25  42  147  0 0 0 0 0 0  22 0  186 0  423
+ha:S      0 0 0 0 0  0  0   6  25  206  0 0 0 0 0 0   0 0  186 0  423
+hi:X      0 0 0 0 0  0  0   3  10  179  0 0 0 0 0 0   0 1  239 0  432
+hi:S      9 0 0 0 0  0  0   0   0  184  0 0 0 0 0 0   0 0  239 0  432
+Ha:X    147 0 0 0 0  1  2  16  14   32  0 0 0 0 0 0  24 0  159 0  395
+Ha:S    148 0 0 0 0  0  0   1  10   77  0 0 0 0 0 0   0 0  159 0  395
+Hi:X    181 0 0 0 0  0  0   0   0    1  0 0 0 0 0 0   0 0  206 0  388
+Hi:S    182 0 0 0 0  0  0   0   0    0  0 0 0 0 0 0   0 0  206 0  388
+ai:X      0 0 0 0 0  0  0   0   4   32  0 0 0 0 0 0   0 0  530 0  566
+ai:S      4 0 0 0 0  0  0   0   0   32  0 0 0 0 0 0   0 0  530 0  566
+---------------------------------------------------------------------
+Totals 1195 0 0 1 5 77 22 196 220 2422  0 0 0 0 0 0 456 2 3560 0 8156
+
+ Legend:
+ QC = 0   Fringes not detected.
+    = 1-9 Fringes detected, no error condition. Higher #, better quality.
+    = B   Interpolation error in fourfit.
+    = D   No data in one or more frequency channels.
+    = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+    = F   Fork problem in processing.
+    = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+    = H   Low Phase-cal amplitude in one or more channels.
+    = N   No valid correlator data.
+  Tot     Total number of scans in schedule.
+  Minus   Scans in original schedule file for which correlation was not
+          attempted, usually because of known station problems.
+
++SNR_RATIOS
+
+MEAN RATIOS = Observed SNR / Predicted SNR 
+
+ ...by baseline, over all sources:
+
+ bl     X     n       S     n
+
+ Ha    0.65  236     0.46  236
+ Hi    0.22  182     0.25  182
+ Hq    0.61  266     0.67  266
+ ai    1.47   36     0.56   36
+ hH    0.84  462     2.64  462
+ ha    1.09  237     0.89  237
+ hi    1.21  193     0.69  193
+ hq    1.02  285     1.22  285
+ qa    0.97  215     0.84  215
+ qi    1.92  186     1.78  186
+
+
++FOURFIT_CONTROL_FILE
+
+*** control file for aua063
+
+pc_mode multitone
+pc_period 1
+sb_win -2.0 2.0
+mb_win -2.0 2.0
+dr_win -30.0e-4 30.0e-4
+weak_channel 0.3
+
+
+*** Hb(h)
+if station h and f_group S
+  pc_mode manual
+  delay_offs_r abcdef 326.3 326.3 326.3 326.3 326.3 326.3 
+  delay_offs_l abcdef 297.3 297.3 297.3 297.3 297.3 297.3
+  pc_phases_r abcdef   81.7   29.5 -127.8 -144.2  -24.0  -71.9 
+  pc_phases_l abcdef   27.6  194.9  267.8  113.1  150.0  309.7 
+
+if station h and f_group X
+  pc_mode manual
+  delay_offs_r ghijklmn -5.9 -5.9 -5.9 -5.9 -5.9 -5.9 -5.9 -5.9
+  delay_offs_l ghijklmn 5.5 5.5 5.5 5.5 5.5 5.5 5.5 5.5
+  pc_phases_r ghijklmn  171.0  130.3  101.0 -308.5  -70.0 -122.5 -148.4 -169.2  
+  pc_phases_l ghijklmn  -10.6   98.5  106.3  322.0  278.7  347.0   47.0   34.0 
+
+
+
+*** Ho(H)
+if station H and f_group S
+  pc_mode manual
+  pc_phases abcdef   11.3  -83.3 -136.2 -188.6 -269.2 -237.1 
+
+if station H and f_group X
+  pc_mode manual
+  pc_phases ghijklmn -128.3  151.7  332.5   18.0   92.4  354.7   61.4  129.2 
+
+
+*** Ht(q)
+if station q and f_group S
+  pc_phases abcdef   11.6 -132.2 -263.9  -33.2 -187.4 -344.3  
+
+if station q and f_group X
+  pc_phases ghijklmn  126.1 -148.2 -107.5  -88.8 -148.6 -248.0 -167.5  -75.9 
+
+
+*** Ke(a)
+if station a and f_group S
+  pc_mode manual
+  delay_offs_r abcdef  1116.8 1116.8 1116.8 1116.8 1116.8 1116.8
+  delay_offs_l abcdef 1144.6 1144.6 1144.6 1144.6 1144.6 1144.6
+  pc_phases_r abcdef  -52.2 -225.3 -304.5  -40.3  -98.3 -173.1 
+  pc_phases_l abcdef   78.0   67.1  256.4  248.2  345.5   48.7 
+
+if station a and f_group X
+  pc_mode manual
+  delay_offs_r ghijklmn 1.4 1.4 1.4 1.4 1.4 1.4 1.4 1.4
+  delay_offs_l ghijklmn 9.1 9.1 9.1 9.1 9.1 9.1 9.1 9.1
+  pc_phases_r ghijklmn  156.3  245.2  123.6  121.2  208.5  103.7  190.7  270.5 
+  pc_phases_l ghijklmn  -55.5  126.4  218.3  205.0   24.8  209.4   22.8  183.4 
+
+
+*** Yg(i) 
+if station i and f_group S
+if station i and f_group X
+
+
+Best Regards,
+Jakob Gruber
+
++END
