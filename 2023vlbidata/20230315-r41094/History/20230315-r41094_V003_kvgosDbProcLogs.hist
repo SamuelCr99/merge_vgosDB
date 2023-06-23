@@ -1,0 +1,406 @@
+
+TIMETAG 2023/03/29 23:37:15 UTC
+MK3DB_VERSION 3
+. vgosDbProcLogs: Library ID: SgLib-0.8.1 (Skyland) released on 05 Jan, 2023
+. vgosDbProcLogs: Driver  ID: vgosDbProcLogs-0.7.1 (Wildcat Ridge) released on 05 Jan, 2023
+. vgosDbProcLogs: Host    ID: gs61av-vlbiprd01 (Hw: x86_64; Sw: 5.4.0-125-generic version of Linux)
+. vgosDbProcLogs: User    ID: Oper <oper@localhost>, NVI, Inc. / NASA Goddard Space Flight Center
+. vgosDbProcLogs: User command: "/sgpvlbi/progs/nusolve/bin/vgosDbProcLogs /sgpvlbi/level2/vgosDB/2023/20230315-r41094/20230315-r41094_V002_iGSFC_kall.wrp"
+. vgosDbProcLogs: Input data  : /sgpvlbi/level2/vgosDB/2023/20230315-r41094/20230315-r41094_V002_iGSFC_kall.wrp
+. vgosDbProcLogs: the session r41094 (20230315-r41094) has been imported from vgosDb data set
+w readFile: got a duplicate record " Ca CAMBRIDG --------- ---- Cambridge, UK (VLBA)" for the station name "CAMBRIDG" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+w readFile: got a duplicate record " Cb CAMBRIDG --------- ---- Cambridge, UK (Ryle)" for the station name "CAMBRIDG" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+w readFile: got a duplicate record " Ef EFLSBERG 14209S001 7203 Effelsberg, Germany (originally Mk4, now common EVN usage)" for the station name "EFLSBERG" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+w readFile: got a duplicate record " Jv JODRELL2 --------- ---- VLBA, Jodrell Bank, UK" for the station name "JODRELL2" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+. importDataFromLogFiles: checking [/sgpvlbi/sessions/2023/r41094/] directory for station log files
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41094/r41094ht.log, a log file for HART15M station
+w readLogFile: station HART15M: the station name from "location" ("Hart15M") is different
+w readLogFile: station HART15M: cannot determine proper cable sign from cable_diff_is pattern; input: "2023.075.05:31:51.42;"Cable difference is: na"
+w readLogFile: station HART15M: no proc record has been found in the log file
+. readLogFile: station HART15M: collected operator's comments: 
+. readLogFile: station HART15M: 2023/03/16 05:28:17: Session r41094 auto-start message for Hart15M.
+. readLogFile: station HART15M: 2023/03/16 05:28:17: ;"----------------------------------------------
+. readLogFile: station HART15M: 2023/03/16 05:28:17: Started recording with source: 2318+049 at 075.05:28:16 UT
+. readLogFile: station HART15M: 2023/03/16 05:31:51: Session r41094 ready message for Hart15M.
+. readLogFile: station HART15M: 2023/03/16 05:31:51: ;"-----------------------------------------
+. readLogFile: station HART15M: 2023/03/16 05:31:51: Comments:
+. readLogFile: station HART15M: 2023/03/16 05:31:51: Hart15M is starting R4094 late due to an operator error.
+. readLogFile: station HART15M: 2023/03/16 05:31:51: First source: 2318+049 at 05:28:16  UT
+. readLogFile: station HART15M: 2023/03/16 05:31:51: FMOUT-GPS: 6.5900 microseconds
+. readLogFile: station HART15M: 2023/03/16 05:31:51: Wx:  Temperature (C): 14.5  Pressure (mBar): 865.6  Humidity (%): 86.7
+. readLogFile: station HART15M: 2023/03/16 05:31:51: Sky Conditions: 5-10% cloud
+. readLogFile: station HART15M: 2023/03/16 05:31:51: Cable difference is: na
+. readLogFile: station HART15M: 2023/03/16 05:31:51: Pointing values: na
+. readLogFile: station HART15M: 2023/03/16 05:31:51: Tsys (x1/s/x2): 44.9/67.3/67.9
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Session r41094 stop message for Hart15M.
+. readLogFile: station HART15M: 2023/03/16 19:08:57: ;"----------------------------------------
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Comments:
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Hart15M has completed R41094.
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Due to an operator error, we started very late, but thereafter all scan were recorded successfully.
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Weather was mostly clear in the middle when we started and clear at the end.
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Data will be e-shipped to Washington.
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Problem scans:
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Source   Scan start   Explanation of problem
+. readLogFile: station HART15M: 2023/03/16 19:08:57: 0131-522 075-0522b    Missed until after this scan
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Disk Inventory: A 0, B 2, C 0, D 1, E 1, F 0, G 5, H 0, (other larger) 3
+. readLogFile: station HART15M: 2023/03/16 19:08:57: Observation finished at: 18:28:21 UT
+. readLogFile: station HART15M: 17473 strings of the log file (1M) were read (2435 strings were skipped)
+. readLogFile: station HART15M: collected 220 on_source, 0 cable_cal and 220 meteo records
+. verifyReadings: station HART15M: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station HART15M: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station HART15M: cannot find any usable cable calibrations
+. propagateData: station HART15M: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41094/r41094hb.log, a log file for HOBART12 station
+w extractEpoch: looks like not NEWEST FS format, string: "Recorded  to flexbuf-2hb using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+w extractEpoch: looks like not NEW FS format, string: "Recorded  to flexbuf-2hb using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+w extractEpoch: looks like not OLD FS format, string: "Recorded  to flexbuf-2hb using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+E extractEpoch: failed to parse, string: "Recorded  to flexbuf-2hb using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+E extractEpoch: failed to parse, string: "Recorded  to flexbuf-2hb using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+E extractEpoch: failed to parse, string: "Recorded  to flexbuf-2hb using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+w extractEpoch: looks like not NEWEST FS format, string: "Known problems:"
+w extractEpoch: looks like not NEW FS format, string: "Known problems:"
+w extractEpoch: looks like not OLD FS format, string: "Known problems:"
+E extractEpoch: failed to parse, string: "Known problems:"
+E extractEpoch: failed to parse, string: "Known problems:"
+E extractEpoch: failed to parse, string: "Known problems:"
+w extractEpoch: looks like not NEWEST FS format, string: "yes, antenna drivee issues at 2145 UT"
+w extractEpoch: looks like not NEW FS format, string: "yes, antenna drivee issues at 2145 UT"
+w extractEpoch: looks like not OLD FS format, string: "yes, antenna drivee issues at 2145 UT"
+E extractEpoch: failed to parse, string: "yes, antenna drivee issues at 2145 UT"
+E extractEpoch: failed to parse, string: "yes, antenna drivee issues at 2145 UT"
+E extractEpoch: failed to parse, string: "yes, antenna drivee issues at 2145 UT"
+w extractEpoch: looks like not NEWEST FS format, string: "Missed Scans:"
+w extractEpoch: looks like not NEW FS format, string: "Missed Scans:"
+w extractEpoch: looks like not OLD FS format, string: "Missed Scans:"
+E extractEpoch: failed to parse, string: "Missed Scans:"
+E extractEpoch: failed to parse, string: "Missed Scans:"
+E extractEpoch: failed to parse, string: "Missed Scans:"
+w extractEpoch: looks like not NEWEST FS format, string: "might be some missed scan around 2145 UT. Nothing mentioned in the handover notes"
+w extractEpoch: looks like not NEW FS format, string: "might be some missed scan around 2145 UT. Nothing mentioned in the handover notes"
+w extractEpoch: looks like not OLD FS format, string: "might be some missed scan around 2145 UT. Nothing mentioned in the handover notes"
+E extractEpoch: failed to parse, string: "might be some missed scan around 2145 UT. Nothing mentioned in the handover notes"
+E extractEpoch: failed to parse, string: "might be some missed scan around 2145 UT. Nothing mentioned in the handover notes"
+E extractEpoch: failed to parse, string: "might be some missed scan around 2145 UT. Nothing mentioned in the handover notes"
+w extractEpoch: looks like not NEWEST FS format, string: "Observers:"
+w extractEpoch: looks like not NEW FS format, string: "Observers:"
+w extractEpoch: looks like not OLD FS format, string: "Observers:"
+E extractEpoch: failed to parse, string: "Observers:"
+E extractEpoch: failed to parse, string: "Observers:"
+E extractEpoch: failed to parse, string: "Observers:"
+w extractEpoch: looks like not NEWEST FS format, string: "Prad, Jamie, Lim, Jay"
+w extractEpoch: looks like not NEW FS format, string: "Prad, Jamie, Lim, Jay"
+w extractEpoch: looks like not OLD FS format, string: "Prad, Jamie, Lim, Jay"
+E extractEpoch: failed to parse, string: "Prad, Jamie, Lim, Jay"
+E extractEpoch: failed to parse, string: "Prad, Jamie, Lim, Jay"
+E extractEpoch: failed to parse, string: "Prad, Jamie, Lim, Jay"
+w extractEpoch: looks like not NEWEST FS format, string: "Regards,"
+w extractEpoch: looks like not NEW FS format, string: "Regards,"
+w extractEpoch: looks like not OLD FS format, string: "Regards,"
+E extractEpoch: failed to parse, string: "Regards,"
+E extractEpoch: failed to parse, string: "Regards,"
+E extractEpoch: failed to parse, string: "Regards,"
+w extractEpoch: looks like not NEWEST FS format, string: "Jay"
+w extractEpoch: looks like not NEW FS format, string: "Jay"
+w extractEpoch: looks like not OLD FS format, string: "Jay"
+E extractEpoch: failed to parse, string: "Jay"
+E extractEpoch: failed to parse, string: "Jay"
+E extractEpoch: failed to parse, string: "Jay"
+w extractEpoch: looks like not NEWEST FS format, string: "Comments from the log:"
+w extractEpoch: looks like not NEW FS format, string: "Comments from the log:"
+w extractEpoch: looks like not OLD FS format, string: "Comments from the log:"
+E extractEpoch: failed to parse, string: "Comments from the log:"
+E extractEpoch: failed to parse, string: "Comments from the log:"
+E extractEpoch: failed to parse, string: "Comments from the log:"
+w readLogFile: station HOBART12: no proc record has been found in the log file
+. readLogFile: station HOBART12: 300651 strings of the log file (24M) were read (5622 strings were skipped)
+. readLogFile: station HOBART12: collected 403 on_source, 0 cable_cal and 403 meteo records
+. verifyReadings: station HOBART12: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station HOBART12: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station HOBART12: cannot find any usable cable calibrations
+. propagateData: station HOBART12: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41094/r41094ke.log, a log file for KATH12M station
+w readLogFile: station KATH12M: got unexpected `on source' record; string: "2023.074.18:29:50.00:preob"
+w readLogFile: station KATH12M: got unexpected `on source' record; string: "2023.074.18:29:50.00&preob/onsource"
+w readLogFile: station KATH12M: got unexpected `on source' record; string: "2023.075.17:19:25.00:preob"
+. readLogFile: station KATH12M: proc has changed: "aum079" => "aum069ke"; input: "2023.075.18:33:13.00;proc=aum069ke"
+w extractEpoch: looks like not NEWEST FS format, string: "Recorded 3.13T to flexbuffke using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+w extractEpoch: looks like not NEW FS format, string: "Recorded 3.13T to flexbuffke using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+w extractEpoch: looks like not OLD FS format, string: "Recorded 3.13T to flexbuffke using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+E extractEpoch: failed to parse, string: "Recorded 3.13T to flexbuffke using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+E extractEpoch: failed to parse, string: "Recorded 3.13T to flexbuffke using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+E extractEpoch: failed to parse, string: "Recorded 3.13T to flexbuffke using the DBBC3. The data will be archived in Hobart for e-transfer to  WASH. "
+w extractEpoch: looks like not NEWEST FS format, string: "Known problems:"
+w extractEpoch: looks like not NEW FS format, string: "Known problems:"
+w extractEpoch: looks like not OLD FS format, string: "Known problems:"
+E extractEpoch: failed to parse, string: "Known problems:"
+E extractEpoch: failed to parse, string: "Known problems:"
+E extractEpoch: failed to parse, string: "Known problems:"
+w extractEpoch: looks like not NEWEST FS format, string: "no"
+w extractEpoch: looks like not NEW FS format, string: "no"
+w extractEpoch: looks like not OLD FS format, string: "no"
+E extractEpoch: failed to parse, string: "no"
+E extractEpoch: failed to parse, string: "no"
+E extractEpoch: failed to parse, string: "no"
+w extractEpoch: looks like not NEWEST FS format, string: "Missed Scans:"
+w extractEpoch: looks like not NEW FS format, string: "Missed Scans:"
+w extractEpoch: looks like not OLD FS format, string: "Missed Scans:"
+E extractEpoch: failed to parse, string: "Missed Scans:"
+E extractEpoch: failed to parse, string: "Missed Scans:"
+E extractEpoch: failed to parse, string: "Missed Scans:"
+w extractEpoch: looks like not NEWEST FS format, string: "no"
+w extractEpoch: looks like not NEW FS format, string: "no"
+w extractEpoch: looks like not OLD FS format, string: "no"
+E extractEpoch: failed to parse, string: "no"
+E extractEpoch: failed to parse, string: "no"
+E extractEpoch: failed to parse, string: "no"
+w extractEpoch: looks like not NEWEST FS format, string: "Observers:"
+w extractEpoch: looks like not NEW FS format, string: "Observers:"
+w extractEpoch: looks like not OLD FS format, string: "Observers:"
+E extractEpoch: failed to parse, string: "Observers:"
+E extractEpoch: failed to parse, string: "Observers:"
+E extractEpoch: failed to parse, string: "Observers:"
+w extractEpoch: looks like not NEWEST FS format, string: "Jamie, Prad, Lim, Jay"
+w extractEpoch: looks like not NEW FS format, string: "Jamie, Prad, Lim, Jay"
+w extractEpoch: looks like not OLD FS format, string: "Jamie, Prad, Lim, Jay"
+E extractEpoch: failed to parse, string: "Jamie, Prad, Lim, Jay"
+E extractEpoch: failed to parse, string: "Jamie, Prad, Lim, Jay"
+E extractEpoch: failed to parse, string: "Jamie, Prad, Lim, Jay"
+w extractEpoch: looks like not NEWEST FS format, string: "Regards,"
+w extractEpoch: looks like not NEW FS format, string: "Regards,"
+w extractEpoch: looks like not OLD FS format, string: "Regards,"
+E extractEpoch: failed to parse, string: "Regards,"
+E extractEpoch: failed to parse, string: "Regards,"
+E extractEpoch: failed to parse, string: "Regards,"
+w extractEpoch: looks like not NEWEST FS format, string: "Jay"
+w extractEpoch: looks like not NEW FS format, string: "Jay"
+w extractEpoch: looks like not OLD FS format, string: "Jay"
+E extractEpoch: failed to parse, string: "Jay"
+E extractEpoch: failed to parse, string: "Jay"
+E extractEpoch: failed to parse, string: "Jay"
+w extractEpoch: looks like not NEWEST FS format, string: "Comments from the log:"
+w extractEpoch: looks like not NEW FS format, string: "Comments from the log:"
+w extractEpoch: looks like not OLD FS format, string: "Comments from the log:"
+E extractEpoch: failed to parse, string: "Comments from the log:"
+E extractEpoch: failed to parse, string: "Comments from the log:"
+E extractEpoch: failed to parse, string: "Comments from the log:"
+. readLogFile: station KATH12M: 2040949 strings of the log file (180M) were read (4283 strings were skipped)
+. readLogFile: station KATH12M: collected 383 on_source, 0 cable_cal and 382 meteo records
+. verifyReadings: station KATH12M: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station KATH12M: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station KATH12M: cannot find any usable cable calibrations
+. propagateData: station KATH12M: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41094/r41094kk.log, a log file for KOKEE station
+w readLogFile: station KOKEE: got unexpected data_valid=off record; string: "2023.075.00:44:07.50;halt"
+w readLogFile: station KOKEE: the scan name "075-0045b" will be replaced with "075-0107a", looks like discontinuity in the log file
+w readLogFile: station KOKEE: string: "2023.075.00:59:27.09:scan_name=075-0107a,r41094,kk,60,60"
+w readLogFile: station KOKEE: the source name "0202+319" will be replaced with "0308-611", looks like discontinuity in the log file
+w readLogFile: station KOKEE: no proc record has been found in the log file
+. readLogFile: station KOKEE: collected operator's comments: 
+. readLogFile: station KOKEE: 2023/03/15 17:31:43: setting up diskpacks before intensive
+. readLogFile: station KOKEE: 2023/03/15 17:32:05: kokee park geophysical observatory, r41094, March 2023, operator-imai.
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: Session r41094 ready message for Kokee Park 20m.
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: ;"------------------------------------------------
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: Comments:
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: pointing checks done prior to experiment i23074
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: First source: 3c371 at 074/1935:17  UT
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: FMOUT-GPS: +6.76 microseconds
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: Wx:  Temperature (C): 16.6  Pressure (mBar): 887.9  Humidity (%): 100
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: Sky Conditions: weather overcast foggy raining
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: Cable difference is: longer cable makes the reading smaller by
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: 52.2 microseconds and is nominal
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: Pointing values:
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: SEFD  X/S       Source          Az/El      Offset1  Offset2
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: 3233/844     casa            34/28      0.001    0.005
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: 2318/828     cygnusa         38/65      -0.013   0.013
+. readLogFile: station KOKEE: 2023/03/15 19:31:05: Tsys (x1/s/x2): 98/43/49
+. readLogFile: station KOKEE: 2023/03/15 19:35:21: Session r41094 auto-start message for Kokee Park 20m.
+. readLogFile: station KOKEE: 2023/03/15 19:35:21: ;"-----------------------------------------------------
+. readLogFile: station KOKEE: 2023/03/15 19:35:21: Started recording with source: 3c371 at 074.19:35:17 UT
+. readLogFile: station KOKEE: 2023/03/15 19:59:34: weather-overcast and fog
+. readLogFile: station KOKEE: 2023/03/15 20:58:07: weather-overcast and fog
+. readLogFile: station KOKEE: 2023/03/15 21:58:17: weather-overcast
+. readLogFile: station KOKEE: 2023/03/15 22:58:05: weather-overcast
+. readLogFile: station KOKEE: 2023/03/16 01:58:32: weather-overcast, foggy
+. readLogFile: station KOKEE: 2023/03/16 02:57:45: weather-overcast
+. readLogFile: station KOKEE: 2023/03/16 03:58:28: weather-overcast
+. readLogFile: station KOKEE: 2023/03/16 04:58:29: weather-overcast, raining
+. readLogFile: station KOKEE: 2023/03/16 05:58:30: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 06:58:22: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 07:58:30: weather-no stars visible, light drizzle
+. readLogFile: station KOKEE: 2023/03/16 08:59:10: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 09:57:53: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 10:58:01: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 11:58:30: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 12:58:39: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 13:58:15: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 14:59:14: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 15:58:58: weather-no stars visible
+. readLogFile: station KOKEE: 2023/03/16 16:55:34: weather-overcast
+. readLogFile: station KOKEE: 2023/03/16 17:57:60: weather-overcast
+. readLogFile: station KOKEE: 38273 strings of the log file (2M) were read (1065 strings were skipped)
+. readLogFile: station KOKEE: collected 335 on_source, 671 cable_cal and 337 meteo records
+. verifyReadings: station KOKEE: insufficient number (0) of tsys readings; skipped
+. verifyReadings: station KOKEE: cannot find any usable cablelong measurements
+. propagateData: station KOKEE: 330 exact (330 are multiple) matches of cable calibrations were found
+. propagateData: station KOKEE: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41094/r41094ns.log, a log file for NYALE13S station
+w readLogFile: station NYALE13S: cannot determine proper cable sign from cable_diff_is pattern; input: "2023.074.17:49:58.80;"Cable difference is: na"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.18:52:18.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.18:52:18.00&preob/onsource"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.19:36:46.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.19:50:48.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.20:10:15.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.20:26:32.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.20:43:15.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.20:55:18.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.21:37:31.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.21:51:53.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.22:16:52.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.22:39:11.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.22:59:25.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.23:18:45.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.074.23:43:20.01:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.00:45:43.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.01:13:43.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.01:50:29.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.02:26:41.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.02:53:49.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.03:53:25.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.04:48:31.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.04:59:44.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.05:17:57.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.05:38:04.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.06:29:24.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.07:19:07.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.09:00:32.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.10:21:56.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.10:50:28.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.11:29:37.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.11:59:14.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.12:34:25.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.12:54:44.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.13:10:41.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.13:36:02.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.14:09:13.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.14:31:54.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.14:50:24.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.15:17:32.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.15:28:54.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.15:49:57.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.16:13:39.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.16:22:25.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.16:57:26.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.17:20:12.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.17:46:17.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.18:10:11.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.075.18:19:03.00:preob"
+. readLogFile: station NYALE13S: collected operator's comments: 
+. readLogFile: station NYALE13S: 2023/03/15 17:49:59: Session r41094 ready message for Ny-Alesund 13m NS.
+. readLogFile: station NYALE13S: 2023/03/15 17:49:59: ;"---------------------------------------------------
+. readLogFile: station NYALE13S: 2023/03/15 17:49:59: First source: 0J287 at 18:52:28  UT
+. readLogFile: station NYALE13S: 2023/03/15 17:49:59: FMOUT-GPS: 12.562 microseconds
+. readLogFile: station NYALE13S: 2023/03/15 17:49:59: Wx:  Temperature (C): -19.5  Pressure (mBar): 1011.6  Humidity (%): 50.9
+. readLogFile: station NYALE13S: 2023/03/15 17:49:59: Sky Conditions: Clear sky
+. readLogFile: station NYALE13S: 2023/03/15 17:49:59: Cable difference is: na
+. readLogFile: station NYALE13S: 2023/03/15 17:49:59: Pointing values: na
+. readLogFile: station NYALE13S: 2023/03/15 17:49:59: Tsys values: na
+. readLogFile: station NYALE13S: 2023/03/15 18:52:28: Session r41094 auto-start message for Ny-Alesund 13m NS.
+. readLogFile: station NYALE13S: 2023/03/15 18:52:28: ;"--------------------------------------------------------
+. readLogFile: station NYALE13S: 2023/03/15 18:52:28: Started recording with source: oj287 at 074.18:52:28 UT
+. readLogFile: station NYALE13S: 10682 strings of the log file (765K) were read (62 strings were skipped)
+. readLogFile: station NYALE13S: collected 56 on_source, 0 cable_cal and 168 meteo records
+. verifyReadings: station NYALE13S: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station NYALE13S: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station NYALE13S: cannot find any usable cable calibrations
+w propagateData: station NYALE13S: cannot find the scan "074-1852" in the log file
+. propagateData: station NYALE13S: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41094/r41094ny.log, a log file for NYALES20 station
+w readLogFile: station NYALES20: the station name from "location" ("NyAlesun") is different
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.074.18:08:34.15#flagr#flagr/antenna,acquired"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.074.18:12:46.17#flagr#flagr/antenna,acquired"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.074.18:32:29.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.074.18:32:29.00&preob/onsource"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.074.18:52:18.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.074.19:35:07.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.074.23:38:45.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.00:01:39.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.00:14:58.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.00:43:28.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.01:34:02.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.02:10:21.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.02:40:18.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.04:16:38.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.04:41:55.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.04:59:44.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.08:51:21.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.09:19:29.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.09:38:04.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.09:49:40.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.10:07:00.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.11:15:29.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.13:45:24.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.14:09:13.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.14:25:57.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.15:10:11.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.15:49:57.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.075.16:51:29.00:preob"
+. readLogFile: station NYALES20: collected operator's comments: 
+. readLogFile: station NYALES20: 2023/03/15 18:10:30: Ny-Alesund 20m antenna
+. readLogFile: station NYALES20: 2023/03/15 18:10:37: Zenith tsys follows:
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: Session r41094 ready message for Ny-Alesund.
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: ;"--------------------------------------------
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: First source: 0529+483 at 18:32:39  UT
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: GPS-FMOUT: 93.495 microseconds
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: Wx:  Temperature (C): -19.2  Pressure (mBar): 1006.3  Humidity (%): 54.7
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: Sky Conditions: Clear sky
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: Cable difference is: longer cable makes the reading larger by
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: 665.8 microseconds and is nominal
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: Pointing values:
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: SEFD  X/S       Source          Az/El      Offset1  Offset2
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: 935/1843    cygnusa        336/30      0.0181   0.1599
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: 956/1672    casa           299/54      0.016    0.1624
+. readLogFile: station NYALES20: 2023/03/15 18:11:31: Tsys (x1/s/x2): 49/22/59
+. readLogFile: station NYALES20: 2023/03/15 18:32:43: Session r41094 auto-start message for Ny-Alesund.
+. readLogFile: station NYALES20: 2023/03/15 18:32:43: ;"-------------------------------------------------
+. readLogFile: station NYALES20: 2023/03/15 18:32:43: Started recording with source: 0529+483 at 074.18:32:39 UT
+. readLogFile: station NYALES20: 56686 strings of the log file (3M) were read (1165 strings were skipped)
+. readLogFile: station NYALES20: collected 285 on_source, 285 cable_cal and 2876 meteo records
+. verifyReadings: station NYALES20: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station NYALES20: cannot determine the cable sign from cablelong measurements
+. propagateData: station NYALES20: 155 exact matches of cable calibrations were found
+. propagateData: station NYALES20: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41094/r41094ww.log, a log file for WARK12M station
+w readLogFile: station WARK12M: the station name from "location" ("WARKWRTH") is different
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.074.19:08:56.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.074.21:37:09.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.074.23:46:24.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.075.00:23:12.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.075.04:26:59.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.075.08:42:07.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.075.11:07:19.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.075.11:36:14.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.075.17:39:39.00:preob"
+w readLogFile: station WARK12M: no proc record has been found in the log file
+. readLogFile: station WARK12M: 27212 strings of the log file (1M) were read (7609 strings were skipped)
+. readLogFile: station WARK12M: collected 397 on_source, 0 cable_cal and 1189 meteo records
+. verifyReadings: station WARK12M: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station WARK12M: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station WARK12M: cannot find any usable cable calibrations
+. propagateData: station WARK12M: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41094/r41094wz.log, a log file for WETTZELL station
+w readLogFile: station WETTZELL: got unexpected `on source' record; string: "2023.075.00:38:58.88#flagr#flagr/antenna,acquired"
+w readLogFile: station WETTZELL: got unexpected `on source' record; string: "2023.075.00:45:43.00:preob"
+w readLogFile: station WETTZELL: got unexpected `on source' record; string: "2023.075.00:45:43.00&preob/onsource"
+w readLogFile: station WETTZELL: no proc record has been found in the log file
+. readLogFile: station WETTZELL: collected operator's comments: 
+. readLogFile: station WETTZELL: 2023/03/16 15:07:42: Interruption due to work in elevation cabine form 15:00 UT
+. readLogFile: station WETTZELL: 2023/03/16 15:18:48: continue Session after work in elevation cabin at 15:18 UTC
+. readLogFile: station WETTZELL: 70727 strings of the log file (4M) were read (11849 strings were skipped)
+. readLogFile: station WETTZELL: collected 424 on_source, 423 cable_cal and 423 meteo records
+. verifyReadings: station WETTZELL: insufficient number (0) of tsys readings; skipped
+. verifyReadings: station WETTZELL: cannot find any usable cablelong measurements
+w verifyReadings: station WETTZELL: cannot determine the cable calibration sign
+. verifyReadings: station WETTZELL: the cable sign was set to "+" according to the list of default cable signs
+. propagateData: station WETTZELL: 338 exact matches of cable calibrations were found
+. propagateData: station WETTZELL: meteo parameters were found
+. vgosDbProcLogs: import of data from station log files has been complete
