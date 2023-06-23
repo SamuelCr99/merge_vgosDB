@@ -27,9 +27,9 @@ Script for adding merged folder to data center (Do later)
 
 
 
-#######################
-    Testing
-#######################
+################################
+    Testing - coroutines
+################################
 
 Files needed:
     A: Original netCDF-file (Antenna.nc)
@@ -68,3 +68,34 @@ Tests to be done:
     Wrapper same:
         1. Check if G is same as G
         2. Check if G is not same as H-J
+
+
+################################
+    Testing - full algorithm    
+################################
+
+Want to test:
+    1. Check wrapper with same name (CASE 1): 
+        a. If wrappers are equivalent, nothing should be changed. 
+        b. If they are not equivalent this is an error. Show this to the user through a warning message. 
+    2. If there are no wrappers with the same name (CASE 2): 
+        a. 
+
+    
+    1. Check that wrappers with same which are equivalent do not copy over a new 
+       wrapper file. 
+    
+    2. Check that wrapper with same which is not equivalent throws a warning message. 
+
+    3. Check that lines of directory are written to new wrapper correct
+
+    4. Check that lines of history files are written to new wrapper correct 
+
+    5. Check that lines of data files are written to new wrapper correct
+        i. files root folder
+        ii. files in sub directories
+        iii. with and without having started a section
+
+    6. Check that other lines are written to new wrapper correct 
+
+    
