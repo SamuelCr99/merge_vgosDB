@@ -134,3 +134,18 @@ Test 4 23/6 14:46, Case 3:
     needed to be created.
 
     Result: History file was created with wrong name, bug fixed.
+
+Test 5 23/6 15:08, Case 4: 
+    Expected result: As there is no history file in merge directory the file 
+    should be copied to the new directory. 
+
+    Result: History file name problems were encountered.
+
+Test 6 23/6 15:13, Case 4:
+    Expected result: As there is a history file that is the same, nothing should
+    happen.
+
+    Result: As expected.
+
+Test 7 23/6 15:24, Case 5:
+    Expected result: 

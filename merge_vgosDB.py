@@ -10,6 +10,19 @@ import sys
 import warnings
 from Directory import Directory
 
+def find_history_file_name(old_file_name, merge_directory):
+    history_file_names = "\t".join(os.listdir(f'{merge_directory}History'))
+    old_file_name_prefix = old_file_name.split('_')[0]
+    flags = old_file_name.strip(".hist").split("_")[1:]
+    flags_reduced = []
+    for flag in flags:
+        if flag[0].lower() != "v":
+            flags_reduced.append(flag)
+    v=0
+    while f"_V{get_version_num(v)}" in history_file_names:
+        v+=1
+    return f"{old_file_name_prefix}_V{get_version_num(v)}_{'_'.join(flags_reduced)}.hist"
+
 def get_version_num(v):
     if v<10:
         return f"00{v}"
@@ -53,10 +66,7 @@ def handle_history_file(line, merge_directory, secondary_directory):
     
     else:
         if not is_identical_history_file(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{history_file_name}'):
-            v = 1
-            while f"{history_file_name[:-5]}_v{get_version_num(v)}.hist" in os.listdir(merge_directory+'/History'):
-                v+=1
-            new_file_name = history_file_name.split('.')[0] + f"_v{get_version_num(v)}.hist"
+            new_file_name = find_history_file_name(history_file_name,merge_directory)
             shutil.copyfile(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{new_file_name}') #Copies file
             line = line.strip(history_file_name) + new_file_name
 
@@ -178,13 +188,11 @@ def create_new_wrapper(wrapper_file, merge_directory, secondary_directory):
         if 'History' not in os.listdir(merge_directory):
             print(f'{merge_directory}History')
             os.mkdir(f'{merge_directory}History')
-        history_files = os.listdir(merge_directory+'History')
-        v = 0
-        for history_file in history_files:
-            ver = int(history_file.split("_")[1][1:])
-            if v<ver: v=ver
-        v += 1
-        merge_history_file_name = f"{merge_directory.split('/')[-2]}_V{get_version_num(v)}_kvgos_DBmerge.hist" 
+        history_file_names = "\t".join(os.listdir(f'{merge_directory}History'))
+        v=0
+        while f"_V{get_version_num(v)}" in history_file_names:
+            v+=1
+        merge_history_file_name = f"{merge_directory.split('/')[-2]}_V{get_version_num(v)}_kvgosDBmerge.hist" 
 
         with open(f"{merge_directory}History/{merge_history_file_name}", 'x') as f: 
             f.writelines("\n".join(lines_to_write_history))
