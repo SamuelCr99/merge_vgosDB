@@ -58,7 +58,7 @@ for file in not_equivalent_files:
 found_plug_compatible_files_raw = find_compatible(A_path,path[0:-1])
 found_plug_compatible_files = []
 for file in found_plug_compatible_files_raw:
-    found_plug_compatible_files.append(file.split("\\")[-1][0:-3])
+    found_plug_compatible_files.append(file.split("/")[-1][0:-3])
 
 for file in plug_compatible_files:
     if file not in found_plug_compatible_files:

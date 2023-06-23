@@ -28,7 +28,6 @@ def extract_paths(lines):
             dir.go_in(line[12:-1])
         elif '.nc' in line and " " not in line:
             paths.append(dir.get_path_with_slash() + line.strip("\n"))
-            print(dir.get_path_with_slash() + line.strip("\n"))
     return paths
 
 def is_same_wrapper(primary_file, secondary_file):
