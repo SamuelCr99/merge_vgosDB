@@ -69,7 +69,7 @@ def handle_data_file(line, merge_directory, secondary_directory):
     # CHECK THAT COMPATIBLE LINE ONLY IS FILE NAME, NO FOLDER!
     if not compatible_lines: 
         shutil.copyfile(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}') #Copies file
-        history_line = f'{secondary_directory}{file_name} did not exist, now reacted' 
+        history_line = f'No compatible files found for: {secondary_directory}{file_name}, creating new file' 
         return line, history_line
 
 
@@ -81,13 +81,13 @@ def handle_data_file(line, merge_directory, secondary_directory):
     for compatible_line in compatible_lines:
         if is_identical(file_path, compatible_line):
             history_line = f'{secondary_directory+file_name} has been changed to {secondary_directory+compatible_line}'
-            return compatible_line, history_line
+            return compatible_line.split("/")[-1], history_line
 
     
     for compatible_line in compatible_lines:
         if is_equivalent(file_path, compatible_line):
             history_line = f'{secondary_directory+file_name} has been changed to {secondary_directory+compatible_line}'
-            return compatible_line, history_line
+            return compatible_line.split("/")[-1], history_line
 
 
     if file_name in os.listdir(merge_directory):
@@ -122,7 +122,7 @@ def main(wrapper_file, merge_directory, secondary_directory):
     with open(wrapper_file) as file:
         wrapper_lines = file.readlines()
 
-    ## This is for case 1
+    # # This is for case 1
     # wrapper_file_name = wrapper_file.split('/')[-1]
     # if wrapper_file_name in os.listdir(merge_directory):
     #     if is_equivalent_wrapper(merge_directory+wrapper_file_name, merge_directory+wrapper_file_name):
@@ -141,10 +141,12 @@ def main(wrapper_file, merge_directory, secondary_directory):
         line = line.strip('\n')
 
         if is_beginning(line):
-            current_dir.go_in()
+            current_dir.go_in("")
+            lines_to_write_wrapper.append(line)
 
         elif is_end(line):
             current_dir.go_out()
+            lines_to_write_wrapper.append(line)
 
         elif is_directory(line):
             current_dir.go_out()
@@ -176,8 +178,8 @@ def main(wrapper_file, merge_directory, secondary_directory):
         print(l)
 
 if __name__ == '__main__':
-    secondary_directory = 'NVI_data/20APR01XA/'
-    merge_directory = 'NVI_data/20APR01XA/'
+    secondary_directory = 'test_data/DB_equiv_1/'
+    merge_directory = 'test_data/DB_orig/'
     wrapper_files = find_wrapper_files(secondary_directory)
     wrapper_files.sort(reverse=True)
     for wrapper_file in wrapper_files: 

@@ -1,6 +1,6 @@
 import netCDF4 as nc
 
-ds = nc.Dataset('test_data/netCDF_files/Antenna_V004.nc', 'a')
+ds = nc.Dataset('test_data/DB_orig/Apriori/Antenna.nc', 'a')
 
 # ds['CreateTime'][:] = ['2','0','2','3','/','0','6','/','2','2',' ','0','9',':','2','0',':','1','8',' ','U','T','C']
 

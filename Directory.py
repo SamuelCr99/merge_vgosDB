@@ -6,9 +6,6 @@ class Directory:
     def go_in(self, dir):
         self.current_dir.append(dir)
 
-    def go_in(self):
-        self.go_in("")
-
     def go_out(self):
         if self.current_dir:
             self.current_dir.pop()
