@@ -1,0 +1,25 @@
+! This wrapper is equivalent to wrapper1 in other primary folder
+!
+!
+!
+This is text that doesn't contain any keywords
+! This is a comment that contains Default_Dir
+! Default_Dir
+!
+!
+BeGin Section1
+!
+! This file is same as file1.nc in primary folder
+file1.nc
+!
+Default_Dir Folder1
+!
+! This file is equivalent to file2.nc in primary folder
+file2.nc
+!
+Default_Dir Folder2
+!
+file1.nc
+!
+End Section1
+!

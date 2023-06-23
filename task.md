@@ -1,6 +1,7 @@
 ####################
     Scripts needed
 ####################
+
 Script which lists all plug-compatible files in a directory, should return a list
 of .netCDF files which are plug compatible. 
 
@@ -74,7 +75,7 @@ Tests to be done:
     Testing - full algorithm    
 ################################
 
-Want to test:
+Cases to test:
     1. Check that wrappers with same name which are equivalent do not copy over
     a new wrapper file. 
     
@@ -95,4 +96,41 @@ Want to test:
 
     6. Check that other lines are written to new wrapper correct 
 
+
+File structure
+    test_primary/wrapper1.wrp is equivalent to test_secondary/wrapper1.wrp
+    test_primary/file1.nc is same as test_secondary/file1.nc
+    test_primary/Folder1/file2.nc is equivalent to test_secondary/Folder1/file2.nc
+
+    test_primary/wrapper2.wrp is not same as test_secondary/wrapper2.wrp
+    test_primary/Folder2/file3.nc doesn't exist in test_secondary
     
+
+Tests: 
+Test 1 23/6 13:45, Case 1:
+    Expected result: As all wrappers in secondary folder have an equivalent wrapper
+    in merge location, no files should be moved and no new wrapper should be created, 
+    there should be print statement stating what happened. 
+
+    Result: Test worked as expected, no files were created and print statement 
+    described what happened.  
+    
+Test 2 23/6 13:52, Case 2:
+    Expected result: As there will be wrappers with the same name which are not 
+    equivalent there should be a warning message. 
+
+    Result: Found issue with code where incorrect files were compared, issue was 
+    fixed, test now performs as expected.
+
+Test 3 23/6 14:11, Case 3:
+    Expected result: New wrapper file created in merge folder, this file should include
+    pointers to all .nc files in their correct locations.
+
+    Result: Test worked as expected, the new wrapper was created, a folder that
+    didn't exist was created and a file was placed in the folder.
+
+Test 4 23/6 14:46, Case 3:
+    Expected result: Creates a history file and notes down that a directory
+    needed to be created.
+
+    Result: History file was created with wrong name, bug fixed.
