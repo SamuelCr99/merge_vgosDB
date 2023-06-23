@@ -8,9 +8,13 @@ def find_compatible(file_path,dir_path):
 
     data_file_paths = glob.glob(f"{dir_path}/*.nc")
 
+    data_file_paths_fixed = []
+    for path in data_file_paths:
+        data_file_paths_fixed.append(path.replace("\\","/"))
+
     plug_compatible_paths = []
 
-    for data_file_path in data_file_paths:
+    for data_file_path in data_file_paths_fixed:
         ds2 = nc.Dataset(data_file_path)
         
         if (ds1['Stub'][:].tobytes() != ds2['Stub'][:].tobytes()):
