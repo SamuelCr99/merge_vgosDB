@@ -31,6 +31,18 @@ def extract_paths(lines):
     return paths
 
 def is_same_wrapper(primary_file, secondary_file):
+    """
+    Answers if two wrapper files are vgosDB same
+
+    Checks if they contain the same files, and of those files are vgosDB same
+
+    Parameters:
+    primary_file (str): Path to one of the wrappers
+    secondary_file (str): Path to the other wrapper
+
+    Returns:
+    True if the wrappers are the same, False if not
+    """
     primary_path = '/'.join(primary_file.split('/')[0:-1]) + '/'
     secondary_path = '/'.join(secondary_file.split('/')[0:-1]) + '/'
 
@@ -40,16 +52,20 @@ def is_same_wrapper(primary_file, secondary_file):
     with open(secondary_file) as file:
         secondary_file_lines = file.readlines()
 
+    # Get the paths to all files in the wrappers
     extracted_primary_paths = extract_paths(primary_file_lines)
     extracted_secondary_paths = extract_paths(secondary_file_lines)
 
+    # If there aren't the same number of files, the wrappers aren't the same
     if len(extracted_primary_paths) != len(extracted_secondary_paths):
         return False
 
+    # Find each file from one DB in the other, otherwise not same
     for path in extracted_primary_paths:
         if path not in extracted_secondary_paths:
             return False
         
+        # Found files also need to be the same
         if not is_same(primary_path+path, secondary_path+path):
             return False
 

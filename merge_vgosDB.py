@@ -11,6 +11,10 @@ import warnings
 from Directory import Directory
 
 def find_history_file_name(old_file_name, merge_directory):
+    """
+    Finds the correct name for a history file, this name should depend on the 
+    version number of the other files in the directory.
+    """
     history_file_names = "\t".join(os.listdir(f'{merge_directory}History'))
     old_file_name_prefix = old_file_name.split('_')[0]
     flags = old_file_name.strip(".hist").split("_")[1:]
@@ -24,6 +28,9 @@ def find_history_file_name(old_file_name, merge_directory):
     return f"{old_file_name_prefix}_V{get_version_num(v)}_{'_'.join(flags_reduced)}.hist"
 
 def get_version_num(v):
+    """
+    Formats number to 3 digit string 
+    """
     if v<10:
         return f"00{v}"
     elif v<100:
@@ -31,6 +38,9 @@ def get_version_num(v):
     else:
         return f"{v}"
 
+
+# Is files are used to determine which type of information a line in the wrapper
+# file is referring to
 def is_beginning(line):
     return line.split(" ")[0].lower() == "begin"
 
@@ -50,6 +60,21 @@ def handle_wrapper_info(line):
     return line
 
 def handle_directory(line, merge_directory):
+    """
+    Handles actions to be performed for lines which refer to a directory. 
+
+    Steps: 
+    Checks to see if referred to directory exists in merge_directory, if it does
+    not then we create it. 
+
+    Parameters: 
+    line (str): Line from wrapper file containing name of history file. 
+    merge_directory(string): File path of the target location for the merge.
+
+    Return values:
+    Returns the lines which should be written to the new wrapper file and history
+    file.
+    """
     directory_name = line.split(' ')[1]
     history_lines = ''
     if directory_name not in os.listdir(merge_directory):
@@ -58,8 +83,28 @@ def handle_directory(line, merge_directory):
     return line, history_lines
 
 def handle_history_file(line, merge_directory, secondary_directory):
+    """
+    Handles actions to be performed for lines which refer to a history file. 
+
+    Steps: 
+    Check if there is a history file with the same name. If there is then check
+    if these history files are identical, if they are don't copy. If they are not
+    create a new copy of the history file from secondary_directory but change name. 
+    If there was no file with the same name copy over the file without a name 
+    change. 
+
+    Parameters: 
+    line (str): Line from wrapper file containing name of history file. 
+    merge_directory(string): File path of the target location for the merge.
+    secondary_directory(string): File path of folder which contains wrapper file.
+
+    Return values:
+    Returns the lines which should be written to the new wrapper file and history
+    file.
+    """
     history_file_name = line.split(' ')[-1]
     history_lines = ''
+
     if history_file_name not in os.listdir(merge_directory+'/History'):
         shutil.copyfile(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{history_file_name}') #Copies file
         history_lines = f'{history_file_name} did not exist in merge directory, copied file to correct location'
@@ -73,6 +118,27 @@ def handle_history_file(line, merge_directory, secondary_directory):
     return line, history_lines
 
 def handle_data_file(line, merge_directory, secondary_directory):
+    """
+    Handles actions to be performed for lines which refer to a data file. 
+
+    Steps: 
+    Check if there are any compatible files in the merge directory: 
+        Y: Check if any of these files are same, identical or equivalent. If 
+            they are copy over the name which corresponds with the file in the 
+            merge dictionary. If same or identical write this to the history file. 
+            If none of these are correct then we should copy over file, check if 
+            there is a file with the same name. If yes rename, otherwise not. 
+        N: Copy file and write to history file.  
+
+    Parameters: 
+    line (str): Line from wrapper file containing name of data file. 
+    merge_directory(string): File path of the target location for the merge.
+    secondary_directory(string): File path of folder which contains wrapper file.
+
+    Return values:
+    Returns the lines which should be written to the new wrapper file and history
+    file.
+    """
     compatible_lines = find_compatible(secondary_directory+line, merge_directory[:-1])
 
     file_name = line
@@ -88,7 +154,7 @@ def handle_data_file(line, merge_directory, secondary_directory):
         if is_same(file_path,compatible_line):
             return line, ''
 
-    
+
     for compatible_line in compatible_lines:
         if is_identical(file_path, compatible_line):
             history_line = f'{secondary_directory+file_name} has been changed to {secondary_directory+compatible_line}'
@@ -118,6 +184,9 @@ def handle_data_file(line, merge_directory, secondary_directory):
 
 
 def find_wrapper_files(directory):
+    """
+    Finds all wrapper files for a given directory
+    """
     # if directory[-1] != '/': directory += '/'
     wrapper_files = []
     files = os.listdir(directory)
@@ -129,6 +198,19 @@ def find_wrapper_files(directory):
 
 
 def create_new_wrapper(wrapper_file, merge_directory, secondary_directory):
+    """
+    Checks if there is an equivalent wrapper with same name in merge directory
+    if not it creates a new wrapper file, writes all the correct lines to it and
+    performs the actions needed for wrapper file to work in new directory. 
+
+    Parameters: 
+    wrapper_file(string): File path of wrapper file.
+    merge_directory(string): File path of the target location for the merge.
+    secondary_directory(string): File path of folder which contains wrapper file.
+
+    Returns: 
+    No return values!  
+    """
     with open(wrapper_file) as file:
         wrapper_lines = file.readlines()
 
@@ -201,11 +283,24 @@ def create_new_wrapper(wrapper_file, merge_directory, secondary_directory):
     # Print this things to a new file!
 
 def main(merge_directory, secondary_directory):
+    """
+    Finds all wrapper files in secondary directory and moves them over to the 
+    merge directory
+
+    Parameters: 
+    merge_directory(str): File path to the directory where files should be 
+    merged to. 
+
+    secondary_directory(str): File path of the directory where files should be
+    merged from. 
+
+    Returns: 
+    No return values
+    """
     wrapper_files = find_wrapper_files(secondary_directory)
     wrapper_files.sort(reverse=True)
     for wrapper_file in wrapper_files: 
         create_new_wrapper(wrapper_file, merge_directory, secondary_directory)
-        quit()
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:

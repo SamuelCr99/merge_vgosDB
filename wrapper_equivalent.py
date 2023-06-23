@@ -32,6 +32,19 @@ def extract_paths(lines):
     return paths
 
 def is_equivalent_wrapper(primary_file, secondary_file):
+    """
+    Answers if two wrapper files are vgosDB equivalent
+
+    Checks if the wrappers have a one-to-one correspondence of vgosDB equivalent
+    data files
+
+    Parameters:
+    primary_file (str): Path to one of the wrappers
+    secondary_file (str): Path to the other wrapper
+
+    Returns:
+    True if the wrappers are equivalent, False if not
+    """
     primary_path = '/'.join(primary_file.split('/')[0:-1]) + '/'
     secondary_path = '/'.join(secondary_file.split('/')[0:-1]) + '/'
 
@@ -41,17 +54,23 @@ def is_equivalent_wrapper(primary_file, secondary_file):
     with open(secondary_file) as file:
         secondary_file_lines = file.readlines()
 
+    # Get the paths to all files in the wrappers
     extracted_primary_paths = extract_paths(primary_file_lines)
     extracted_secondary_paths = extract_paths(secondary_file_lines)
 
+    # If there aren't the same number of files, the wrappers aren't equivalent
     if len(extracted_primary_paths) != len(extracted_secondary_paths):
         return False
 
+    # Find each file from one DB in the other, otherwise not equivalent
     for path in extracted_primary_paths:
         nonFound = True
         for path2 in extracted_secondary_paths:
+
+            # Found files also need to be equivalent
             if is_equivalent(primary_path+path, secondary_path+path2):
                 nonFound = False
+                # Need a one-to-one correspondence
                 extracted_secondary_paths.remove(path2)
                 break
         if nonFound:
