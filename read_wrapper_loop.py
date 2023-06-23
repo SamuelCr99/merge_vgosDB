@@ -8,6 +8,13 @@ import os
 import shutil
 from Directory import Directory
 
+def get_version_num(v):
+    if v<10:
+        return f"00{v}"
+    elif v<100:
+        return f"0{v}"
+    else:
+        return f"{v}"
 
 def is_beginning(line):
     return line.split(" ")[0].lower() == "begin"
@@ -44,42 +51,60 @@ def handle_history_file(line, merge_directory, secondary_directory):
     
     else:
         if not is_identical_history_file(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{history_file_name}'):
-            new_file_name = history_file_name.split('.')[0] + '_merged' + '.hist'
+            v = 1
+            while f"{history_file_name[:-5]}_v{get_version_num(v)}.hist" in os.listdir(merge_directory+'/History'):
+                v+=1
+            new_file_name = history_file_name.split('.')[0] + f"_v{get_version_num(v)}.hist"
             shutil.copyfile(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{new_file_name}') #Copies file
             line = line.strip(history_file_name) + new_file_name
 
     return line, history_lines
 
 def handle_data_file(line, merge_directory, secondary_directory):
-    compatible_line = find_compatible(secondary_directory+line, merge_directory)[0] # Remember to add the function so more than 1 compatible file can be used
-    compatible_line_folder = compatible_line.strip(merge_directory).strip(line)
-    folder_name = ''
+    compatible_lines = find_compatible(secondary_directory+line, merge_directory[:-1])
+
+    file_name = line
+    file_path = secondary_directory+line
 
     # CHECK THAT COMPATIBLE LINE ONLY IS FILE NAME, NO FOLDER!
+    if not compatible_lines: 
+        shutil.copyfile(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}') #Copies file
+        history_line = f'{secondary_directory}{file_name} did not exist, now reacted' 
+        return line, history_line
 
-    if not compatible_line: 
-        # Copy file to merged vgosDB  
-        pass
 
-    if is_same(line,compatible_line):
-        # Return to top 
-        return line
-    elif is_identical(line, compatible_line):
-        # Update history to indicate change of name
-        return compatible_line
-    elif is_equivalent(line, compatible_line):
-        # Update history to indicate change of name
-        return compatible_line
-    else:
-        if line in os.listdir(merge_directory+folder_name): 
-            # Copy the secondary vgosDB datafile to the merged vgosDB with a unique name
-            # Add to wrapper
-            # Update history
-            pass
-        else: 
-            # Copy the secondary vgosDB datafile 
-            # Write to wrapper
-            pass
+    for compatible_line in compatible_lines:
+        if is_same(file_path,compatible_line):
+            return line, ''
+
+    
+    for compatible_line in compatible_lines:
+        if is_identical(file_path, compatible_line):
+            history_line = f'{secondary_directory+file_name} has been changed to {secondary_directory+compatible_line}'
+            return compatible_line, history_line
+
+    
+    for compatible_line in compatible_lines:
+        if is_equivalent(file_path, compatible_line):
+            history_line = f'{secondary_directory+file_name} has been changed to {secondary_directory+compatible_line}'
+            return compatible_line, history_line
+
+
+    if file_name in os.listdir(merge_directory):
+        old_file_name = file_name
+        v = 1
+        while file_name[:-3] + f"_v{get_version_num(v)}.nc" in os.listdir(merge_directory):
+            v+=1
+        file_name = file_name[:-3] + f"_v{get_version_num(v)}.nc"
+        shutil.copyfile(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}') #Copies file
+        history_line = f'No file same, identical or equivalent for {old_file_name}, but name already existed, updating name to {file_name}'
+        return file_name, history_line
+
+    else: 
+        shutil.copyfile(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}') #Copies file
+        history_line = f'No file is same, identical or equivalent for {file_name}. Copied it over.'
+        return file_name, history_line
+
 
 def find_wrapper_files(directory):
     # if directory[-1] != '/': directory += '/'
@@ -95,13 +120,13 @@ def find_wrapper_files(directory):
 
 def main(wrapper_file, merge_directory, secondary_directory):
     with open(wrapper_file) as file:
-        lines = file.readlines()
+        wrapper_lines = file.readlines()
 
     ## This is for case 1
     # wrapper_file_name = wrapper_file.split('/')[-1]
     # if wrapper_file_name in os.listdir(merge_directory):
     #     if is_equivalent_wrapper(merge_directory+wrapper_file_name, merge_directory+wrapper_file_name):
-    #         print("Equivalent wrapper found")
+    #         print("Equivalent wrapper with same name found, no need to copy files")
     #         return
     #     else: 
     #         print("Wrapper with same name found, but they are not equivalent!")
@@ -112,11 +137,11 @@ def main(wrapper_file, merge_directory, secondary_directory):
     lines_to_write_history = []
     current_dir = Directory()
     
-    for line in lines: 
+    for line in wrapper_lines: 
         line = line.strip('\n')
 
         if is_beginning(line):
-            current_dir.go_in("")
+            current_dir.go_in()
 
         elif is_end(line):
             current_dir.go_out()
@@ -135,12 +160,20 @@ def main(wrapper_file, merge_directory, secondary_directory):
             if return_values[1]:
                 lines_to_write_history.append(return_values[1])
 
-        # elif is_data_file(line):
-        #     # Line here will not work, we will need the whole path! 
-        #     handle_data_file(line, merge_root_directory, secondary_root_directory)
+        elif is_data_file(line):
+            return_values = handle_data_file(line, merge_directory + current_dir.get_path_with_slash(), secondary_directory + current_dir.get_path_with_slash())
+            lines_to_write_wrapper.append(return_values[0])
+            if return_values[1]:
+                lines_to_write_history.append(return_values[1])
 
         else:
             lines_to_write_wrapper.append(handle_wrapper_info(line))
+
+    for l in lines_to_write_wrapper:
+        print(l)
+    print('------')
+    for l in lines_to_write_history:
+        print(l)
 
 if __name__ == '__main__':
     secondary_directory = 'NVI_data/20APR01XA/'
