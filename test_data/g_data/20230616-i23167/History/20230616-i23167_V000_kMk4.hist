@@ -1,0 +1,212 @@
+
+TIMETAG 2023/06/20 11:19:38 UTC
+MK3DB_VERSION 1
+%CORRELATOR_REPORT_FORMAT 3
+
++HEADER
+
+SESSION     I23167
+VGOSDB      20230616-i23167
+START       2023-167-1830
+END         2023-167-1930
+CORRELATOR  WACO
+ANALYST     Roxanne Inniss
+VERSION     1-1
+
++SUMMARY
+
+qcode     total   correlated
+----------------------------
+5-9        98.53%     98.53%
+0           1.47%      1.47%
+1-4,A-H,N   0.00%      0.00%
+removed     0.00%      0.00%
+
+* qcode       quality codes, error codes, or status
+* total       percent of total scans
+* correlated  percent of correlated scans
+
++STATIONS
+
+station name     mk4
+--------------------
+Kk      KOKEE    K
+Wz      WETTZELL v
+
+* station  2-char station ID
+* name     3- to 8-char station name
+* mk4      1-char HOPS station code
+
++NOTES
+
+station note
+----------------------------
+-       No problems detected
+
+* station  2-char station ID, baseline, closure set, or - for general notes
+* note     correlator notes and feedback
+
++CLOCK
+
+st         epoch used-offset     used-rate raw-offset      raw-rate comment
+---------------------------------------------------------------------------
+Kk 2023-167-1830       6.486 -2.200000e-12    -         -
+Wz 2023-167-1830      -3.646 -2.431000e-12  -5.830094 -2.430831e-12
+
+* st           2-char station ID
+* epoch        time coordinate of offsets and clock model segment start time
+* used-offset  (usec) station clock minus offset used in correlation at epoch
+* used-rate    drift rate of station clock minus offset used in correlation
+* raw-offset   (usec) station clock minus reference clock offset at epoch
+* raw-rate     drift rate of station clock minus reference clock offset
+* comment      clock-break, reference station, or other notes
+
++CHANNELS
+
+channel id frequency
+--------------------
+S00UR   a    2225.99
+S01UR   b    2245.99
+S02UR   c    2265.99
+S03UR   d    2295.99
+S04UR   e    2345.99
+S05UR   f    2365.99
+X06LR   g-   8212.99
+X06UR   g+   8212.99
+X07UR   h    8252.99
+X08UR   i    8352.99
+X09UR   j    8512.99
+X10UR   k    8732.99
+X11UR   l    8852.99
+X12UR   m    8912.99
+X13LR   n-   8932.99
+X13UR   n+   8932.99
+
+* channel    HOPS channel name
+* id         short name with sideband indicator
+* frequency  (MHz) sky frequency
+
++DROP_CHANNELS
+
++MANUAL_PCAL
+
++QCODES
+
+bl:band 0 1 2 3 4 5 6 7 8  9 N - total
+--------------------------------------
+Kv:S    0 0 0 0 0 0 1 0 1 32 0 0    34
+Kv:X    1 0 0 0 0 0 0 0 4 29 0 0    34
+total   1 0 0 0 0 0 1 0 5 61 0 0    68
+
+* bl:band  baseline and frequency band name
+* 0        no fringe detected
+* 1-9      fringe detected, higher value means better quality
+* B        fourfit interpolation error
+* D        no data in one or more frequency channels
+* E        fringe found at edge of SBD, MBD, or rate window
+* F        fork problem in processing
+* G        channel amplitude diverges too far from mean amplitude
+* H        low phase-cal amplitude in one or more channels
+* N        correlation or fringing failed
+* -        correlation not attempted
+* total    column and row totals
+
++SNR_RATIOS
+
+bl        S n_S        X n_X
+----------------------------
+Kv 0.912491  34 0.729504  33
+
+* bl       baseline
+* [A-Z]    ratio for this band name
+* n_[A-Z]  number of scans in average for this band name
+
++EOP
+
+  mjd tai-utc   ut1-utc    xpole    ypole
+-----------------------------------------
+60110    37.0 -0.044673 0.133804 0.513043
+60111    37.0 -0.044267 0.136535 0.512904
+60112    37.0 -0.043658 0.139481 0.512884
+60113    37.0 -0.042924 0.142523 0.512743
+60114    37.0 -0.042099 0.145617 0.512579
+
+* mjd      integer modified Julian date
+* tai-utc  (sec) TAI minus UTC offset
+* ut1-utc  (sec) UT1 minus UTC offset
+* xpole    X pole EOP parameter
+* ypole    Y pole EOP parameter
+
++CORRELATION
+
+SOFTWARE    DiFX
+VERSION     2.5.4
+ALGORITHM   FX
+NCHAN       256
+FFTSPECRES  0.03125 MHz
+SPECRES     0.125 MHz
+TINT        2.0 sec
+
++FRINGING
+
+SOFTWARE  HOPS
+VERSION   3.24-3753
+
++VGOSDB
+
+SOFTWARE  nuSolve
+
++CORRELATION_CONFIG_FILE
+
+vex = i23167.vex
+maxGap = 180000.0
+maxLength = 360000.0
+singleScan = true
+startSeries = 1
+antennas = KK, WZ
+SETUP normalSetup {
+  FFTSpecRes = 0.03125
+  specRes = 0.125
+  tInt = 2
+}
+RULE scansubset {
+  setup = normalSetup
+}
+ANTENNA KK {
+  phaseCalInt = 1
+  toneSelection = all
+  filelist = filelist
+}
+ANTENNA WZ {
+  phaseCalInt = 1
+  toneSelection = all
+  filelist = filelist
+}
+
++FRINGING_CONFIG_FILE
+
+sb_win -256.0 256.0
+mb_win -256.0 256.0
+dr_win -0.03 0.03
+pc_mode multitone
+pc_period 5
+
+if f_group X
+  ref_freq 8212.99
+
+if f_group S
+  ref_freq 2225.99
+
+if station K and f_group X
+  pc_tonemask ghijklmn 148 132 132 132 132 132 132 132
+
+if station K and f_group S
+  pc_tonemask abcdef 16 16 16 16 16 16
+
+if station K
+  lsb_offset 70.0
+
+if station v
+  lsb_offset 0.0
+
++END

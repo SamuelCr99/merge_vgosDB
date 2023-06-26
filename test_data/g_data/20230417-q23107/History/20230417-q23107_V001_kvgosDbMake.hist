@@ -1,0 +1,17 @@
+
+TIMETAG 2023/04/17 12:28:54 UTC
+MK3DB_VERSION 1
+. vgosDbMake: Library ID: SgLib-0.8.1 (Skyland) released on 05 Jan, 2023
+. vgosDbMake: Driver  ID: vgosDbMake-0.6.0 (Rose River) released on 03 Jan, 2023
+. vgosDbMake: Host    ID: frontend (Hw: x86_64; Sw: 3.10.0-1062.4.3.el7.x86_64 version of Linux)
+. vgosDbMake: User    ID: geodesy <geodesy@mpifr-bonn.mpg.de>, MPIFR correlator
+. vgosDbMake: User command: "vgosDbMake -f2 /Exps/q23107/v1/5481/ -t /Exps/q23107/v1/5481/q23107.corr -o /Exps/q23107/EXPORT/"
+. vgosDbMake: Input data  : "/Exps/q23107/v1/5481/"
+w getDataFromFringeFiles: cannot find correlator name in the vex files
+. selfCheck: the X-band is set as the primary one
+. selfCheck: the record mode has been set to "NChan:14 Rbw:448.0 Bps:2"
+. selfCheck: skipping the eccentricities set up: incomplete data set 
+. guessNetworkId: unable to guess the network ID, nothing to match
+. checkChannelSetup: the session is ok
+. selfCheck: the session selfcheck has been completed
+. vgosDbMake: the session Q23107 (20230417-q23107) has been imported from fringes files

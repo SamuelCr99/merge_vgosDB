@@ -1,0 +1,98 @@
+
+TIMETAG 2023/04/17 12:31:06 UTC
+MK3DB_VERSION 3
+  vgosDbProcLogs-0.7.2 (Lewis Falls (rc2)): Library ID: SgLib-0.8.2 (Compton Peak (rc2)) released on 03 Apr, 2023
+  vgosDbProcLogs-0.7.2 (Lewis Falls (rc2)): Driver  ID: vgosDbProcLogs-0.7.2 (Lewis Falls (rc2)) released on 03 Apr, 2023
+  vgosDbProcLogs-0.7.2 (Lewis Falls (rc2)): Host    ID: gs61av-vlbiprd01 (Hw: x86_64; Sw: 5.4.0-125-generic version of Linux)
+  vgosDbProcLogs-0.7.2 (Lewis Falls (rc2)): User    ID: Oper <oper@localhost>, NVI, Inc. / NASA Goddard Space Flight Center
+  vgosDbProcLogs-0.7.2 (Lewis Falls (rc2)): User command: "/sgpvlbi/progs/nusolve/bin/vgosDbProcLogs -klog /sgpvlbi/level2/vgosDB/2023/20230417-q23107/20230417-q23107_V002_iGSFC_kall.wrp"
+  vgosDbProcLogs-0.7.2 (Lewis Falls (rc2)): Input data  : /sgpvlbi/level2/vgosDB/2023/20230417-q23107/20230417-q23107_V002_iGSFC_kall.wrp
+  vgosDbProcLogs-0.7.2 (Lewis Falls (rc2)): the session q23107 (20230417-q23107) has been imported from vgosDb data set
+w readFile: got a duplicate record " Ca CAMBRIDG --------- ---- Cambridge, UK (VLBA)" for the station name "CAMBRIDG" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+w readFile: got a duplicate record " Cb CAMBRIDG --------- ---- Cambridge, UK (Ryle)" for the station name "CAMBRIDG" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+w readFile: got a duplicate record " Ef EFLSBERG 14209S001 7203 Effelsberg, Germany (originally Mk4, now common EVN usage)" for the station name "EFLSBERG" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+w readFile: got a duplicate record " Jv JODRELL2 --------- ---- VLBA, Jodrell Bank, UK" for the station name "JODRELL2" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+. importDataFromLogFiles: checking [/sgpvlbi/sessions/2023/q23107/] directory for station log files
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/q23107/q23107ns.log, a log file for NYALE13S station
+w readLogFile: station NYALE13S: cannot determine proper cable sign from cable_diff_is pattern; input: "2023.107.06:24:46.48;"Cable difference is: na"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.107.06:59:50.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.107.06:59:50.00&preob/onsource"
+. readLogFile: station NYALE13S: collected operator's comments: 
+. readLogFile: station NYALE13S: 2023/04/17 06:24:46: Session q23107 ready message for Ny-Alesund 13m NS.
+. readLogFile: station NYALE13S: 2023/04/17 06:24:46: ;"---------------------------------------------------
+. readLogFile: station NYALE13S: 2023/04/17 06:24:46: First source: 0955+476 at 070000  UT
+. readLogFile: station NYALE13S: 2023/04/17 06:24:46: FMOUT-GPS: 13.841 microseconds
+. readLogFile: station NYALE13S: 2023/04/17 06:24:46: Wx:  Temperature (C): 0.9  Pressure (mBar): 1015.2  Humidity (%): 95.2
+. readLogFile: station NYALE13S: 2023/04/17 06:24:46: Sky Conditions: Cloudy and a bit rainy
+. readLogFile: station NYALE13S: 2023/04/17 06:24:46: Cable difference is: na
+. readLogFile: station NYALE13S: 2023/04/17 06:24:46: Pointing values: na
+. readLogFile: station NYALE13S: 2023/04/17 06:24:46: Tsys values: na
+. readLogFile: station NYALE13S: 2023/04/17 07:00:00: Session q23107 auto-start message for Ny-Alesund 13m NS.
+. readLogFile: station NYALE13S: 2023/04/17 07:00:00: ;"--------------------------------------------------------
+. readLogFile: station NYALE13S: 2023/04/17 07:00:00: Started recording with source: 0955+476 at 107.07:00:00 UT
+. readLogFile: station NYALE13S: 5778 strings of the log file (410K) were read (33 strings were skipped)
+. readLogFile: station NYALE13S: collected 29 on_source, 0 cable_cal and 85 meteo records
+. verifyReadings: station NYALE13S: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station NYALE13S: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station NYALE13S: cannot find any usable cable calibrations
+. propagateData: station NYALE13S: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/q23107/q23107ny.log, a log file for NYALES20 station
+w readLogFile: station NYALES20: the station name from "location" ("NyAlesun") is different
+w extractMeteoReading: the extracted relative humidity looks suspicious: 100.2%; adjusted it to 100%
+w extractMeteoReading: the extracted relative humidity looks suspicious: 100.1%; adjusted it to 100%
+w extractMeteoReading: the extracted relative humidity looks suspicious: 100.1%; adjusted it to 100%
+w extractMeteoReading: the extracted relative humidity looks suspicious: 100.1%; adjusted it to 100%
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.107.06:40:23.16#flagr#flagr/antenna,acquired"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.107.06:46:04.16#flagr#flagr/antenna,acquired"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.107.06:59:50.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.107.06:59:50.00&preob/onsource"
+. readLogFile: station NYALES20: collected operator's comments: 
+. readLogFile: station NYALES20: 2023/04/17 06:43:05: Ny-Alesund 20m antenna
+. readLogFile: station NYALES20: 2023/04/17 06:43:13: Zenith tsys follows:
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: Session q23107 ready message for Ny-Alesund.
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: ;"--------------------------------------------
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: First source: 0955+476 at 07:00:00  UT
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: GPS-FMOUT: 191.84 microseconds
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: Wx:  Temperature (C): 0.8  Pressure (mBar): 1010.1  Humidity (%): 99.8
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: Sky Conditions: Cloudy and rainy
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: Cable difference is: longer cable makes the reading larger by
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: 669.5 microseconds and is nominal
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: Pointing values:
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: SEFD  X/S       Source          Az/El      Offset1  Offset2
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: 1016/1778    cygnusa        196/51      0.007    -0.0003
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: 1045/1674    casa           129/67      0.005    0.0007
+. readLogFile: station NYALES20: 2023/04/17 06:43:54: Tsys (x1/s/x2): 43/24/66
+. readLogFile: station NYALES20: 2023/04/17 07:02:45: Session q23107 start message for Ny-Alesund.
+. readLogFile: station NYALES20: 2023/04/17 07:02:45: ;"--------------------------------------------
+. readLogFile: station NYALES20: 2023/04/17 07:02:45: Started recording with source: 0955+476 at: 07:00:00 UT
+. readLogFile: station NYALES20: 5765 strings of the log file (374K) were read (119 strings were skipped)
+. readLogFile: station NYALES20: collected 29 on_source, 28 cable_cal and 119 meteo records
+. verifyReadings: station NYALES20: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station NYALES20: cannot determine the cable sign from cablelong measurements
+. propagateData: station NYALES20: no cable cal record found for the scan "107-0700" in the log file
+. propagateData: station NYALES20: 28 exact and 1 closest matches of cable calibrations were found
+. propagateData: station NYALES20: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/q23107/q23107sh.log, a log file for SESHAN25 station
+w readLogFile: station SESHAN25: got unexpected `on source' record; string: "2023.107.06:59:50.00:preob"
+w readLogFile: station SESHAN25: got unexpected `on source' record; string: "2023.107.06:59:50.00&preob/onsource"
+w readLogFile: station SESHAN25: no proc record has been found in the log file
+. readLogFile: station SESHAN25: 2980 strings of the log file (188K) were read (58 strings were skipped)
+. readLogFile: station SESHAN25: collected 29 on_source, 0 cable_cal and 28 meteo records
+. verifyReadings: station SESHAN25: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station SESHAN25: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station SESHAN25: cannot find any usable cable calibrations
+. propagateData: station SESHAN25: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/q23107/q23107wz.log, a log file for WETTZELL station
+w readLogFile: station WETTZELL: got unexpected `on source' record; string: "2023.107.06:59:50.00:preob"
+w readLogFile: station WETTZELL: got unexpected `on source' record; string: "2023.107.06:59:50.00&preob/onsource"
+w readLogFile: station WETTZELL: no proc record has been found in the log file
+. readLogFile: station WETTZELL: 4855 strings of the log file (325K) were read (813 strings were skipped)
+. readLogFile: station WETTZELL: collected 29 on_source, 28 cable_cal and 28 meteo records
+. verifyReadings: station WETTZELL: insufficient number (0) of tsys readings; skipped
+. verifyReadings: station WETTZELL: cannot find any usable cablelong measurements
+w verifyReadings: station WETTZELL: cannot determine the cable calibration sign
+. verifyReadings: station WETTZELL: the cable sign was set to "+" according to the list of default cable signs
+. propagateData: station WETTZELL: no cable cal record found for the scan "107-0700" in the log file
+. propagateData: station WETTZELL: 28 exact and 1 closest matches of cable calibrations were found
+. propagateData: station WETTZELL: meteo parameters were found
+  vgosDbProcLogs-0.7.2 (Lewis Falls (rc2)): import of data from station log files has been complete

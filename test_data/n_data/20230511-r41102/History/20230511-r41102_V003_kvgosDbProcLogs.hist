@@ -1,0 +1,224 @@
+
+TIMETAG 2023/06/02 15:39:11 UTC
+MK3DB_VERSION 3
+. vgosDbProcLogs: Library ID: SgLib-0.8.2 (Compton Peak) released on 30 May, 2023
+. vgosDbProcLogs: Driver  ID: vgosDbProcLogs-0.7.2 (Lewis Falls) released on 09 May, 2023
+. vgosDbProcLogs: Host    ID: gs61av-vlbiprd01 (Hw: x86_64; Sw: 5.4.0-125-generic version of Linux)
+. vgosDbProcLogs: User    ID: Oper <oper@localhost>, NVI, Inc. / NASA Goddard Space Flight Center
+. vgosDbProcLogs: User command: "/sgpvlbi/progs/nusolve/bin/vgosDbProcLogs /sgpvlbi/level2/vgosDB/2023/20230511-r41102/20230511-r41102_V002_iGSFC_kall.wrp"
+. vgosDbProcLogs: Input data  : /sgpvlbi/level2/vgosDB/2023/20230511-r41102/20230511-r41102_V002_iGSFC_kall.wrp
+. vgosDbProcLogs: the session r41102 (20230511-r41102) has been imported from vgosDb data set
+w readFile: got a duplicate record " Ca CAMBRIDG --------- ---- Cambridge, UK (VLBA)" for the station name "CAMBRIDG" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+w readFile: got a duplicate record " Cb CAMBRIDG --------- ---- Cambridge, UK (Ryle)" for the station name "CAMBRIDG" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+w readFile: got a duplicate record " Ef EFLSBERG 14209S001 7203 Effelsberg, Germany (originally Mk4, now common EVN usage)" for the station name "EFLSBERG" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+w readFile: got a duplicate record " Jv JODRELL2 --------- ---- VLBA, Jodrell Bank, UK" for the station name "JODRELL2" in the ns-codes file [/sgpvlbi/sessions/control/ns-codes.txt]
+. importDataFromLogFiles: checking [/sgpvlbi/sessions/2023/r41102/] directory for station log files
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41102/r41102ht.log, a log file for HART15M station
+w readLogFile: station HART15M: the station name from "location" ("Hart15M") is different
+w readLogFile: station HART15M: cannot determine proper cable sign from cable_diff_is pattern; input: "2023.131.14:23:40.78;"Cable difference is: na"
+w readLogFile: station HART15M: got unexpected `on source' record; string: "2023.132.10:34:03.00:preob"
+w readLogFile: station HART15M: got unexpected `on source' record; string: "2023.132.17:14:04.00:preob"
+w readLogFile: station HART15M: no proc record has been found in the log file
+. readLogFile: station HART15M: collected operator's comments: 
+. readLogFile: station HART15M: 2023/05/11 14:23:41: Session r41102 ready message for Hart15M.
+. readLogFile: station HART15M: 2023/05/11 14:23:41: ;"-----------------------------------------
+. readLogFile: station HART15M: 2023/05/11 14:23:41: Comments:
+. readLogFile: station HART15M: 2023/05/11 14:23:41: Hart15M is ready to start R41102.
+. readLogFile: station HART15M: 2023/05/11 14:23:41: All systems are nominal.
+. readLogFile: station HART15M: 2023/05/11 14:23:41: Session is being operated remotely.
+. readLogFile: station HART15M: 2023/05/11 14:23:41: First source: 1040+244 at 18:30:00  UT
+. readLogFile: station HART15M: 2023/05/11 14:23:41: FMOUT-GPS: 7.5800 microseconds
+. readLogFile: station HART15M: 2023/05/11 14:23:41: Wx:  Temperature (C): 22.9  Pressure (mBar): 863.6  Humidity (%): 42.8
+. readLogFile: station HART15M: 2023/05/11 14:23:41: Sky Conditions: Clear
+. readLogFile: station HART15M: 2023/05/11 14:23:41: Cable difference is: na
+. readLogFile: station HART15M: 2023/05/11 14:23:41: Pointing values: na
+. readLogFile: station HART15M: 2023/05/11 14:23:41: Tsys (x1/s/x2): 36.2/66.9/45.7
+. readLogFile: station HART15M: 2023/05/11 18:30:01: Session r41102 auto-start message for Hart15M.
+. readLogFile: station HART15M: 2023/05/11 18:30:01: ;"----------------------------------------------
+. readLogFile: station HART15M: 2023/05/11 18:30:01: Started recording with source: 1040+244 at 131.18:30:00 UT
+. readLogFile: station HART15M: 2023/05/12 04:42:31: Weather conditions: clear skies
+. readLogFile: station HART15M: 2023/05/12 07:23:51: Weather conditions: clear skies
+. readLogFile: station HART15M: 2023/05/12 07:55:10: Fire alarm in control room - investigating
+. readLogFile: station HART15M: 2023/05/12 08:28:18: Smoke but no fire - cause unknown
+. readLogFile: station HART15M: 2023/05/12 11:14:30: Turned out to be firing of a faulty fire-suppression system
+. readLogFile: station HART15M: 2023/05/12 11:15:11: ;")Experiment ran through un affected)
+. readLogFile: station HART15M: 2023/05/12 14:03:30: Weather conditions: mostly clear
+. readLogFile: station HART15M: 2023/05/12 18:38:31: Session r41102 stop message for Hart15M.
+. readLogFile: station HART15M: 2023/05/12 18:38:31: ;"----------------------------------------
+. readLogFile: station HART15M: 2023/05/12 18:38:31: Comments:
+. readLogFile: station HART15M: 2023/05/12 18:38:31: Hart15M has completed R41102.
+. readLogFile: station HART15M: 2023/05/12 18:38:31: One source was missed because the antenna did not reach it it time - seemingly dur
+. readLogFile: station HART15M: 2023/05/12 18:38:31: to a scheduling error.
+. readLogFile: station HART15M: 2023/05/12 18:38:31: Weather conditions were clear to mostly clear throughout.
+. readLogFile: station HART15M: 2023/05/12 18:38:31: Data is being e-shipped to Washington.
+. readLogFile: station HART15M: 2023/05/12 18:38:31: Problem scans:
+. readLogFile: station HART15M: 2023/05/12 18:38:31: Source   Scan start   Explanation of problem
+. readLogFile: station HART15M: 2023/05/12 18:38:31: 1759-396 132-0223a    Scheduling error
+. readLogFile: station HART15M: 2023/05/12 18:38:31: Disk Inventory: A 0, B 2, C 0, D 1, E 1, F 0, G 5, H 0, (other larger) 5
+. readLogFile: station HART15M: 2023/05/12 18:38:31: Observation finished at: 18:30:00 UT
+. readLogFile: station HART15M: 25611 strings of the log file (1M) were read (3593 strings were skipped)
+. readLogFile: station HART15M: collected 323 on_source, 0 cable_cal and 322 meteo records
+. verifyReadings: station HART15M: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station HART15M: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station HART15M: cannot find any usable cable calibrations
+. propagateData: station HART15M: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41102/r41102hb.log, a log file for HOBART12 station
+w readLogFile: station HOBART12: got unexpected `on source' record; string: "2023.131.18:29:50.00:preob"
+w readLogFile: station HOBART12: got unexpected `on source' record; string: "2023.131.18:29:50.00&preob/onsource"
+. readLogFile: station HOBART12: 4452231 strings of the log file (415M) were read (4325 strings were skipped)
+. readLogFile: station HOBART12: collected 385 on_source, 0 cable_cal and 384 meteo records
+. verifyReadings: station HOBART12: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station HOBART12: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station HOBART12: cannot find any usable cable calibrations
+. propagateData: station HOBART12: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41102/r41102kk.log, a log file for KOKEE station
+w readLogFile: station KOKEE: no proc record has been found in the log file
+. readLogFile: station KOKEE: collected operator's comments: 
+. readLogFile: station KOKEE: 2023/05/11 18:05:55: kokee park  geophysical observatory, r41102, May 2023, operator-imai.
+. readLogFile: station KOKEE: 2023/05/11 18:06:04: setting up disks before intesive
+. readLogFile: station KOKEE: 2023/05/11 19:34:31: srtong RFI on IFB
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: Session r41102 ready message for Kokee Park 20m.
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: ;"------------------------------------------------
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: Comments:
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: RFI in IFB at 2175 Mhz
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: First source: 0059+581 at 131/1933:39  UT
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: FMOUT-GPS: +6.22 microseconds
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: Wx:  Temperature (C): 15.6  Pressure (mBar): 890.8  Humidity (%): 98.4
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: Sky Conditions: overcast and light rain
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: Cable difference is: longer cable makes the reading smaller by
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: 49.5 microseconds and is nominal
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: Pointing values:
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: SEFD  X/S       Source          Az/El      Offset1  Offset2
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: 2235/na      casa             6/53      0.003    0.011
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: 2095/na      cygnusa        307/49      0.005    0.018
+. readLogFile: station KOKEE: 2023/05/11 19:40:19: Tsys (x1/s/x2): 98/na/56
+. readLogFile: station KOKEE: 2023/05/11 19:40:34: Session r41102 start message for Kokee Park 20m.
+. readLogFile: station KOKEE: 2023/05/11 19:40:34: ;"------------------------------------------------
+. readLogFile: station KOKEE: 2023/05/11 19:40:34: Started recording with source: 0059+581 at: 131/1933:39 UT
+. readLogFile: station KOKEE: 2023/05/11 19:56:58: weather-overcast and light rain
+. readLogFile: station KOKEE: 2023/05/11 20:54:51: weather-overcast and light rain
+. readLogFile: station KOKEE: 2023/05/11 21:58:30: weather-overcast and light rain
+. readLogFile: station KOKEE: 2023/05/11 22:58:23: weather-overcast and rain
+. readLogFile: station KOKEE: 2023/05/11 23:15:37: breaking off support to observe intensive ii3131
+. readLogFile: station KOKEE: 2023/05/12 00:58:25: weather-overcast and light rain
+. readLogFile: station KOKEE: 2023/05/12 01:58:50: weather-overcast
+. readLogFile: station KOKEE: 2023/05/12 02:58:09: weather-overcast
+. readLogFile: station KOKEE: 2023/05/12 03:59:57: weather-overcast
+. readLogFile: station KOKEE: 2023/05/12 04:56:21: weather-mostly cloudy
+. readLogFile: station KOKEE: 2023/05/12 05:51:21: weather-no stars visible
+. readLogFile: station KOKEE: 2023/05/12 06:59:01: weather-many stars visible
+. readLogFile: station KOKEE: 2023/05/12 07:58:09: weather-many stars visible
+. readLogFile: station KOKEE: 2023/05/12 08:58:43: weather-many stars visible
+. readLogFile: station KOKEE: 2023/05/12 09:58:57: weather-few stars visible
+. readLogFile: station KOKEE: 2023/05/12 10:58:25: weather-few stars visible
+. readLogFile: station KOKEE: 2023/05/12 11:58:30: weather-many stars visible
+. readLogFile: station KOKEE: 2023/05/12 12:58:47: weather-many stars visible
+. readLogFile: station KOKEE: 2023/05/12 13:58:51: weather-many stars visible
+. readLogFile: station KOKEE: 2023/05/12 14:58:43: weather-many stars visible
+. readLogFile: station KOKEE: 2023/05/12 15:58:45: weather-clear sky
+. readLogFile: station KOKEE: 2023/05/12 16:58:02: weather-clear sky
+. readLogFile: station KOKEE: 2023/05/12 17:56:07: weather-clear sky
+. readLogFile: station KOKEE: 2023/05/12 17:58:35: weather-clear sky
+. readLogFile: station KOKEE: 37038 strings of the log file (2M) were read (1002 strings were skipped)
+. readLogFile: station KOKEE: collected 327 on_source, 655 cable_cal and 328 meteo records
+. verifyReadings: station KOKEE: insufficient number (0) of tsys readings; skipped
+. verifyReadings: station KOKEE: cannot find any usable cablelong measurements
+. propagateData: station KOKEE: 320 exact (320 are multiple) matches of cable calibrations were found
+. propagateData: station KOKEE: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41102/r41102ns.log, a log file for NYALE13S station
+w readLogFile: station NYALE13S: cannot determine proper cable sign from cable_diff_is pattern; input: "2023.131.18:11:59.80;"Cable difference is: NA"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.131.18:29:50.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.131.18:29:50.00&preob/onsource"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.131.19:28:30.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.01:26:50.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.02:52:55.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.04:01:45.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.06:23:44.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.06:43:01.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.07:17:29.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.09:01:11.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.11:36:25.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.12:23:13.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.12:59:19.01:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.13:28:23.00:preob"
+w readLogFile: station NYALE13S: got unexpected `on source' record; string: "2023.132.18:26:49.00:preob"
+. readLogFile: station NYALE13S: collected operator's comments: 
+. readLogFile: station NYALE13S: 2023/05/11 18:11:60: Session r41102 ready message for Ny-Alesund 13m NS.
+. readLogFile: station NYALE13S: 2023/05/11 18:11:60: ;"---------------------------------------------------
+. readLogFile: station NYALE13S: 2023/05/11 18:11:60: First source: 1846+322 at 18:30  UT
+. readLogFile: station NYALE13S: 2023/05/11 18:11:60: FMOUT-GPS: 14.532 microseconds
+. readLogFile: station NYALE13S: 2023/05/11 18:11:60: Wx:  Temperature (C): -6.5  Pressure (mBar): 1010.1  Humidity (%): 84.9
+. readLogFile: station NYALE13S: 2023/05/11 18:11:60: Sky Conditions: Partly clouded
+. readLogFile: station NYALE13S: 2023/05/11 18:11:60: Cable difference is: NA
+. readLogFile: station NYALE13S: 2023/05/11 18:11:60: Pointing values: NA
+. readLogFile: station NYALE13S: 2023/05/11 18:11:60: Tsys values: NA
+. readLogFile: station NYALE13S: 2023/05/11 18:30:00: Session r41102 auto-start message for Ny-Alesund 13m NS.
+. readLogFile: station NYALE13S: 2023/05/11 18:30:00: ;"--------------------------------------------------------
+. readLogFile: station NYALE13S: 2023/05/11 18:30:00: Started recording with source: 1846+322 at 131.18:30:00 UT
+. readLogFile: station NYALE13S: 57137 strings of the log file (4M) were read (300 strings were skipped)
+. readLogFile: station NYALE13S: collected 297 on_source, 0 cable_cal and 889 meteo records
+. verifyReadings: station NYALE13S: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station NYALE13S: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station NYALE13S: cannot find any usable cable calibrations
+. propagateData: station NYALE13S: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41102/r41102ny.log, a log file for NYALES20 station
+w readLogFile: station NYALES20: the station name from "location" ("NyAlesun") is different
+w readLogFile: station NYALES20: the station name from "location" ("NyAlesun") is different
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.131.18:23:29.15#flagr#flagr/antenna,acquired"
+w readLogFile: station NYALES20: the station name from "location" ("NyAlesun") is different
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.131.18:28:16.15#flagr#flagr/antenna,acquired"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.131.18:29:12.14#flagr#flagr/antenna,acquired"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.131.18:29:50.00:preob"
+w readLogFile: station NYALES20: got unexpected `on source' record; string: "2023.131.18:29:50.00&preob/onsource"
+. readLogFile: station NYALES20: collected operator's comments: 
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: Session r41102 ready message for Ny-Alesund.
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: ;"--------------------------------------------
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: First source: 1846+322 at 18:30  UT
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: GPS-FMOUT: 22.229 microseconds
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: Wx:  Temperature (C): -7,5  Pressure (mBar): 1005  Humidity (%): 92
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: Sky Conditions: Partly clouded
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: Cable difference is: longer cable makes the reading larger by
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: 657 microseconds and is nominal
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: Pointing values:
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: SEFD  X/S       Source          Az/El      Offset1  Offset2
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: 957/1729    Cygnusa       29.5/31.3    -0.00242 0.04566
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: na/na      Casa           348/48      0.00816  0.0105
+. readLogFile: station NYALES20: 2023/05/11 18:28:46: Tsys (x1/s/x2): 43/26/60
+. readLogFile: station NYALES20: 2023/05/11 18:29:19: Session r41102 start message for Ny-Alesund.
+. readLogFile: station NYALES20: 2023/05/11 18:29:19: ;"--------------------------------------------
+. readLogFile: station NYALES20: 2023/05/11 18:29:19: Started recording with source: 1846+322 at: 18:30 UT
+. readLogFile: station NYALES20: 92210 strings of the log file (6M) were read (1158 strings were skipped)
+. readLogFile: station NYALES20: collected 359 on_source, 358 cable_cal and 2878 meteo records
+. verifyReadings: station NYALES20: insufficient number (0) of tsys readings; skipped
+. propagateData: station NYALES20: no cable cal record found for the scan "131-1830b" in the log file
+. propagateData: station NYALES20: 357 exact and 1 closest matches of cable calibrations were found
+. propagateData: station NYALES20: meteo parameters were found
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41102/r41102ww.log, a log file for WARK12M station
+w readLogFile: station WARK12M: the station name from "location" ("WARKWRTH") is different
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.131.23:13:53.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.132.06:52:56.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.132.10:02:18.00:preob"
+w readLogFile: station WARK12M: got unexpected `on source' record; string: "2023.132.17:31:45.01:preob"
+w readLogFile: station WARK12M: no proc record has been found in the log file
+. readLogFile: station WARK12M: 26694 strings of the log file (1M) were read (8194 strings were skipped)
+. readLogFile: station WARK12M: collected 373 on_source, 0 cable_cal and 0 meteo records
+. verifyReadings: station WARK12M: insufficient number (0) of meteo parameters; skipped
+. verifyReadings: station WARK12M: insufficient number (0) of cable calibrations; skipped
+. verifyReadings: station WARK12M: insufficient number (0) of tsys readings; skipped
+w verifyReadings: station WARK12M: cannot find any usable meteo readings
+w verifyReadings: station WARK12M: cannot find any usable cable calibrations
+. importDataFromLogFiles: data propagation has failed for WARK12M
+. importDataFromLogFiles: processing /sgpvlbi/sessions/2023/r41102/r41102wz.log, a log file for WETTZELL station
+w readLogFile: station WETTZELL: got unexpected `on source' record; string: "2023.132.00:38:56.98#flagr#flagr/antenna,acquired"
+w readLogFile: station WETTZELL: got unexpected `on source' record; string: "2023.132.00:45:36.00:preob"
+w readLogFile: station WETTZELL: got unexpected `on source' record; string: "2023.132.00:45:36.00&preob/onsource"
+w readLogFile: station WETTZELL: no proc record has been found in the log file
+. readLogFile: station WETTZELL: 77143 strings of the log file (5M) were read (9609 strings were skipped)
+. readLogFile: station WETTZELL: collected 343 on_source, 343 cable_cal and 343 meteo records
+. verifyReadings: station WETTZELL: insufficient number (0) of tsys readings; skipped
+. verifyReadings: station WETTZELL: cannot find any usable cablelong measurements
+w verifyReadings: station WETTZELL: cannot determine the cable calibration sign
+. verifyReadings: station WETTZELL: the cable sign was set to "+" according to the list of default cable signs
+. propagateData: station WETTZELL: 342 exact matches of cable calibrations were found
+. propagateData: station WETTZELL: meteo parameters were found
+. vgosDbProcLogs: import of data from station log files has been complete

@@ -1,0 +1,21 @@
+
+TIMETAG 2023/04/17 12:31:04 UTC
+MK3DB_VERSION 2
+CALC11.02 Ver. 2016.12.29  Mon Apr 17 08:31:03 2023gs61av-vlb
+Calc 11 at NASA GSFC  -OP-
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): Library ID: SgLib-0.8.2 (Compton Peak (rc2)) released on 03 Apr, 2023
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): Driver  ID: vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)) released on 03 Apr, 2023
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): Host    ID: gs61av-vlbiprd01 (Hw: x86_64; Sw: 5.4.0-125-generic version of Linux)
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): User    ID: Oper <oper@localhost>, NVI, Inc. / NASA Goddard Space Flight Center
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): User command: "/sgpvlbi/progs/nusolve/bin/vgosDbCalc /sgpvlbi/level2/vgosDB/2023/20230417-q23107/20230417-q23107_V001_iMPI_kall.wrp"
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): Input data  : /sgpvlbi/level2/vgosDB/2023/20230417-q23107/20230417-q23107_V001_iMPI_kall.wrp
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): External a priori setup: 
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): SITES    : /sgpvlbi/apriori/calc/blokq.c11.dat
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): Sources  : /sgpvlbi/apriori/calc/blokq.c11.dat
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): Ocean    : /sgpvlbi/apriori/calc/blokq.c11.dat
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): EOPs     : /sgpvlbi/apriori/calc/usno_finals.erp
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): Tilts    : /sgpvlbi/apriori/calc/tilt.dat
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): OPTL     : /sgpvlbi/apriori/calc/blokq.c11.dat
+  vgosDbCalc-0.5.2 (Fort Windham Rocks (rc2)): running observations through CALC has been complete
+. putDataIntoVgosDb: no clock break information were added to the vgosDb data tree
+. createWrapperFileName: the organization name has been adjusted: MPI => GSFC

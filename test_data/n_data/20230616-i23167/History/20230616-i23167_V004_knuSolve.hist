@@ -1,0 +1,37 @@
+
+TIMETAG 2023/06/20 11:35:54 UTC
+MK3DB_VERSION 4
+nuSolve: Library ID: SgLib-0.8.2 (Compton Peak) released on 16 Jun, 2023
+nuSolve: Driver  ID: nuSolve-0.8.2 (Dark Hollow Falls) released on 16 Jun, 2023
+nuSolve: Host    ID: gs61av-vlbiprd01 (Hw: x86_64; Sw: 5.4.0-125-generic version of Linux)
+nuSolve: User    ID: NVI Oper <karen.d.baver@nasa.gov>, NASA Goddard Space Flight Center VLBI Analysis Center
+nuSolve: Input data: /sgpvlbi/level2/vgosDB/2023/20230616-i23167/20230616-i23167_V003_iGSFC_kall.wrp
+nuSolve: Command   : nuSolve -a auto-int -t autoINT.js 20230616-i23167 yes
+Analyzed by NVI Oper (hereafter O1) at NASA Goddard Space Flight Center VLBI Analysis Center. Contact info: <karen.d.baver@nasa.gov>
+i23167/NASA GSFC nuSolve update. -O1-
+Delays only, 6 parameters, 46.376 psec fit,
+31 obs, 7.77 microsec UT1 formal error.
+The following flyby options were used in the solution:
+Station positions flyby file: 2023a_mod.sit
+Station velocities flyby file: 2023a_mod.vel
+Source flyby file: 2023a_mod.src
+Station axis offset flyby file: glo.axis
+EOP high frequency variations flyby file: NONE
+Station mean gradients flyby file: NONE
+Nutation series flyby file :  NONE
+Nutation offset flyby file :  NONE
+Earth rotation flyby file  :  NONE
+Tectonic plate motion file :  NONE
+Group delay ambiguities were resolved.
+Group delay outliers were processed and editing info has been updated.
+Troposphere and cable cal status for standard solution have been stored.
+Observation dependent contribution status has been stored.
+Reweighting updated for:
+KO-WE 
+Solution data configuration: group delays with ionosphere corrections
+Clock and atmosphere constraint information saved.
+Batchmode clock parameterization saved.
+Batchmode atmosphere parameterization saved.
+Ionosphere corrections were evaluated for group delays.
+Barometer calibration and barometer height offset not available.
+Elevation cutoff data stored in database.
