@@ -4,12 +4,13 @@ from vgos_db_identical import is_identical
 from vgos_db_same import is_same
 from wrapper_equivalent import is_equivalent_wrapper
 from history_file_identical import is_identical_history_file
+from Directory import Directory
 import os
 import shutil
 import sys
 import warnings
 import glob
-from Directory import Directory
+import datetime
 
 def find_history_file_name(old_file_name, merge_directory):
     """
@@ -251,6 +252,8 @@ def create_new_wrapper(wrapper_file, merge_directory, secondary_directory):
     # For case 2
     lines_to_write_wrapper = []
     lines_to_write_history = []
+    now = datetime.datetime.utcnow()
+    lines_to_write_history.append(f"\nTIMETAG {now.strftime('%Y/%m/%d %H:%M:%S')} UTC")
     current_dir = Directory()
     
     for line in wrapper_lines: 
@@ -290,7 +293,7 @@ def create_new_wrapper(wrapper_file, merge_directory, secondary_directory):
     with open(merge_directory+wrapper_file_name, 'x') as f: 
         f.writelines("\n".join(lines_to_write_wrapper))
 
-    if lines_to_write_history:
+    if len(lines_to_write_history) > 1:
         if 'History' not in os.listdir(merge_directory):
             print(f'{merge_directory}History')
             os.mkdir(f'{merge_directory}History')
