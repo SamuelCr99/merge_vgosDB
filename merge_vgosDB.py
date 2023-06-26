@@ -12,9 +12,10 @@ import warnings
 import glob
 import datetime
 
+
 def find_history_file_name(old_file_name, merge_directory):
     """
-    Finds the correct name for a history file, this name should depend on the 
+    Finds the correct name for a history file. This name should depend on the 
     version number of the other files in the directory.
     """
     history_file_names = "\t".join(os.listdir(f'{merge_directory}History'))
@@ -29,8 +30,13 @@ def find_history_file_name(old_file_name, merge_directory):
         v+=1
     return f"{old_file_name_prefix}_V{get_version_num(v)}_{'_'.join(flags_reduced)}.hist"
 
+
 def find_data_file_name(old_file_name, merge_directory):
-    old_file_name_prefix = old_file_name.split("_")[0]
+    """
+    Finds the correct name for a data file. This name should depend on the 
+    version number of the other files in the directory.
+    """
+    old_file_name_prefix = old_file_name.split("_")[0].split(".")[0]
 
     data_file_paths = glob.glob(f"{merge_directory}{old_file_name_prefix}*.nc")
     data_file_names = []
@@ -41,13 +47,13 @@ def find_data_file_name(old_file_name, merge_directory):
     flags_reduced = []
     for flag in flags:
         if flag[0].lower() != "v":
-            flags_reduced.append(flag)
+            flags_reduced.append(f"_{flag}")
     
-    v=0
+    v=1
     while f"_V{get_version_num(v)}" in data_file_names:
         v+=1
     
-    return f"{old_file_name_prefix}_V{get_version_num(v)}_{'_'.join(flags_reduced)}.nc"
+    return f"{old_file_name_prefix}_V{get_version_num(v)}{''.join(flags_reduced)}.nc"
 
 
 def get_version_num(v):
@@ -62,8 +68,8 @@ def get_version_num(v):
         return f"{v}"
 
 
-# Is files are used to determine which type of information a line in the wrapper
-# file is referring to
+# Is-methods are used to determine which type of information a line in the
+# wrapper file is referring to
 def is_beginning(line):
     return line.split(" ")[0].lower() == "begin"
 
@@ -78,9 +84,6 @@ def is_history_file(line):
 
 def is_data_file(line):
     return '.nc' in line.split(' ')[-1]
-
-def handle_wrapper_info(line):
-    return line
 
 def handle_directory(line, merge_directory):
     """
@@ -102,7 +105,7 @@ def handle_directory(line, merge_directory):
     history_lines = ''
     if directory_name not in os.listdir(merge_directory):
         os.mkdir(f'{merge_directory}{directory_name}')
-        history_lines = f"Directory: {directory_name} did not exist, now created"
+        history_lines = f"Directory: {directory_name} did not exist, now created."
     return line, history_lines
 
 def handle_history_file(line, merge_directory, secondary_directory):
@@ -130,14 +133,14 @@ def handle_history_file(line, merge_directory, secondary_directory):
 
     if history_file_name not in os.listdir(merge_directory+'/History'):
         shutil.copyfile(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{history_file_name}') #Copies file
-        history_lines = f'Copy history: {history_file_name} did not exist in merge directory, copied file to correct location'
+        history_lines = f'Copy history: {history_file_name} did not exist in merge directory, copied file.'
     
     else:
         if not is_identical_history_file(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{history_file_name}'):
             new_file_name = find_history_file_name(history_file_name,merge_directory)
             shutil.copyfile(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{new_file_name}') #Copies file
             line = line.strip(history_file_name) + new_file_name
-            history_lines = f'Copy history: {history_file_name} did not exist in merge directory, but name was taken. Copied file to correct location with name {new_file_name}'
+            history_lines = f'Copy history: {history_file_name} did not exist in merge directory, but name was taken. Copied file with name {new_file_name}.'
 
     return line, history_lines
 
@@ -170,7 +173,7 @@ def handle_data_file(line, merge_directory, secondary_directory, current_dir):
 
     if not compatible_paths: 
         shutil.copyfile(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}') #Copies file
-        history_line = f'Copy file: No compatible files found for {secondary_directory}{file_name}, copied file' 
+        history_line = f'Copy file: No compatible files found for {current_dir}{file_name}, copied file.' 
         return line, history_line
 
 
@@ -181,26 +184,22 @@ def handle_data_file(line, merge_directory, secondary_directory, current_dir):
 
     for compatible_line in compatible_paths:
         if is_identical(file_path, compatible_line):
-            history_line = f'Identical file found: {secondary_directory+file_name} has been changed to {compatible_line}'
+            history_line = f'Identical file found: {current_dir+file_name} has been changed to {current_dir}{compatible_line.split("/")[-1]}.'
             return compatible_line.split("/")[-1], history_line
 
     
     for compatible_line in compatible_paths:
         if is_equivalent(file_path, compatible_line):
-            history_line = f'Equivalent file found: {secondary_directory+file_name} has been changed to {compatible_line}'
+            history_line = f'Equivalent file found: {current_dir+file_name} has been changed to {current_dir}{compatible_line.split("/")[-1]}.'
             return compatible_line.split("/")[-1], history_line
 
 
     if file_name in os.listdir(merge_directory):
         old_file_name = file_name
-        # v = 1
-        # while file_name[:-3] + f"_v{get_version_num(v)}.nc" in os.listdir(merge_directory):
-        #     v+=1
-        # file_name = file_name[:-3] + f"_v{get_version_num(v)}.nc"
         file_name = find_data_file_name(old_file_name,merge_directory)
 
         shutil.copyfile(f'{secondary_directory}{old_file_name}', f'{merge_directory}{file_name}') #Copies file
-        history_line = f'Copy file: No file same, identical or equivalent for {current_dir}{old_file_name}, but name already existed. Updating name to {current_dir}{file_name}'
+        history_line = f'Copy file: No file same, identical or equivalent for {current_dir}{old_file_name}, but name already existed. Updating name to {current_dir}{file_name}.'
         return file_name, history_line
 
     else: 
@@ -243,7 +242,6 @@ def create_new_wrapper(wrapper_file, merge_directory, secondary_directory):
     wrapper_file_name = wrapper_file.split('/')[-1]
     if wrapper_file_name in os.listdir(merge_directory):
         if is_equivalent_wrapper(merge_directory+wrapper_file_name, secondary_directory+wrapper_file_name):
-            print("Equivalent wrapper with same name found, no need to copy files")
             return
         else: 
             warnings.warn("Wrapper with the same name found, but they are not equivalent!")
@@ -288,14 +286,13 @@ def create_new_wrapper(wrapper_file, merge_directory, secondary_directory):
                 lines_to_write_history.append(return_values[1])
 
         else:
-            lines_to_write_wrapper.append(handle_wrapper_info(line))
+            lines_to_write_wrapper.append(line)
 
     with open(merge_directory+wrapper_file_name, 'x') as f: 
         f.writelines("\n".join(lines_to_write_wrapper))
 
     if len(lines_to_write_history) > 1:
         if 'History' not in os.listdir(merge_directory):
-            print(f'{merge_directory}History')
             os.mkdir(f'{merge_directory}History')
         history_file_names = "\t".join(os.listdir(f'{merge_directory}History'))
         v=0
@@ -306,8 +303,6 @@ def create_new_wrapper(wrapper_file, merge_directory, secondary_directory):
         with open(f"{merge_directory}History/{merge_history_file_name}", 'x') as f: 
             f.writelines("\n".join(lines_to_write_history))
         
-
-    # Print this things to a new file!
 
 def main(merge_directory, secondary_directory):
     """
@@ -334,8 +329,8 @@ def main(merge_directory, secondary_directory):
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        merge_directory = 'test_data/n_data/20230315-r41094/'
-        secondary_directory = 'test_data/g_data/20230315-r41094/'
+        merge_directory = 'test_data/n_data/20230616-i23167/'
+        secondary_directory = 'test_data/g_data/20230616-i23167/'
     else: 
         merge_directory = sys.argv[1]
         secondary_directory = sys.argv[2] 
