@@ -105,7 +105,7 @@ def handle_directory(line, merge_directory):
     history_lines = ''
     if directory_name not in os.listdir(merge_directory):
         os.mkdir(f'{merge_directory}{directory_name}')
-        history_lines = f"Directory: {directory_name} did not exist, now created."
+        history_lines = f"New directory: {directory_name} did not exist, now created."
     return line, history_lines
 
 def handle_history_file(line, merge_directory, secondary_directory):
@@ -136,11 +136,16 @@ def handle_history_file(line, merge_directory, secondary_directory):
         history_lines = f'Copy history: {history_file_name} did not exist in merge directory, copied file.'
     
     else:
-        if not is_identical_history_file(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{history_file_name}'):
+        new_history_file_name = is_identical_history_file(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/')
+        if not new_history_file_name:
             new_file_name = find_history_file_name(history_file_name,merge_directory)
             shutil.copyfile(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{new_file_name}') #Copies file
             line = line.strip(history_file_name) + new_file_name
             history_lines = f'Copy history: {history_file_name} did not exist in merge directory, but name was taken. Copied file with name {new_file_name}.'
+        
+        elif new_history_file_name != history_file_name:
+            line = line.strip(history_file_name) + new_history_file_name
+            history_lines = f'Identical history: {history_file_name} changed name to {new_history_file_name}.'
 
     return line, history_lines
 
@@ -184,14 +189,19 @@ def handle_data_file(line, merge_directory, secondary_directory, current_dir):
 
     for compatible_line in compatible_paths:
         if is_identical(file_path, compatible_line):
-            history_line = f'Identical file found: {current_dir+file_name} has been changed to {current_dir}{compatible_line.split("/")[-1]}.'
-            return compatible_line.split("/")[-1], history_line
+            new_file_name = compatible_line.split("/")[-1]
+            history_line = f'Identical file found: {current_dir}{file_name} has been changed to {current_dir}{new_file_name}.'
+            return new_file_name, history_line
 
     
     for compatible_line in compatible_paths:
         if is_equivalent(file_path, compatible_line):
-            history_line = f'Equivalent file found: {current_dir+file_name} has been changed to {current_dir}{compatible_line.split("/")[-1]}.'
-            return compatible_line.split("/")[-1], history_line
+            new_file_name = compatible_line.split("/")[-1]
+            if file_name == new_file_name:
+                history_line = f'Equivalent file found: {current_dir}{file_name}, did not copy old file.'
+            else:
+                history_line = f'Equivalent file found: {current_dir}{file_name} has been substituted with {current_dir}{new_file_name}.'
+            return new_file_name, history_line
 
 
     if file_name in os.listdir(merge_directory):
@@ -329,8 +339,8 @@ def main(merge_directory, secondary_directory):
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        merge_directory = 'test_data/n_data/20230616-i23167/'
-        secondary_directory = 'test_data/g_data/20230616-i23167/'
+        merge_directory = 'test_data/n_data/20230315-r41094/'
+        secondary_directory = 'test_data/g_data/20230315-r41094/'
     else: 
         merge_directory = sys.argv[1]
         secondary_directory = sys.argv[2] 
