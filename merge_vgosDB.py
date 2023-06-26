@@ -139,29 +139,29 @@ def handle_data_file(line, merge_directory, secondary_directory):
     Returns the lines which should be written to the new wrapper file and history
     file.
     """
-    compatible_lines = find_compatible(secondary_directory+line, merge_directory[:-1])
+    compatible_paths = find_compatible(secondary_directory+line, merge_directory[:-1])
 
     file_name = line
     file_path = secondary_directory+line
 
-    if not compatible_lines: 
+    if not compatible_paths: 
         shutil.copyfile(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}') #Copies file
         history_line = f'No compatible files found for: {secondary_directory}{file_name}, creating new file' 
         return line, history_line
 
 
-    for compatible_line in compatible_lines:
+    for compatible_line in compatible_paths:
         if is_same(file_path,compatible_line):
             return line, ''
 
 
-    for compatible_line in compatible_lines:
+    for compatible_line in compatible_paths:
         if is_identical(file_path, compatible_line):
             history_line = f'{secondary_directory+file_name} has been changed to {secondary_directory+compatible_line}'
             return compatible_line.split("/")[-1], history_line
 
     
-    for compatible_line in compatible_lines:
+    for compatible_line in compatible_paths:
         if is_equivalent(file_path, compatible_line):
             history_line = f'{secondary_directory+file_name} has been changed to {secondary_directory+compatible_line}'
             return compatible_line.split("/")[-1], history_line
@@ -173,7 +173,7 @@ def handle_data_file(line, merge_directory, secondary_directory):
         while file_name[:-3] + f"_v{get_version_num(v)}.nc" in os.listdir(merge_directory):
             v+=1
         file_name = file_name[:-3] + f"_v{get_version_num(v)}.nc"
-        shutil.copyfile(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}') #Copies file
+        shutil.copyfile(f'{secondary_directory}{old_file_name}', f'{merge_directory}{file_name}') #Copies file
         history_line = f'No file same, identical or equivalent for {old_file_name}, but name already existed, updating name to {file_name}'
         return file_name, history_line
 

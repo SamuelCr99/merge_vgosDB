@@ -41,8 +41,8 @@ def is_identical(primary_file, secondary_file):
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        s1 = "NVI_data/20APR01XA/Apriori/Antenna.nc"
-        s2 = "NVI_data/20APR01XA/Apriori2/Antenna.nc"
+        s1 = "test_data/test_secondary/file2.nc"
+        s2 = "test_data/test_primary/file1.nc"
         print(is_identical(s1, s2))
 
     else:

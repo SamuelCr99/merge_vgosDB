@@ -147,5 +147,36 @@ Test 6 23/6 15:13, Case 4:
 
     Result: As expected.
 
-Test 7 23/6 15:24, Case 5:
-    Expected result: 
+Test 7 26/6 9:34, Case 5:
+    Expected result: As file1 in merge directory is vgosDB same as file1 in 
+    secondary directory the expected result is that no file should be copied. 
+    The line should be written correctly to the new wrapper file. 
+
+    Result: No file was copied and new wrapper file contains correct 
+    information. 
+
+Test 8 26/6 9:39, Case 5: 
+    Expected result: As file1 in merge directory is not same, identical or 
+    equivalent to the file in secondary directory, we should copy over the file
+    and change its name. This name change should also be seen in the new wrapper
+    file. 
+
+    Result: Works as intended, file is copied with a new name, this new name is 
+    also shown in the new wrapper file. 
+
+Test 9 26/6 9:54, Case 5:
+    Expected result: As file1 in merge directory is vgosDB identical to file2 
+    in secondary directory we expect no file to be copied and the new wrapper 
+    file to show the name of file1. 
+
+    Result: Work as intended, file was not copied and the name was updated in 
+    the wrapper.
+
+Test 10 26/6 10:56, Case 5:
+    Expected result: As file1 in merge directory is vgosDB equivalent to file2 
+    in secondary directory we expect no file to be copied and the new wrapper 
+    file to show the name of file1.
+
+    Result: Work as intended, file was not copied and the name was updated in 
+    the wrapper.
+
