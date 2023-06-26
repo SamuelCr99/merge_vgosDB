@@ -1,0 +1,23 @@
+
+TIMETAG 2023/03/29 23:36:36 UTC
+MK3DB_VERSION 2
+CALC11.02 Ver. 2016.12.29  Wed Mar 29 19:36:35 2023gs61av-vlb
+Calc 11 at NASA GSFC  -OP-
+
+TIMETAG 2023/03/29 23:36:38 UTC
+. vgosDbCalc: Library ID: SgLib-0.8.1 (Skyland) released on 05 Jan, 2023
+. vgosDbCalc: Driver  ID: vgosDbCalc-0.5.0 (Knob Mountain) released on 03 Jan, 2023
+. vgosDbCalc: Host    ID: gs61av-vlbiprd01 (Hw: x86_64; Sw: 5.4.0-125-generic version of Linux)
+. vgosDbCalc: User    ID: Oper <oper@localhost>, NVI, Inc. / NASA Goddard Space Flight Center
+. vgosDbCalc: User command: "/sgpvlbi/progs/nusolve/bin/vgosDbCalc /sgpvlbi/level2/vgosDB/2023/20230315-r41094/20230315-r41094_V001_iWACO_kall.wrp"
+. vgosDbCalc: Input data  : /sgpvlbi/level2/vgosDB/2023/20230315-r41094/20230315-r41094_V001_iWACO_kall.wrp
+. vgosDbCalc: External a priori setup: 
+. vgosDbCalc: SITES    : /sgpvlbi/apriori/calc/blokq.c11.dat
+. vgosDbCalc: Sources  : /sgpvlbi/apriori/calc/blokq.c11.dat
+. vgosDbCalc: Ocean    : /sgpvlbi/apriori/calc/blokq.c11.dat
+. vgosDbCalc: EOPs     : /sgpvlbi/apriori/calc/usno_finals.erp
+. vgosDbCalc: Tilts    : /sgpvlbi/apriori/calc/tilt.dat
+. vgosDbCalc: OPTL     : /sgpvlbi/apriori/calc/blokq.c11.dat
+. vgosDbCalc: running observations through CALC has been complete
+. putDataIntoVgosDb: no clock break information were added to the vgosDb data tree
+. createWrapperFileName: the organization name has been adjusted: WACO => GSFC

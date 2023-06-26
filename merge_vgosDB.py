@@ -297,15 +297,18 @@ def main(merge_directory, secondary_directory):
     Returns: 
     No return values
     """
+    if merge_directory[-1] != '/': merge_directory += '/'
+    if secondary_directory[-1] != '/': secondary_directory += '/'
+
     wrapper_files = find_wrapper_files(secondary_directory)
-    wrapper_files.sort(reverse=True)
+    wrapper_files.sort()
     for wrapper_file in wrapper_files: 
         create_new_wrapper(wrapper_file, merge_directory, secondary_directory)
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        merge_directory = 'test_data/test_primary/'
-        secondary_directory = 'test_data/test_secondary/'
+        merge_directory = 'test_data/n_data/20230315-r41094/'
+        secondary_directory = 'test_data/g_data/20230315-r41094/'
     else: 
         merge_directory = sys.argv[1]
         secondary_directory = sys.argv[2] 
