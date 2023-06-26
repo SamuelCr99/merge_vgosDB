@@ -8,6 +8,7 @@ import os
 import shutil
 import sys
 import warnings
+import glob
 from Directory import Directory
 
 def find_history_file_name(old_file_name, merge_directory):
@@ -26,6 +27,27 @@ def find_history_file_name(old_file_name, merge_directory):
     while f"_V{get_version_num(v)}" in history_file_names:
         v+=1
     return f"{old_file_name_prefix}_V{get_version_num(v)}_{'_'.join(flags_reduced)}.hist"
+
+def find_data_file_name(old_file_name, merge_directory):
+    old_file_name_prefix = old_file_name.split("_")[0]
+
+    data_file_paths = glob.glob(f"{merge_directory}{old_file_name_prefix}*.nc")
+    data_file_names = []
+    for path in data_file_paths:
+        data_file_names.append(os.path.basename(path))
+
+    flags = old_file_name.strip(".nc").split("_")[1:]
+    flags_reduced = []
+    for flag in flags:
+        if flag[0].lower() != "v":
+            flags_reduced.append(flag)
+    
+    v=0
+    while f"_V{get_version_num(v)}" in data_file_names:
+        v+=1
+    
+    return f"{old_file_name_prefix}_V{get_version_num(v)}_{'_'.join(flags_reduced)}.nc"
+
 
 def get_version_num(v):
     """
@@ -107,17 +129,18 @@ def handle_history_file(line, merge_directory, secondary_directory):
 
     if history_file_name not in os.listdir(merge_directory+'/History'):
         shutil.copyfile(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{history_file_name}') #Copies file
-        history_lines = f'{history_file_name} did not exist in merge directory, copied file to correct location'
+        history_lines = f'Copy history: {history_file_name} did not exist in merge directory, copied file to correct location'
     
     else:
         if not is_identical_history_file(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{history_file_name}'):
             new_file_name = find_history_file_name(history_file_name,merge_directory)
             shutil.copyfile(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{new_file_name}') #Copies file
             line = line.strip(history_file_name) + new_file_name
+            history_lines = f'Copy history: {history_file_name} did not exist in merge directory, but name was taken. Copied file to correct location with name {new_file_name}'
 
     return line, history_lines
 
-def handle_data_file(line, merge_directory, secondary_directory):
+def handle_data_file(line, merge_directory, secondary_directory, current_dir):
     """
     Handles actions to be performed for lines which refer to a data file. 
 
@@ -146,7 +169,7 @@ def handle_data_file(line, merge_directory, secondary_directory):
 
     if not compatible_paths: 
         shutil.copyfile(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}') #Copies file
-        history_line = f'No compatible files found for: {secondary_directory}{file_name}, creating new file' 
+        history_line = f'Copy file: No compatible files found for {secondary_directory}{file_name}, copied file' 
         return line, history_line
 
 
@@ -157,29 +180,31 @@ def handle_data_file(line, merge_directory, secondary_directory):
 
     for compatible_line in compatible_paths:
         if is_identical(file_path, compatible_line):
-            history_line = f'{secondary_directory+file_name} has been changed to {secondary_directory+compatible_line}'
+            history_line = f'Identical file found: {secondary_directory+file_name} has been changed to {compatible_line}'
             return compatible_line.split("/")[-1], history_line
 
     
     for compatible_line in compatible_paths:
         if is_equivalent(file_path, compatible_line):
-            history_line = f'{secondary_directory+file_name} has been changed to {secondary_directory+compatible_line}'
+            history_line = f'Equivalent file found: {secondary_directory+file_name} has been changed to {compatible_line}'
             return compatible_line.split("/")[-1], history_line
 
 
     if file_name in os.listdir(merge_directory):
         old_file_name = file_name
-        v = 1
-        while file_name[:-3] + f"_v{get_version_num(v)}.nc" in os.listdir(merge_directory):
-            v+=1
-        file_name = file_name[:-3] + f"_v{get_version_num(v)}.nc"
+        # v = 1
+        # while file_name[:-3] + f"_v{get_version_num(v)}.nc" in os.listdir(merge_directory):
+        #     v+=1
+        # file_name = file_name[:-3] + f"_v{get_version_num(v)}.nc"
+        file_name = find_data_file_name(old_file_name,merge_directory)
+
         shutil.copyfile(f'{secondary_directory}{old_file_name}', f'{merge_directory}{file_name}') #Copies file
-        history_line = f'No file same, identical or equivalent for {old_file_name}, but name already existed, updating name to {file_name}'
+        history_line = f'Copy file: No file same, identical or equivalent for {current_dir}{old_file_name}, but name already existed. Updating name to {current_dir}{file_name}'
         return file_name, history_line
 
     else: 
         shutil.copyfile(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}') #Copies file
-        history_line = f'No file is same, identical or equivalent for {file_name}. Copied it over.'
+        history_line = f'Copy file: No file is same, identical or equivalent for {current_dir}{file_name}. Copied it over.'
         return file_name, history_line
 
 
@@ -187,7 +212,6 @@ def find_wrapper_files(directory):
     """
     Finds all wrapper files for a given directory
     """
-    # if directory[-1] != '/': directory += '/'
     wrapper_files = []
     files = os.listdir(directory)
     for file in files:
@@ -255,7 +279,7 @@ def create_new_wrapper(wrapper_file, merge_directory, secondary_directory):
                 lines_to_write_history.append(return_values[1])
 
         elif is_data_file(line):
-            return_values = handle_data_file(line, merge_directory + current_dir.get_path_with_slash(), secondary_directory + current_dir.get_path_with_slash())
+            return_values = handle_data_file(line, merge_directory + current_dir.get_path_with_slash(), secondary_directory + current_dir.get_path_with_slash(), current_dir.get_path_with_slash())
             lines_to_write_wrapper.append(return_values[0])
             if return_values[1]:
                 lines_to_write_history.append(return_values[1])

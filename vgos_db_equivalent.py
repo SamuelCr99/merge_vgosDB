@@ -25,7 +25,7 @@ def is_equivalent(file1,file2):
             continue
         if var not in ds2.variables:
             return False
-        if (ds1[var][:] != ds2[var][:]).any():
+        if ds1[var][:].tolist() != ds2[var][:].tolist():
             return False
 
     return True
