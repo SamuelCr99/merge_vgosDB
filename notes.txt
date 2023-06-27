@@ -1,4 +1,5 @@
 Frågor till John:
 Multiple history files can have the same version number (but different other flags). Ask John if this is desired or not
 Multiple wrapper files can have the same version number (but different other flags). Ask John if this is desired or not
-There exists "InputWrapper" command in History section. Should this be considered? Ask John.
+There exists "InputWrapper" command in History section. Should this be considered?
+Should we make READMEs and other quality of life improvements to the other projects before starting the new one?
