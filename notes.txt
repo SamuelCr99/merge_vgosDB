@@ -2,12 +2,3 @@ Frågor till John:
 Multiple history files can have the same version number (but different other flags). Ask John if this is desired or not
 Multiple wrapper files can have the same version number (but different other flags). Ask John if this is desired or not
 There exists "InputWrapper" command in History section. Should this be considered? Ask John.
-
-fixes:
-1. Extend the header of the history file to include:
-    - Which program did the merging (including version number).
-    - "Merging  20230616-i23167_V002_iBKG.wrp into  vgosdB 20230616-i23167"
-
-2. Update header and history section of copied/merged wrappers
-
-3. Check that when we copy the files over, we preserve the original creation date.

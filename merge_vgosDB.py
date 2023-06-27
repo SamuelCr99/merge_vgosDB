@@ -344,8 +344,10 @@ Run by {who}
         # Add to the history section of the merged wrapper
         end_history_index = [i for i, elem in enumerate(lines_to_write_wrapper) if 'end history' in elem.lower()][0]
         now = datetime.datetime.utcnow()
-        process_text = f"""!
-Begin Process merge_vgosDB
+        if lines_to_write_wrapper[end_history_index-1][0] != "!":
+            lines_to_write_wrapper.insert(end_history_index-1,"!")
+            end_history_index += 1
+        process_text = f"""Begin Process merge_vgosDB
 Version {VERSION}
 CreatedBy {who}
 Default_dir History
