@@ -3,8 +3,6 @@ import tarfile
 import os
 import shutil
 import sys
-
-
         
 
 def main(merge_directory, secondary_directory, who):

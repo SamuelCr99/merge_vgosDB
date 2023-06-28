@@ -1,6 +1,6 @@
 import netCDF4 as nc
 import sys
-from vgos_db_identical import is_identical
+from utility.vgos_db_identical import is_identical
 
 
 def is_same(primary_file, secondary_file):

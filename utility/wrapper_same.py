@@ -1,8 +1,8 @@
 import netCDF4 as nc
-import sys
-from vgos_db_same import is_same
+from utility.vgos_db_same import is_same
+from utility.Directory import Directory
 import os
-from Directory import Directory
+import sys
 
 def extract_paths(lines):
     """

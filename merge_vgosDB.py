@@ -1,10 +1,10 @@
-from vgos_db_equivalent import is_equivalent
-from vgos_db_plug_compatible import find_compatible
-from vgos_db_identical import is_identical
-from vgos_db_same import is_same
-from wrapper_equivalent import is_equivalent_wrapper
-from history_file_identical import is_identical_history_file
-from Directory import Directory
+from utility.vgos_db_equivalent import is_equivalent
+from utility.vgos_db_plug_compatible import find_compatible
+from utility.vgos_db_identical import is_identical
+from utility.vgos_db_same import is_same
+from utility.wrapper_equivalent import is_equivalent_wrapper
+from utility.history_file_identical import is_identical_history_file
+from utility.Directory import Directory
 import os
 import shutil
 import sys
@@ -393,8 +393,8 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
 
 if __name__ == '__main__':
     if len(sys.argv) < 4:
-        merge_directory = 'test_data/n_data/20230315-r41094/'
-        secondary_directory = 'test_data/g_data/20230315-r41094/'
+        merge_directory = 'example/GSFC_data/20230315-r41094/'
+        secondary_directory = 'example/BKG_data/20230315-r41094/'
         who = 'NVI Inc. - Summer Swedes'
     else: 
         merge_directory = sys.argv[1]
