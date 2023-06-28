@@ -1,7 +1,5 @@
 import netCDF4 as nc
-import sys
 
-# Is "Stub" necessarily meta?
 META_VARS = ["Stub", "CreateTime", "CreatedBy", "Program", "DataOrigin", "TimeTag",
              "TimeTagFile", "Session", "Band", "Station", "Subroutine", "History", "vgosDB_Version"]
 

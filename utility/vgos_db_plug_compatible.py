@@ -1,6 +1,5 @@
 import netCDF4 as nc
 import glob
-import sys
 
 
 def find_compatible(file_path, dir_path):

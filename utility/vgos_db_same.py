@@ -1,5 +1,3 @@
-import netCDF4 as nc
-import sys
 from utility.vgos_db_identical import is_identical
 
 

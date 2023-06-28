@@ -1,7 +1,4 @@
-import netCDF4 as nc
-import sys
 from utility.vgos_db_equivalent import is_equivalent
-import os
 
 
 def extract_paths(lines):

@@ -410,7 +410,7 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
         ".")[-1] or "xz" in merge_directory.split(".")[-1]
 
     if is_zip:
-        # Update the directories
+        # Unzip the files and update directory paths
         with tarfile.open(merge_directory, 'r') as mergeZip:
             mergeZip.extractall('merge_temp')
         with tarfile.open(secondary_directory, 'r') as secondaryZip:
@@ -424,11 +424,13 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
         merge_directory = f'merge_temp/{merge_folder_name}'
         secondary_directory = f'secondary_temp/{secondary_folder_name}'
 
+    # Make sure paths always end with a /
     if merge_directory[-1] != '/':
         merge_directory += '/'
     if secondary_directory[-1] != '/':
         secondary_directory += '/'
 
+    # Create a new wrapper for each wrapper in the second directory
     wrapper_files = find_wrapper_files(secondary_directory)
     wrapper_files.sort()
     for wrapper_file in wrapper_files:
@@ -452,24 +454,29 @@ if __name__ == '__main__':
     """
 
     if len(sys.argv) == 1:
+        # Prompt user for each argument
         print(f"----------- Merge vgosDB v{VERSION} -----------")
         merge_directory = input("Directory/file to merge into: ")
         secondary_directory = input("Second directory/file to merge: ")
         who = input("Who is merging the files: ")
 
     elif len(sys.argv) > 1 and sys.argv[1] == "--help":
+        # Display help text
         print(help_text)
         sys.exit()
 
     elif len(sys.argv) > 1 and len(sys.argv) < 4:
+        # Too few arguments
         raise ValueError("Not enough arguments")
 
     elif len(sys.argv) == 4:
+        # Set the variables using the given arguments
         merge_directory = sys.argv[1]
         secondary_directory = sys.argv[2]
         who = sys.argv[3]
 
     else:
+        # Too many arguments
         raise ValueError("Too many arguments")
 
     merge_vgosDB(merge_directory, secondary_directory, who)

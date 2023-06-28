@@ -1,4 +1,7 @@
 class Directory:
+    """
+    Class to manage the current directory    
+    """
 
     def __init__(self):
         self.current_dir = []

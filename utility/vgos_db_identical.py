@@ -1,5 +1,4 @@
 import netCDF4 as nc
-import sys
 
 
 def is_identical(primary_file, secondary_file):
