@@ -5,12 +5,12 @@ from utility.vgos_db_same import is_same
 from utility.wrapper_equivalent import is_equivalent_wrapper
 from utility.history_file_identical import is_identical_history_file
 from utility.Directory import Directory
-import os
 import shutil
-import sys
 import warnings
 import glob
 import datetime
+import os
+import sys
 
 VERSION = 1.0
 
@@ -392,6 +392,8 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
         create_new_wrapper(wrapper_file, merge_directory, secondary_directory, who)
 
 if __name__ == '__main__':
+    help_text = ""
+
     if len(sys.argv) < 4:
         merge_directory = 'example/GSFC_data/20230315-r41094/'
         secondary_directory = 'example/BKG_data/20230315-r41094/'
@@ -400,5 +402,7 @@ if __name__ == '__main__':
         merge_directory = sys.argv[1]
         secondary_directory = sys.argv[2]
         who = sys.argv[3]
+
+    # if "zip" in merge_directory.split(".")[-1]:
 
     merge_vgosDB(merge_directory, secondary_directory, who)

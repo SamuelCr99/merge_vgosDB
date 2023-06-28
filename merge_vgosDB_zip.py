@@ -28,8 +28,8 @@ def main(merge_directory, secondary_directory, who):
 
 if __name__ == '__main__':
     if len(sys.argv) < 4:
-        merge_directory = 'test_data/n_data/20230315-r41094.tar.xz'
-        secondary_directory = 'test_data/g_data/20230315-r41094.tar.xz'
+        merge_directory = 'example/GSFC_data/20230315-r41094.tgz'
+        secondary_directory = 'example/BKG_data/20230315-r41094.tgz'
         who = 'NVI Inc. - Summer Swedes'
     else: 
         merge_directory = sys.argv[1]
