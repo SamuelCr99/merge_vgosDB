@@ -11,6 +11,7 @@ import glob
 import datetime
 import os
 import sys
+import tarfile
 
 VERSION = 1.0
 
@@ -383,6 +384,22 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
     Returns: 
     No return values
     """
+    is_zip = "tgz" in merge_directory.split(".")[-1] or "xz" in merge_directory.split(".")[-1]
+
+    if is_zip:
+        # Update the directories
+        with tarfile.open(merge_directory, 'r') as mergeZip: 
+            mergeZip.extractall('merge_temp')
+        with tarfile.open(secondary_directory, 'r') as secondaryZip:
+            secondaryZip.extractall('secondary_temp')
+
+        merge_folder_name = merge_directory.split('/')[-1].split('.')[0]
+        secondary_folder_name = secondary_directory.split('/')[-1].split('.')[0]
+
+        old_merge_directory = merge_directory
+        merge_directory = f'merge_temp/{merge_folder_name}'
+        secondary_directory = f'secondary_temp/{secondary_folder_name}'
+
     if merge_directory[-1] != '/': merge_directory += '/'
     if secondary_directory[-1] != '/': secondary_directory += '/'
 
@@ -391,18 +408,40 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
     for wrapper_file in wrapper_files: 
         create_new_wrapper(wrapper_file, merge_directory, secondary_directory, who)
 
-if __name__ == '__main__':
-    help_text = ""
+    if is_zip:
+        # Zip up the merge directory
+        with tarfile.open(old_merge_directory, 'w:xz') as mergeZip:
+            mergeZip.add('merge_temp', arcname=os.path.basename(''))
+        shutil.rmtree('merge_temp')
+        shutil.rmtree('secondary_temp')
 
-    if len(sys.argv) < 4:
-        merge_directory = 'example/GSFC_data/20230315-r41094/'
-        secondary_directory = 'example/BKG_data/20230315-r41094/'
-        who = 'NVI Inc. - Summer Swedes'
-    else: 
+if __name__ == '__main__':
+    help_text = """
+    Merge vgosDB
+    Merges a vgosDB (secondary database) into another (merged database).
+    
+    usage: merge_vgosDB filepath_merge_db filepath_secondary_db name_executer
+    """
+
+    if len(sys.argv) == 1:
+        print(f"----------- Merge vgosDB v{VERSION} -----------")
+        merge_directory = input("Directory/file to merge into: ")
+        secondary_directory = input("Second directory/file to merge: ")
+        who = input("Who is merging the files: ")
+
+    elif len(sys.argv) > 1 and sys.argv[1] == "--help":
+            print(help_text)
+            sys.exit()
+
+    elif len(sys.argv) > 1 and len(sys.argv) < 4:
+        raise ValueError("Not enough arguments")
+
+    elif len(sys.argv) == 4: 
         merge_directory = sys.argv[1]
         secondary_directory = sys.argv[2]
         who = sys.argv[3]
 
-    # if "zip" in merge_directory.split(".")[-1]:
+    else:
+        raise ValueError("Too many arguments")
 
     merge_vgosDB(merge_directory, secondary_directory, who)

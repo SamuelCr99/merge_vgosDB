@@ -15,7 +15,7 @@ Each wrapper that is written gets a new history file assigned to it, which descr
 
 ## How to install
 
-You can install the package by pip (not yet implemented) with
+You can install the package by pip (__not yet implemented__) with
 
 ```bash
 $ pip install merge_vgosDB
@@ -36,17 +36,11 @@ Merge vgosDB is used by running the script `merge_vgosDB.py` with
 $ python3 merge_vgosDB.py <filepath_merge_db> <filepath_secondary_db> <name_executer>
 ```
 
-The filepaths can either be paths to directories or to files ending in .tgz or .tar.xz. These paths can be given as either relative or absolute. The code will then merge the secondary directory into the merge directory.
+Write `python` instead of `python3` if running code on Windows. The filepaths can either be paths to directories or to files ending in .tgz or .tar.xz. These paths can be given as either relative or absolute. When specifying directories, the program will merge the secondary directory into the merge directory. When specifying zipped files, the program will overwrite the first file.
 
-Example (write `python` instead of `python3` if running code on Windows): 
+Example: 
 ```
 $ python3 merge_vgosDB example/GSFC_data/20230315-r41094 example/BKG_data/20230315-r41094 "NVI Inc."
-```
-
-Merge vgosDB can also be run on files ending in .tgz and .tar.xz with
-
-```bash
-$ python3 merge_vgosDB.py <filepath_to_merge_file> <filepath_to_secondary file> <name_of_person_or_institution>
 ```
 
 When merging databases using a script, include the method `merge_vgosDB()` with
@@ -54,6 +48,8 @@ When merging databases using a script, include the method `merge_vgosDB()` with
 ```python
 from merge_vgosDB.merge_vgosDB import merge_vgosDB
 ```
+
+and supply the method with the same parameters as before.
 
 ## Credits
 
