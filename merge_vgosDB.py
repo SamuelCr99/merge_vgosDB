@@ -15,7 +15,6 @@ import tarfile
 
 VERSION = 1.0
 
-
 def find_history_file_name(old_file_name, merge_directory):
     """
     Finds the correct name for a history file. This name should depend on the 
