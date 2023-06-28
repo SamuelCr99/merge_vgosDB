@@ -11,4 +11,31 @@ Each wrapper that is written gets a new history file assigned to it, which descr
 
 ## How to install
 
+You can install the package by pip (not yet implemented) with
+
+```bash
+$ pip install merge_vgosDB
+```
+
+Or, you can clone the GitHub repository and install the required libraries manually with
+
+```bash
+$ git clone https://github.com/SamuelCr99/merge_vgosDB.git
+$ pip install netCDF4
+```
+
 ## How to use
+
+Merge_vgosDB is run by running the script `merge_vgosDB.py` with
+
+```bash
+$ python merge_vgosDB.py <filepath to merge directory> <filepath to secondary directory>
+```
+
+These paths can be given as either relative or absolute.
+
+Example (write python instead of python3 if running code on Windows): 
+```
+$ python3 merge_vgosDB test_data/n_data/20230315-r41094 test_data/g_data/20230315-r41094 
+```
+

@@ -77,14 +77,3 @@ def is_equivalent_wrapper(primary_file, secondary_file):
             return False
 
     return True
-
-
-
-if __name__ == '__main__':
-    if len(sys.argv) < 3:
-        s1 = "NVI_data/20APR01XA/20APR01XA_V005_iGSFC_kall.wrp"
-        s2 = "NVI_data/20APR01XAV2/20APR01XA_V005_iGSFC_kall.wrp"
-        print(is_equivalent_wrapper(s1, s2))
-
-    else:
-        print(is_equivalent_wrapper(sys.argv[1], sys.argv[2]))

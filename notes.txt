@@ -1,2 +1,0 @@
-Tasks:
-Make READMEs and other quality of life improvements to the other projects

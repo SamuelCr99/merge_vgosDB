@@ -36,12 +36,3 @@ def find_compatible(file_path,dir_path):
         plug_compatible_paths.append(data_file_path)
 
     return plug_compatible_paths
-
-if __name__ == '__main__':
-    if len(sys.argv) < 3:
-        s1 = "NVI_data/20APR01XA/Apriori/Antenna.nc"
-        s2 = "NVI_data/20APR01XA/Apriori"
-        print(find_compatible(s1, s2))
-
-    else:
-        print(find_compatible(sys.argv[1], sys.argv[2]))
