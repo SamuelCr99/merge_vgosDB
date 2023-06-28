@@ -51,8 +51,6 @@ from merge_vgosDB.merge_vgosDB import merge_vgosDB
 
 and supply the method with the same parameters as before.
 
-## Credits
+## Acknowledgements
 
-
-
-## License
+This project contains data supplied by the Federal Agency for Cartography and Geodesy of Germany and NASA Goddard Space Flight Center.

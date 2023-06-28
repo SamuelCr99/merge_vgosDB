@@ -2,9 +2,11 @@ import netCDF4 as nc
 import sys
 
 # Is "Stub" necessarily meta?
-META_VARS = ["Stub", "CreateTime","CreatedBy","Program","DataOrigin","TimeTag","TimeTagFile","Session","Band","Station","Subroutine","History","vgosDB_Version"]
+META_VARS = ["Stub", "CreateTime", "CreatedBy", "Program", "DataOrigin", "TimeTag",
+             "TimeTagFile", "Session", "Band", "Station", "Subroutine", "History", "vgosDB_Version"]
 
-def is_equivalent(file1,file2):
+
+def is_equivalent(file1, file2):
     """
     Checks if two netCDF files are vgosDB equivalent
 
@@ -19,7 +21,7 @@ def is_equivalent(file1,file2):
     """
     ds1 = nc.Dataset(file1)
     ds2 = nc.Dataset(file2)
-    
+
     for var in ds1.variables:
         if var in META_VARS:
             continue

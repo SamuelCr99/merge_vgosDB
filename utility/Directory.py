@@ -12,7 +12,7 @@ class Directory:
 
     def get_path(self):
         return "/".join(filter(lambda x: x, self.current_dir))
-    
+
     def get_path_with_slash(self):
         # Returns the path with a slash at the end, if the path is not the root
         path_without_slash = self.get_path()

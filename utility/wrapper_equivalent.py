@@ -3,6 +3,7 @@ import sys
 from utility.vgos_db_equivalent import is_equivalent
 import os
 
+
 def extract_paths(lines):
     """
     Finds paths to files referenced in wrapper file
@@ -15,7 +16,7 @@ def extract_paths(lines):
     """
     paths = []
     default_dir = []
-    for line in lines: 
+    for line in lines:
         if line[0] == "!" or line[0] == "#" or line[0] == "/":
             continue
         elif line[0:5].lower() == "begin":
@@ -30,6 +31,7 @@ def extract_paths(lines):
             line = line.strip("\n")
             paths.append("/".join(filter(lambda x: x, default_dir)) + line)
     return paths
+
 
 def is_equivalent_wrapper(primary_file, secondary_file):
     """
@@ -50,7 +52,7 @@ def is_equivalent_wrapper(primary_file, secondary_file):
 
     with open(primary_file) as file:
         primary_file_lines = file.readlines()
-        
+
     with open(secondary_file) as file:
         secondary_file_lines = file.readlines()
 

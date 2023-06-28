@@ -2,6 +2,8 @@ import os
 
 # Maybe change this so that we check if each row is in both files, instead of checking
 # that they are in the exact same place!
+
+
 def is_identical_history_file(history_file, merge_history_directory):
     """
     Checks if there exists a history file in a directory which contains the same

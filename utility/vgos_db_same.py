@@ -20,4 +20,4 @@ def is_same(primary_file, secondary_file):
     if primary_file.split('/')[-1] != secondary_file.split('/')[-1]:
         return False
 
-    return is_identical(primary_file,secondary_file)
+    return is_identical(primary_file, secondary_file)

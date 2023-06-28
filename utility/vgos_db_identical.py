@@ -24,14 +24,14 @@ def is_identical(primary_file, secondary_file):
         return False
 
     # Checks values and attributes for each variable
-    for variable in primary_ds.variables: 
+    for variable in primary_ds.variables:
         if (primary_ds[variable][:] != secondary_ds[variable][:]).any():
             return False
         for attr in primary_ds[variable].ncattrs():
             if attr not in secondary_ds[variable].ncattrs():
                 return False
             else:
-                if getattr(primary_ds[variable],attr) != getattr(secondary_ds[variable],attr):
+                if getattr(primary_ds[variable], attr) != getattr(secondary_ds[variable], attr):
                     return False
         if primary_ds[variable].dimensions != secondary_ds[variable].dimensions:
             return False

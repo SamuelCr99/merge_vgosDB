@@ -30,12 +30,12 @@ def find_history_file_name(old_file_name, merge_directory):
     for flag in flags:
         if flag[0].lower() != "v":
             flags_reduced.append(f"_{flag}")
-    
+
     # Find the correct version number
-    v=0
+    v = 0
     while f"_V{get_version_num(v)}" in history_file_names:
-        v+=1
-    
+        v += 1
+
     # Return new name
     return f"{file_name_stub}_V{get_version_num(v)}{''.join(flags_reduced)}.hist"
 
@@ -59,12 +59,12 @@ def find_data_file_name(old_file_name, merge_directory):
     for flag in flags:
         if flag[0].lower() != "v":
             flags_reduced.append(f"_{flag}")
-    
+
     # Find the correct version number
-    v=1
+    v = 1
     while f"_V{get_version_num(v)}" in data_file_names:
-        v+=1
-    
+        v += 1
+
     # Return new name
     return f"{file_name_stub}_V{get_version_num(v)}{''.join(flags_reduced)}.nc"
 
@@ -73,9 +73,9 @@ def get_version_num(v):
     """
     Formats number to 3 digit string 
     """
-    if v<10:
+    if v < 10:
         return f"00{v}"
-    elif v<100:
+    elif v < 100:
         return f"0{v}"
     else:
         return f"{v}"
@@ -86,17 +86,22 @@ def get_version_num(v):
 def is_beginning(line):
     return line.split(" ")[0].lower() == "begin"
 
+
 def is_end(line):
     return line.split(" ")[0].lower() == "end"
+
 
 def is_directory(line):
     return line.split(' ')[0].lower() == "default_dir"
 
+
 def is_history_file(line):
     return ".hist" in line.split(' ')[-1] and line.split(' ')[0] == 'History'
 
+
 def is_data_file(line):
     return '.nc' in line.split(' ')[-1]
+
 
 def handle_directory(line, merge_directory):
     """
@@ -120,6 +125,7 @@ def handle_directory(line, merge_directory):
         os.mkdir(f'{merge_directory}{directory_name}')
         history_lines = f"New directory: {directory_name} did not exist, now created."
     return line, history_lines
+
 
 def handle_history_file(line, merge_directory, secondary_directory):
     """
@@ -146,26 +152,31 @@ def handle_history_file(line, merge_directory, secondary_directory):
 
     # If there is no history file with the given name, we can copy it over
     if history_file_name not in os.listdir(merge_directory+'/History'):
-        shutil.copy2(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{history_file_name}')
+        shutil.copy2(f'{secondary_directory}History/{history_file_name}',
+                     f'{merge_directory}History/{history_file_name}')
         history_lines = f'Copy history: {history_file_name} did not exist in merge directory, copied file.'
-    
+
     else:
-        new_history_file_name = is_identical_history_file(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/')
+        new_history_file_name = is_identical_history_file(
+            f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/')
 
         # If no identical history files exist, we copy the file with a different name
         if not new_history_file_name:
             # Finds a file name with correct version number
-            new_file_name = find_history_file_name(history_file_name,merge_directory)
-            shutil.copy2(f'{secondary_directory}History/{history_file_name}', f'{merge_directory}History/{new_file_name}')
+            new_file_name = find_history_file_name(
+                history_file_name, merge_directory)
+            shutil.copy2(f'{secondary_directory}History/{history_file_name}',
+                         f'{merge_directory}History/{new_file_name}')
             line = line.strip(history_file_name) + new_file_name
             history_lines = f'Copy history: {history_file_name} did not exist in merge directory, but name was taken. Copied file with name {new_file_name}.'
-        
+
         # If there exists a file with the same contents and a different name, we need to change the name
         elif new_history_file_name != history_file_name:
             line = line.strip(history_file_name) + new_history_file_name
             history_lines = f'Identical history: {history_file_name} changed name to {new_history_file_name}.'
 
     return line, history_lines
+
 
 def handle_data_file(line, merge_directory, secondary_directory, current_dir):
     """
@@ -189,20 +200,22 @@ def handle_data_file(line, merge_directory, secondary_directory, current_dir):
     Returns the lines which should be written to the new wrapper file and history
     file.
     """
-    compatible_paths = find_compatible(secondary_directory+line, merge_directory[:-1])
+    compatible_paths = find_compatible(
+        secondary_directory+line, merge_directory[:-1])
 
     file_name = line
     file_path = secondary_directory+line
 
     # When no plug-compatible files are there, we can just copy over the data file
-    if not compatible_paths: 
-        shutil.copy2(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}')
-        history_line = f'Copy file: No compatible files found for {current_dir}{file_name}, copied file.' 
+    if not compatible_paths:
+        shutil.copy2(f'{secondary_directory}{file_name}',
+                     f'{merge_directory}{file_name}')
+        history_line = f'Copy file: No compatible files found for {current_dir}{file_name}, copied file.'
         return line, history_line
 
     # If there exists a file that is the same, we don't need to copy anything
     for compatible_line in compatible_paths:
-        if is_same(file_path,compatible_line):
+        if is_same(file_path, compatible_line):
             return line, ''
 
     # If there exists a file that is the identical, we want that one instead
@@ -212,7 +225,7 @@ def handle_data_file(line, merge_directory, secondary_directory, current_dir):
             history_line = f'Identical file found: {current_dir}{file_name} has been changed to {current_dir}{new_file_name}.'
             return new_file_name, history_line
 
-    # If there exists a file that is equivalent, we want that one instead    
+    # If there exists a file that is equivalent, we want that one instead
     for compatible_line in compatible_paths:
         if is_equivalent(file_path, compatible_line):
             new_file_name = compatible_line.split("/")[-1]
@@ -229,13 +242,15 @@ def handle_data_file(line, merge_directory, secondary_directory, current_dir):
     if file_name in os.listdir(merge_directory):
         old_file_name = file_name
         # Finds a file name with a correct version number
-        file_name = find_data_file_name(old_file_name,merge_directory)
-        shutil.copy2(f'{secondary_directory}{old_file_name}', f'{merge_directory}{file_name}')
+        file_name = find_data_file_name(old_file_name, merge_directory)
+        shutil.copy2(f'{secondary_directory}{old_file_name}',
+                     f'{merge_directory}{file_name}')
         history_line = f'Copy file: No file same, identical or equivalent for {current_dir}{old_file_name}, but name already existed. Updating name to {current_dir}{file_name}.'
         return file_name, history_line
 
-    else: 
-        shutil.copy2(f'{secondary_directory}{file_name}', f'{merge_directory}{file_name}')
+    else:
+        shutil.copy2(f'{secondary_directory}{file_name}',
+                     f'{merge_directory}{file_name}')
         history_line = f'Copy file: No file is same, identical or equivalent for {current_dir}{file_name}. Copied it over.'
         return file_name, history_line
 
@@ -250,7 +265,6 @@ def find_wrapper_files(directory):
         if file[-4:] == '.wrp':
             wrapper_files.append(directory + file)
     return wrapper_files
-
 
 
 def create_new_wrapper(wrapper_file, merge_directory, secondary_directory, who):
@@ -273,12 +287,14 @@ def create_new_wrapper(wrapper_file, merge_directory, secondary_directory, who):
     # If there is an equivalent wrapper already, we don't need to copy it
     wrapper_file_name = wrapper_file.split('/')[-1]
     if wrapper_file_name in os.listdir(merge_directory):
-        if is_equivalent_wrapper(merge_directory+wrapper_file_name, secondary_directory+wrapper_file_name):
+        if is_equivalent_wrapper(merge_directory+wrapper_file_name,
+                                 secondary_directory+wrapper_file_name):
             return
         else:
             # Happens if there is a wrapper with the same name but not the same
             # content. Should not be possible.
-            warnings.warn(f"Wrapper with the same name found, but they are not equivalent! Wrapper ignored: {wrapper_file_name}")
+            warnings.warn(
+                f"Wrapper with the same name found, but they are not equivalent! Wrapper ignored: {wrapper_file_name}")
             return
 
     # When there is no equivalent wrapper, we need to write a new one
@@ -293,10 +309,10 @@ Merging  {wrapper_file_name} into  vgosdB {merge_directory.split('/')[-2]}
 Run by {who}
 """)
     current_dir = Directory()
-    
+
     # Goes through each line and finds specific keywords which triggers events
     # that change the line in the wrapper and writes to the history file.
-    for line in wrapper_lines: 
+    for line in wrapper_lines:
         line = line.strip('\n')
 
         if is_beginning(line):
@@ -309,20 +325,25 @@ Run by {who}
 
         elif is_directory(line):
             current_dir.go_out()
-            return_values = handle_directory(line, merge_directory + current_dir.get_path())
+            return_values = handle_directory(
+                line, merge_directory + current_dir.get_path())
             current_dir.go_in(line.split(" ")[1])
             lines_to_write_wrapper.append(return_values[0])
             if return_values[1]:
                 lines_to_write_history.append(return_values[1])
 
         elif is_history_file(line):
-            return_values = handle_history_file(line, merge_directory, secondary_directory)
+            return_values = handle_history_file(
+                line, merge_directory, secondary_directory)
             lines_to_write_wrapper.append(return_values[0])
             if return_values[1]:
                 lines_to_write_history.append(return_values[1])
 
         elif is_data_file(line):
-            return_values = handle_data_file(line, merge_directory + current_dir.get_path_with_slash(), secondary_directory + current_dir.get_path_with_slash(), current_dir.get_path_with_slash())
+            return_values = handle_data_file(
+                line,merge_directory + current_dir.get_path_with_slash(),
+                secondary_directory + current_dir.get_path_with_slash(),
+                current_dir.get_path_with_slash())
             lines_to_write_wrapper.append(return_values[0])
             if return_values[1]:
                 lines_to_write_history.append(return_values[1])
@@ -334,19 +355,20 @@ Run by {who}
         # Make the history directory if there isn't one
         if 'History' not in os.listdir(merge_directory):
             os.mkdir(f'{merge_directory}History')
-        
+
         # Get a reasonable name for the history file
         history_file_names = "\t".join(os.listdir(f'{merge_directory}History'))
-        v=0
+        v = 0
         while f"_V{get_version_num(v)}" in history_file_names:
-            v+=1
-        merge_history_file_name = f"{merge_directory.split('/')[-2]}_V{get_version_num(v)}_kvgosDBmerge.hist" 
+            v += 1
+        merge_history_file_name = f"{merge_directory.split('/')[-2]}_V{get_version_num(v)}_kvgosDBmerge.hist"
 
         # Add to the history section of the merged wrapper
-        end_history_index = [i for i, elem in enumerate(lines_to_write_wrapper) if 'end history' in elem.lower()][0]
+        end_history_index = [i for i, elem in enumerate(
+            lines_to_write_wrapper) if 'end history' in elem.lower()][0]
         now = datetime.datetime.utcnow()
         if lines_to_write_wrapper[end_history_index-1][0] != "!":
-            lines_to_write_wrapper.insert(end_history_index-1,"!")
+            lines_to_write_wrapper.insert(end_history_index-1, "!")
             end_history_index += 1
         process_text = f"""Begin Process merge_vgosDB
 Version {VERSION}
@@ -356,16 +378,16 @@ RunTimeTag {now.strftime('%Y/%m/%d %H:%M:%S')} UTC
 {merge_history_file_name}
 End Process merge_vgosDB
 !"""
-        lines_to_write_wrapper.insert(end_history_index,process_text)
+        lines_to_write_wrapper.insert(end_history_index, process_text)
 
         # Write the history file
-        with open(f"{merge_directory}History/{merge_history_file_name}", 'x') as f: 
+        with open(f"{merge_directory}History/{merge_history_file_name}", 'x') as f:
             f.writelines("\n".join(lines_to_write_history))
-    
+
     # Write the wrapper
-    with open(merge_directory+wrapper_file_name, 'x') as f: 
+    with open(merge_directory+wrapper_file_name, 'x') as f:
         f.writelines("\n".join(lines_to_write_wrapper))
-        
+
 
 def merge_vgosDB(merge_directory, secondary_directory, who):
     """
@@ -384,29 +406,34 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
     Returns: 
     No return values
     """
-    is_zip = "tgz" in merge_directory.split(".")[-1] or "xz" in merge_directory.split(".")[-1]
+    is_zip = "tgz" in merge_directory.split(
+        ".")[-1] or "xz" in merge_directory.split(".")[-1]
 
     if is_zip:
         # Update the directories
-        with tarfile.open(merge_directory, 'r') as mergeZip: 
+        with tarfile.open(merge_directory, 'r') as mergeZip:
             mergeZip.extractall('merge_temp')
         with tarfile.open(secondary_directory, 'r') as secondaryZip:
             secondaryZip.extractall('secondary_temp')
 
         merge_folder_name = merge_directory.split('/')[-1].split('.')[0]
-        secondary_folder_name = secondary_directory.split('/')[-1].split('.')[0]
+        secondary_folder_name = secondary_directory.split(
+            '/')[-1].split('.')[0]
 
         old_merge_directory = merge_directory
         merge_directory = f'merge_temp/{merge_folder_name}'
         secondary_directory = f'secondary_temp/{secondary_folder_name}'
 
-    if merge_directory[-1] != '/': merge_directory += '/'
-    if secondary_directory[-1] != '/': secondary_directory += '/'
+    if merge_directory[-1] != '/':
+        merge_directory += '/'
+    if secondary_directory[-1] != '/':
+        secondary_directory += '/'
 
     wrapper_files = find_wrapper_files(secondary_directory)
     wrapper_files.sort()
-    for wrapper_file in wrapper_files: 
-        create_new_wrapper(wrapper_file, merge_directory, secondary_directory, who)
+    for wrapper_file in wrapper_files:
+        create_new_wrapper(wrapper_file, merge_directory,
+                           secondary_directory, who)
 
     if is_zip:
         # Zip up the merge directory
@@ -414,6 +441,7 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
             mergeZip.add('merge_temp', arcname=os.path.basename(''))
         shutil.rmtree('merge_temp')
         shutil.rmtree('secondary_temp')
+
 
 if __name__ == '__main__':
     help_text = """
@@ -430,13 +458,13 @@ if __name__ == '__main__':
         who = input("Who is merging the files: ")
 
     elif len(sys.argv) > 1 and sys.argv[1] == "--help":
-            print(help_text)
-            sys.exit()
+        print(help_text)
+        sys.exit()
 
     elif len(sys.argv) > 1 and len(sys.argv) < 4:
         raise ValueError("Not enough arguments")
 
-    elif len(sys.argv) == 4: 
+    elif len(sys.argv) == 4:
         merge_directory = sys.argv[1]
         secondary_directory = sys.argv[2]
         who = sys.argv[3]

@@ -3,6 +3,7 @@ import sys
 from utility.vgos_db_same import is_same
 from utility.Directory import Directory
 
+
 def extract_paths(lines):
     """
     Finds paths to files referenced in wrapper file
@@ -15,7 +16,7 @@ def extract_paths(lines):
     """
     paths = []
     dir = Directory()
-    for line in lines: 
+    for line in lines:
         if line[0] == "!" or line[0] == "#" or line[0] == "/":
             continue
         elif line[0:5].lower() == "begin":
@@ -28,6 +29,7 @@ def extract_paths(lines):
         elif '.nc' in line and " " not in line:
             paths.append(dir.get_path_with_slash() + line.strip("\n"))
     return paths
+
 
 def is_same_wrapper(primary_file, secondary_file):
     """
@@ -47,7 +49,7 @@ def is_same_wrapper(primary_file, secondary_file):
 
     with open(primary_file) as file:
         primary_file_lines = file.readlines()
-        
+
     with open(secondary_file) as file:
         secondary_file_lines = file.readlines()
 
@@ -63,7 +65,7 @@ def is_same_wrapper(primary_file, secondary_file):
     for path in extracted_primary_paths:
         if path not in extracted_secondary_paths:
             return False
-        
+
         # Found files also need to be the same
         if not is_same(primary_path+path, secondary_path+path):
             return False
