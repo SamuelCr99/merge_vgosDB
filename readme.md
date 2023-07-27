@@ -2,7 +2,7 @@
 
 ## Description
 
-A utility for merging two vgosDB databases together, developed at NVI Inc.
+A utility for merging two vgosDBs together, developed at NVI Inc.
 
 ### Method
 
