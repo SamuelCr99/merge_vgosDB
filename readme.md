@@ -2,7 +2,7 @@
 
 ## Description
 
-A utility for merging two vgosDBs together, developed at NVI Inc.
+A utility for merging two vgosDBs together. The program was developed at NVI Inc. by Filip Herbertsson and Samuel Collier Ryder during a summer internship in 2023.
 
 ### Method
 
@@ -15,13 +15,7 @@ Each wrapper that is written gets a new history file assigned to it, which descr
 
 ## How to install
 
-You can install the package by pip (__not yet implemented__) with
-
-```bash
-$ pip install merge_vgosDB
-```
-
-Or, you can clone the GitHub repository and install the required libraries manually with
+You can clone the GitHub repository and install the required libraries manually with
 
 ```bash
 $ git clone https://github.com/SamuelCr99/merge_vgosDB.git
@@ -39,7 +33,7 @@ $ python3 merge_vgosDB.py <filepath_merge_db> <filepath_secondary_db> <name_exec
 Write `python` instead of `python3` if running code on Windows. The filepaths can either be paths to directories or to files ending in .tgz or .tar.xz. These paths can be given as either relative or absolute. When specifying directories, the program will merge the secondary directory into the merge directory. When specifying zipped files, the program will overwrite the first file.
 
 Example: 
-```
+```bash
 $ python3 merge_vgosDB example/GSFC_data/20230315-r41094 example/BKG_data/20230315-r41094 "NVI Inc."
 ```
 
