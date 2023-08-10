@@ -461,6 +461,6 @@ if __name__ == '__main__':
 
     parser.add_argument('merge_dir', type=str, help="Session directory to merge into")
     parser.add_argument('secondary_dir', type=str, help="Session directory to merge from")
-    parser.add_argument('--who', default="Name of the person/group running the script")
+    parser.add_argument('--who', default="unknown", help="Name of the person/group running the script")
     args = parser.parse_args()
-    merge_vgosDB(args.merge_dir, args.dir, args.who)
+    merge_vgosDB(args.merge_dir, args.secondary_dir, args.who)
