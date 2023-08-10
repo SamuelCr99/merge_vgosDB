@@ -10,7 +10,6 @@ import warnings
 import glob
 import datetime
 import os
-import sys
 import tarfile
 import argparse
 
@@ -459,8 +458,8 @@ if __name__ == '__main__':
                 prog='Merge vgosDB',
                 description='Utility for merging two vgosDB folders')
 
-    parser.add_argument('merge_dir', type=str, help="Session directory to merge into")
-    parser.add_argument('secondary_dir', type=str, help="Session directory to merge from")
-    parser.add_argument('--who', default="unknown", help="Name of the person/group running the script")
+    parser.add_argument('merge_dir', type=str, help="session directory to merge into")
+    parser.add_argument('secondary_dir', type=str, help="session directory to merge from")
+    parser.add_argument('--who', default="unknown", help="name of the person/group running the script")
     args = parser.parse_args()
     merge_vgosDB(args.merge_dir, args.secondary_dir, args.who)

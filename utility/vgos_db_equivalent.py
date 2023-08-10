@@ -1,5 +1,6 @@
 import netCDF4 as nc
 
+
 META_VARS = ["Stub", "CreateTime", "CreatedBy", "Program", "DataOrigin", "TimeTag",
              "TimeTagFile", "Session", "Band", "Station", "Subroutine", "History", "vgosDB_Version"]
 
