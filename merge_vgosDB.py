@@ -12,6 +12,7 @@ import datetime
 import os
 import sys
 import tarfile
+import argparse
 
 VERSION = 1.0
 
@@ -405,22 +406,23 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
     Returns: 
     No return values
     """
-    is_zip = "tgz" in merge_directory.split(
+    merge_is_zip = "tgz" in merge_directory.split(
         ".")[-1] or "xz" in merge_directory.split(".")[-1]
+    secondary_is_zip = "tgz" in secondary_directory.split(
+        ".")[-1] or "xz" in secondary_directory.split(".")[-1]
 
-    if is_zip:
+    if merge_is_zip:
         # Unzip the files and update directory paths
         with tarfile.open(merge_directory, 'r') as mergeZip:
             mergeZip.extractall('merge_temp')
-        with tarfile.open(secondary_directory, 'r') as secondaryZip:
-            secondaryZip.extractall('secondary_temp')
-
         merge_folder_name = merge_directory.split('/')[-1].split('.')[0]
-        secondary_folder_name = secondary_directory.split(
-            '/')[-1].split('.')[0]
-
         old_merge_directory = merge_directory
         merge_directory = f'merge_temp/{merge_folder_name}'
+
+    if secondary_is_zip:
+        with tarfile.open(secondary_directory, 'r') as secondaryZip:
+            secondaryZip.extractall('secondary_temp')
+        secondary_folder_name = secondary_directory.split('/')[-1].split('.')[0]
         secondary_directory = f'secondary_temp/{secondary_folder_name}'
 
     # Make sure paths always end with a /
@@ -436,11 +438,13 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
         create_new_wrapper(wrapper_file, merge_directory,
                            secondary_directory, who)
 
-    if is_zip:
+    if merge_is_zip:
         # Zip up the merge directory
         with tarfile.open(old_merge_directory, 'w:xz') as mergeZip:
             mergeZip.add('merge_temp', arcname=os.path.basename(''))
         shutil.rmtree('merge_temp')
+
+    if secondary_is_zip:
         shutil.rmtree('secondary_temp')
 
 
@@ -451,31 +455,12 @@ if __name__ == '__main__':
     
     usage: merge_vgosDB filepath_merge_db filepath_secondary_db name_executer
     """
+    parser = argparse.ArgumentParser(
+                prog='Merge vgosDB',
+                description='Utility for merging two vgosDB folders')
 
-    if len(sys.argv) == 1:
-        # Prompt user for each argument
-        print(f"----------- Merge vgosDB v{VERSION} -----------")
-        merge_directory = input("Directory/file to merge into: ")
-        secondary_directory = input("Second directory/file to merge: ")
-        who = input("Who is merging the files: ")
-
-    elif len(sys.argv) > 1 and sys.argv[1] == "--help":
-        # Display help text
-        print(help_text)
-        sys.exit()
-
-    elif len(sys.argv) > 1 and len(sys.argv) < 4:
-        # Too few arguments
-        raise ValueError("Not enough arguments")
-
-    elif len(sys.argv) == 4:
-        # Set the variables using the given arguments
-        merge_directory = sys.argv[1]
-        secondary_directory = sys.argv[2]
-        who = sys.argv[3]
-
-    else:
-        # Too many arguments
-        raise ValueError("Too many arguments")
-
-    merge_vgosDB(merge_directory, secondary_directory, who)
+    parser.add_argument('merge_dir', type=str, help="Session directory to merge into")
+    parser.add_argument('secondary_dir', type=str, help="Session directory to merge from")
+    parser.add_argument('--who', default="Name of the person/group running the script")
+    args = parser.parse_args()
+    merge_vgosDB(args.merge_dir, args.dir, args.who)
