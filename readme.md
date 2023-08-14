@@ -47,4 +47,4 @@ and supply the method with the same parameters as before.
 
 ## Acknowledgements
 
-This project contains data supplied by the Federal Agency for Cartography and Geodesy of Germany and NASA Goddard Space Flight Center.
+This project contains data supplied by the Federal Agency for Cartography and Geodesy of Germany and NASA Goddard Space Flight Center. The manual for vgosDB, as well as the general layout of this project, were both written by John Gipson.
