@@ -5,6 +5,7 @@ from utility.vgos_db_same import is_same
 from utility.wrapper_equivalent import is_equivalent_wrapper
 from utility.history_file_identical import is_identical_history_file
 from utility.Directory import Directory
+from utility.compare_session_code import compare_session_code
 import shutil
 import warnings
 import glob
@@ -432,6 +433,8 @@ def merge_vgosDB(merge_directory, secondary_directory, who):
 
     # Create a new wrapper for each wrapper in the second directory
     wrapper_files = find_wrapper_files(secondary_directory)
+    wrapper_files_merge = find_wrapper_files(merge_directory)
+    compare_session_code(wrapper_files, wrapper_files_merge)
     wrapper_files.sort()
     for wrapper_file in wrapper_files:
         create_new_wrapper(wrapper_file, merge_directory,
