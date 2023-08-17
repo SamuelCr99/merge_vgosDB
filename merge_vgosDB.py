@@ -17,8 +17,10 @@ VERSION = 1.0
 
 def find_history_file_name(old_file_name, inst_code):
     """
-    Finds the correct name for a history file. This name should depend on the 
-    version number of the other files in the directory.
+    Adds a suffix to the file name describing which institution it came from. 
+    Also checks that no institution suffix already existed. If so program shows 
+    warning. 
+
     """
 
     if "_i" in old_file_name:
@@ -30,8 +32,9 @@ def find_history_file_name(old_file_name, inst_code):
 
 def find_data_file_name(old_file_name, inst_code):
     """
-    Finds the correct name for a data file. This name should depend on the 
-    version number of the other files in the directory.
+    Adds a suffix to the file name describing which institution it came from. 
+    Also checks that no institution suffix already existed. If so program shows 
+    warning. 
     """
 
     if "_i" in old_file_name:
