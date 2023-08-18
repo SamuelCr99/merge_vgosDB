@@ -19,7 +19,7 @@ You can clone the GitHub repository and install the required libraries manually 
 
 ```bash
 $ git clone https://github.com/SamuelCr99/merge_vgosDB.git
-$ pip install netCDF4
+$ pip -r requirements.txt
 ```
 
 ## How to use
